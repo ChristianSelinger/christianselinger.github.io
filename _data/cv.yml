@@ -55,8 +55,8 @@
     - title: Mathematical epidemiology
       items: 
         - Simulation algorithms
-        - Dynamical systems
-        - Health intervention modeling
+        - Statistical inference and learning
+        - Applications to health interventions
     - title: Immunodynamics
       items:
         - Genomics of host response to infection

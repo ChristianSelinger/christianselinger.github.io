@@ -10,6 +10,12 @@ nav_order: 1
 <!-- _pages/publications.md -->
 <div class="publications">
 
+{% capture numJournalPapers %}
+  {% bibliography_count %}
+{% endcapture %}
+<div style=counter-reset:bibitem {{numJournalPqpers|plus:1}}3>
+</div>
+
 {%- for y in page.years %}
   <h2 class="year">{{y}}</h2>
   {% bibliography -f papers -q @*[year={{y}}]* %}

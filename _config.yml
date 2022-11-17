@@ -191,7 +191,6 @@ plugins:
   - jekyll-sitemap
   - jekyll-target-blank
   - jekyll-seo-tag
-  - jekyll-link-attributes
   - jekyll-twitter-plugin
   - jemoji
 

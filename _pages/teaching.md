@@ -7,7 +7,7 @@ nav: true
 nav_order: 4
 ---
 
-I taught this pre-doctoral course on stochastic simulation algorithms and numerics for epidemiological models at the African Institute for Mathematical Sciences in Senegal.
+This is a pre-doctoral course on stochastic simulation algorithms and numerics for epidemiological models, taught at the African Institute for Mathematical Sciences in Senegal. We started from simple compartmental models by discussing frequency vs. density-dependent transmission models. We gave examples of different approaches to solve numerically deterministic dynamical systems of epidemics. We then studied in detail biochemical reaction network simulation algorithms and glimpsed into numerics of stochastic differential equations. We put particular emphasis on practicals with toy models, but you will also find sketches of proofs and links to rigorous mathematical theory.
 
 You can have a look at the slides here.
 

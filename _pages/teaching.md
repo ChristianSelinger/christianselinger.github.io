@@ -2,11 +2,11 @@
 layout: page
 permalink: /teaching/
 title: teaching
-description: Materials for courses you taught. Replace this text with your description.
+description: Simulation algorithms & numerics for epidemiological models
 nav: true
 nav_order: 4
 ---
 
-For now, this page is assumed to be a static description of your courses. You can convert it to a collection similar to `_projects/` so that you can have a dedicated page for each course.
-
-Organize your courses by years, topics, or universities, however you like!
+I taught this pre-doctoral course on stochastic simulation algorithms and numerics for epidemiological models at the African Institute for Mathematical Sciences in Senegal.
+You can have a look at the slides here.
+Code and solutions for exercises upon request!

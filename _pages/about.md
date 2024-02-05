@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Infectious disease modeler
+subtitle: Disease modeler
 
 profile:
   align: right
@@ -18,10 +18,10 @@ social: true  # includes social icons at the bottom of the page
 ---
 
 
-A mathematician by [trade](http://tsp.imath.kiev.ua/files/242/tsp1710_12.pdf), I have been working in **infectious disease modeling** for the past 10 years. 
+A mathematician by [trade](http://tsp.imath.kiev.ua/files/242/tsp1710_12.pdf), I have been working in **disease modeling** for the past 12 years. 
 
 
-Infectious disease dynamics are **multi-scale** by definition. The combination of **pathogen** or **immune dynamics** within a host and changing patterns of **interactions between hosts** during transmission result in rich population-level phenomena. Ranging from stochastic emergence and extinction, to structured and well-mixed epidemic processes, I am interested in applying **mathematical** and **statistical concepts** to answer questions from the angle of **public health**:  
+Infectious disease dynamics are **multi-scale** by definition. The combination of **pathogen** or **immune dynamics** within a host and changing patterns of **interactions between hosts** during transmission result in rich population-level phenomena. Ranging from stochastic emergence and extinction, to structured and well-mixed epidemic processes, I am interested in applying **mathematical** and **statistical concepts** to answer questions from the angle of **population health**:  
 
 * What is the role of host response to infection towards [disease outcome](https://doi.org/10.1186/1471-2164-15-1161)?
 

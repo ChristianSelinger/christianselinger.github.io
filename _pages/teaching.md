@@ -6,15 +6,16 @@ description:
 nav: true
 nav_order: 4
 ---
-<h2>Simulation algorithms & numerics for epidemiological models </h2>
-This is a pre-doctoral course on stochastic simulation algorithms and numerics for epidemiological models, taught at the <a href="https://aims-senegal.org/">African Institute for Mathematical Sciences</a> in Senegal. 
+<h2>Introduction to simulation algorithms & numerics for epidemiological models</h2>
 
-We start with compartmental models by discussing frequency vs. density-dependent transmission models. Then, we give examples of different approaches to solve numerically deterministic dynamical systems of epidemics. In the major part, we study in detail biochemical reaction network simulation algorithms. Towards the end we also glimpse into numerics of stochastic differential equations. 
+This is an **introductory course** on stochastic simulation algorithms and numerical methods to solve epidemiological models of disease transmission. The target audience are quantitatively minded people from all walks of scientific lifes with interest in disease transmission mechanisms. Most recently, the course has been taught at the <a href="https://aims-senegal.org/">African Institute for Mathematical Sciences</a> in Senegal.
 
-Particular emphasis is on practicals with toy models, but you will also find sketches of proofs and links to rigorous mathematical theory.
+We start with compartmental models by discussing frequency vs. density-dependent transmission models. Then, we give examples of different approaches to **solve numerically deterministic** dynamical systems of epidemics. In the major part, we study in detail **biochemical reaction network** simulation algorithms. Towards the end we also glimpse into numerics of **stochastic differential equations**. 
 
-You can have a look at the slides <a href="/assets/pdf/MaModAfrica_TrainingSchoolSenegal2023_modsimul_20240111.pdf">here</a>.
+Particular emphasis is on **practicals with toy models**, but you will also find sketches of proofs and links to rigorous mathematical theory.
 
-Code and solutions for exercises upon request!
+You can have a look at the slides <a href="/assets/pdf/MaModAfrica_TrainingSchoolSenegal2023_modsimul_20240216.pdf">here</a>.
+
+Code in R and solutions for exercises upon request!
 
 Any comments and suggestions are appreciated!

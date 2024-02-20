@@ -14,7 +14,7 @@ We start with compartmental models by discussing frequency vs. density-dependent
 
 Particular emphasis is on **practicals with toy models**, but you will also find sketches of proofs and links to rigorous mathematical theory.
 
-You can have a look at the slides <a href="/assets/pdf/MaModAfrica_TrainingSchoolSenegal2023_modsimul_20240111.pdf">here</a>.
+You can have a look at the slides <a href="/assets/pdf/modsimul_20240111.pdf">here</a>.
 
 Code in R and solutions for exercises upon request!
 

@@ -407,7 +407,12 @@ ninja.data = [{
             window.location.href = "/blog/2015/formatting-and-links/";
           
         },
-      },{id: "books-the-godfather",
+      },{id: "books-the-fantastic-laboratory-of-dr-weigl",
+          title: 'The Fantastic Laboratory of Dr. Weigl',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/allen-weigl/";
+            },},{id: "books-the-godfather",
           title: 'The Godfather',
           description: "",
           section: "Books",handler: () => {

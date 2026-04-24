@@ -16,6 +16,6 @@ stars: 4
 goodreads_review: 54572348
 status: Finished
 ---
-This non-technical introduction into articial intelligence touches on the polictical economy of its large-scale deployment. 
-It discusses in depth implications for privacy, inequality and goverance for democratic societies.
+This non-technical introduction into articial intelligence touches on the political economy of its large-scale deployment. 
+It discusses in depth implications for privacy, inequality and governance in democratic societies.
 The book finishes with suggestion on how to design artificial intelligence products whose objectives focus on societal welfare as opposed to profit maximization. 

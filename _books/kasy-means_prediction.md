@@ -9,7 +9,7 @@ categories: machine-learning statistics
 tags: top-100
 buy_link: [https://press.uchicago.edu/ucp/books/book/chicago/M/bo255887145.html]
 date: 2026-03-30
-started: 2022-02-01
+started: 2026-02-01
 finished: 2026-03-30
 released: 2025
 stars: 4

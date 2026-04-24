@@ -490,9 +490,9 @@ ninja.data = [{
           description: "This course covers the foundational aspects of data science, including data collection, cleaning, analysis, and visualization. Students will learn practical skills for working with real-world datasets.",
           section: "Teachings",handler: () => {
               window.location.href = "/teachings/data2impact/";
-            },},{id: "teachings-",
-          title: '',
-          description: "",
+            },},{id: "teachings-from-data-to-impact-a-practical-guide-to-inference-for-infectious-disease-dynamics",
+          title: 'From data to impact, a practical guide to inference for infectious disease dynamics...',
+          description: "This course covers the foundational aspects of data science, including data collection, cleaning, analysis, and visualization. Students will learn practical skills for working with real-world datasets.",
           section: "Teachings",handler: () => {
               window.location.href = "/teachings/data2impact/";
             },},{id: "teachings-introduction-to-machine-learning",

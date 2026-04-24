@@ -475,8 +475,8 @@ ninja.data = [{
           description: "another project with an image 🎉",
           section: "Projects",handler: () => {
               window.location.href = "/projects/9_project/";
-            },},{id: "teachings-advanced-infectious-disease-modeling",
-          title: 'Advanced infectious disease modeling',
+            },},{id: "teachings-advanced-infectious-disease-models",
+          title: 'Advanced infectious disease models',
           description: "The course starts with an introduction to compartmental models of disease transmission including calculations of basic reproductive numbers and final epidemic size. Touching on numerical aspects, we focus on parameter inference and sensitivity analysis. The lecture notes are accompanied by coding practicals in R.",
           section: "Teachings",handler: () => {
               window.location.href = "/teachings/aidm2025/";

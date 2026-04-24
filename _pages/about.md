@@ -29,7 +29,7 @@ latest_posts:
 {% assign startYear = 2012 %}
 {% assign diff = currentYear | minus: startYear %}
 
-A mathematician by [trade](http://tsp.imath.kiev.ua/files/242/tsp1710_12.pdf), I have been working in **disease modeling** since for the past {{ diff }} years. 
+A mathematician by [trade](http://tsp.imath.kiev.ua/files/242/tsp1710_12.pdf), I have been working in **disease modeling**  for the past {{ diff }} years. 
 
 
 Infectious disease dynamics are **multi-scale** by definition. The combination of **pathogen** or **immune dynamics** within a host and changing patterns of **interactions between hosts** during transmission result in rich population-level phenomena. Ranging from stochastic emergence and extinction, to structured and well-mixed epidemic processes, I am interested in applying **mathematical** and **statistical techniques** to answer questions from the angle of **population health**:  

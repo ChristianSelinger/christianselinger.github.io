@@ -415,6 +415,11 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
+            },},{id: "books-exact-thinking-in-demented-times",
+          title: 'Exact Thinking in Demented Times',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/sigmund-exact/";
             },},{id: "books-the-means-of-prediction",
           title: 'The Means of Prediction',
           description: "",

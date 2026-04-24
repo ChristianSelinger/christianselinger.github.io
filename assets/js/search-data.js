@@ -417,6 +417,11 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
+            },},{id: "books-the-means-of-prediction",
+          title: 'The Means of Prediction',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/kasy-means_prediction/";
             },},{id: "news-a-simple-inline-announcement",
           title: 'A simple inline announcement.',
           description: "",

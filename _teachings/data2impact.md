@@ -2,7 +2,7 @@
 layout: course
 title: From data to impact - a practical guide to inference for infectious disease dynamics
 description: This course covers the foundational aspects of data science, including data collection, cleaning, analysis, and visualization. Students will learn practical skills for working with real-world datasets.
-instructor: Prof. Data
+instructor: Monica Golumbeanu, Christian Selinger
 year: 2026
 term: Spring
 location: Science Building, Room 202

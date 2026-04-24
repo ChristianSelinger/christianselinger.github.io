@@ -400,7 +400,12 @@ ninja.data = [{
             window.location.href = "/blog/2015/formatting-and-links/";
           
         },
-      },{id: "books-the-fantastic-laboratory-of-dr-weigl",
+      },{id: "books-c-39-est-grave-dr-darwin",
+          title: 'C&amp;#39;est grave, Dr Darwin ?',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/alizon-darwin/";
+            },},{id: "books-the-fantastic-laboratory-of-dr-weigl",
           title: 'The Fantastic Laboratory of Dr. Weigl',
           description: "",
           section: "Books",handler: () => {

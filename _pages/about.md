@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Disease modeler
+subtitle: Mathematical modeler
 
 profile:
   align: right

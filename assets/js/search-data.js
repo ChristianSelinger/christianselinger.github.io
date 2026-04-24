@@ -491,7 +491,7 @@ ninja.data = [{
               window.location.href = "/projects/9_project/";
             },},{id: "teachings-advanced-infectious-disease-modeling",
           title: 'Advanced infectious disease modeling',
-          description: "This course covers the foundational aspects of data science, including data collection, cleaning, analysis, and visualization. Students will learn practical skills for working with real-world datasets.",
+          description: "The course starts with an introduction to compartmental models of disease transmission including calculations of basic reproductive numbers and final epidemic size. Touching on numerical aspects, we focus on parameter inference and sensitivity analysis. The lecture notes are accompanied by coding practicals in R.",
           section: "Teachings",handler: () => {
               window.location.href = "/teachings/aidm2025/";
             },},{id: "teachings-data-science-fundamentals",

@@ -5,7 +5,7 @@ author: Karl Sigmund
 cover: assets/img/book_covers/sigmund-exact.jpg
 olid: OL43499941M # use Open Library ID to fetch cover (if no `cover` is provided)
 isbn: 7539967447 # use ISBN to fetch cover (if no `olid` is provided, dashes are optional)
-categories: philsopy mathematics logic vienna ww2
+categories: philosophy mathematics logic vienna ww2
 tags: top-100
 buy_link: 
 date: 2024-10-25

@@ -405,6 +405,11 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/alizon-darwin/";
+            },},{id: "books-the-bourbaki-gambit",
+          title: 'The Bourbaki Gambit',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/djerassi-bourbaki/";
             },},{id: "books-the-fantastic-laboratory-of-dr-weigl",
           title: 'The Fantastic Laboratory of Dr. Weigl',
           description: "",

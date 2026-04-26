@@ -410,11 +410,6 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/allen-weigl/";
-            },},{id: "books-the-godfather",
-          title: 'The Godfather',
-          description: "",
-          section: "Books",handler: () => {
-              window.location.href = "/books/the_godfather/";
             },},{id: "books-exact-thinking-in-demented-times",
           title: 'Exact Thinking in Demented Times',
           description: "",

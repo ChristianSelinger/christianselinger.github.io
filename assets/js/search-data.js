@@ -479,11 +479,6 @@ ninja.data = [{
           description: "The course starts with an introduction to compartmental models of disease transmission including calculations of basic reproductive numbers and final epidemic size. Touching on numerical aspects, we focus on parameter inference and sensitivity analysis. The lecture notes are accompanied by coding practicals in R.",
           section: "Teachings",handler: () => {
               window.location.href = "/teachings/aidm2025/";
-            },},{id: "teachings-data-science-fundamentals",
-          title: 'Data Science Fundamentals',
-          description: "This course covers the foundational aspects of data science, including data collection, cleaning, analysis, and visualization. Students will learn practical skills for working with real-world datasets.",
-          section: "Teachings",handler: () => {
-              window.location.href = "/teachings/data-science-fundamentals/";
             },},{id: "teachings-from-data-to-impact-a-practical-guide-to-inference-for-infectious-disease-dynamics",
           title: 'From data to impact - a practical guide to inference for infectious disease...',
           description: "This course covers the foundational aspects of data science, including data collection, cleaning, analysis, and visualization. Students will learn practical skills for working with real-world datasets.",

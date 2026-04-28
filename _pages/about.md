@@ -43,3 +43,5 @@ Infectious disease dynamics are **multi-scale** by definition. The combination o
 I have been mainly interested in pathogens and diseases affecting humans such as HIV, Influenza, Polio, HPV, Coronaviruses and Malaria.
 
 I am currently employed at the [Swiss Tropical and Public Health Institute](https://swisstph.ch).
+
+For more details, you can download my [resume](/assets/pdf/resume_cselinger_20260324.pdf)

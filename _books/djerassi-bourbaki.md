@@ -8,9 +8,9 @@ isbn: 7539967447 # use ISBN to fetch cover (if no `olid` is provided, dashes are
 categories: biotechnology biochemistry
 tags: top-100
 buy_link: [https://www.penguinrandomhouse.com/books/329396/the-bourbaki-gambit-by-carl-djerassi/]
-date: 2019-04-01
-started: 2019-03-01
-finished: 2019-04-01
+date: 2022-04-01
+started: 2022-03-01
+finished: 2022-04-01
 released: 1994
 stars: 4
 goodreads_review: 

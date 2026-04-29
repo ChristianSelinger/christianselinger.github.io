@@ -476,7 +476,7 @@ ninja.data = [{
               window.location.href = "/projects/9_project/";
             },},{id: "teachings-advanced-infectious-disease-models",
           title: 'Advanced infectious disease models',
-          description: "The course starts with an introduction to compartmental models of disease transmission including calculations of basic reproductive numbers and final epidemic size. Touching on numerical aspects, we focus on parameter inference and sensitivity analysis. The lecture notes are accompanied by coding practicals in R.",
+          description: "The course starts with an introduction to compartmental models of disease transmission including calculations of basic reproductive numbers and final epidemic size. We continue with numerical simulations and we focus on parameter inference and sensitivity analysis. The lecture notes are accompanied by coding practicals in R.",
           section: "Teachings",handler: () => {
               window.location.href = "/teachings/aidm2025/";
             },},{id: "teachings-from-data-to-impact-a-practical-guide-to-inference-for-infectious-disease-dynamics",

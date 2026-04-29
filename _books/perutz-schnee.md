@@ -1,4 +1,4 @@
-**---
+---
 layout: book-review
 title: St. Petri - Schnee
 author: Leo Perutz

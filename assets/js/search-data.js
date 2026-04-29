@@ -408,6 +408,11 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/allen-weigl/";
+            },},{id: "books-st-petri-schnee",
+          title: 'St. Petri - Schnee',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/perutz-schnee/";
             },},{id: "books-exact-thinking-in-demented-times",
           title: 'Exact Thinking in Demented Times',
           description: "",

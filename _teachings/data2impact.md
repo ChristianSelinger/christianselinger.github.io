@@ -88,6 +88,20 @@ schedule:
         url: /assets/pdf/example_pdf.pdf
       - name: Coding Lab
         url: https://github.com/
+
+  - week: 9
+    date: Apr 29
+    topic: Disease transmission models
+    description: Flow diagrams, compartmental models, ordinary differential equations, time-dependent coefficients
+    materials:
+      - name: Lecture Notes
+        url: /assets/pdf/example_pdf.pdf
+      - name: Coding Lab
+        url: https://github.com/
+
+
+
+
 ---
 
 ## Course Overview

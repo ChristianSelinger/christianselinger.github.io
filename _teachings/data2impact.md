@@ -59,6 +59,16 @@ schedule:
       - name: Coding Lab
         url: https://github.com/
 
+  - week: 6
+    date: Apr 8
+    topic: Case study: retrospective impact quantification with Poisson regression models
+    description: Group work in class
+    materials:
+      - name: Lecture Notes
+        url: /assets/pdf/example_pdf.pdf
+      - name: Coding Lab
+        url: https://github.com/
+
   
 ---
 

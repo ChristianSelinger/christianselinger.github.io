@@ -6,33 +6,33 @@ instructor: Monica Golumbeanu, Christian Selinger
 year: 2026
 term: Spring
 location: Science Building, Room 202
-time: Mondays and Wednesdays, 2:00-3:30 PM
-course_id: data-science-fundamentals
+time: Wednesdays, 4:15-6:00 PM
+course_id: data2impact
 schedule:
   - week: 1
-    date: Feb 5
-    topic: Introduction to Data Science
-    description: Overview of the data science workflow and key concepts.
+    date: Mar 3
+    topic: Introduction & time series analysis
+    description: Time series analysis of malaria data from Sri Lanka, additive vs multiplicative, auto-correlation, seasonality
     materials:
       - name: Syllabus
-        url: /assets/pdf/example_pdf.pdf
+        url: /assets/pdf/data2Impact2026_Lecture01.pdf
       - name: Slides
         url: /assets/pdf/example_pdf.pdf
 
   - week: 2
-    date: Feb 12
-    topic: Data Collection and APIs
-    description: Methods for collecting data through APIs, web scraping, and databases.
+    date: Mar 11
+    topic: Time series analysis, continued
+    description:  Time series analysis of malaria data from Sri Lanka, additive vs multiplicative, auto-correlation, seasonality
     materials:
       - name: Lecture Notes
-        url: /assets/pdf/example_pdf.pdf
+        url: /assets/pdf/data2Impact2026_Lecture01.pdf
       - name: Assignment 1
         url: /assets/pdf/example_pdf.pdf
 
   - week: 3
-    date: Feb 19
-    topic: Data Cleaning and Preprocessing
-    description: Techniques for handling missing values, outliers, and data transformation.
+    date: Mar 18
+    topic: Statistical inference for malaria case count data
+    description: Poisson regression, generalized linear models, model selection
     materials:
       - name: Lecture Notes
         url: /assets/pdf/example_pdf.pdf
@@ -40,48 +40,36 @@ schedule:
         url: https://github.com/
 
   - week: 4
-    date: Feb 26
-    topic: Exploratory Data Analysis
-    description: Descriptive statistics, visualization, and pattern discovery.
+    date: Mar 25
+    topic: Statistical inference for malaria case count data, continued
+    description: Model validation, prediction, intervention models, counterfactuals
     materials:
       - name: Lecture Notes
         url: /assets/pdf/example_pdf.pdf
-      - name: Assignment 2
-        url: /assets/pdf/example_pdf.pdf
+      - name: Coding Lab
+        url: https://github.com/
 
-  - week: 5
-    date: Mar 4
-    topic: Statistical Analysis
-    description: Hypothesis testing, confidence intervals, and statistical inference.
-    materials:
-      - name: Lecture Notes
-        url: /assets/pdf/example_pdf.pdf
-      - name: Review Materials
-        url: /assets/pdf/example_pdf.pdf
-
-  - week: 6
-    date: Mar 11
-    topic: Data Visualization
-    description: Principles and tools for effective data visualization.
-    materials:
-      - name: Lecture Notes
-        url: /assets/pdf/example_pdf.pdf
-      - name: Assignment 3
-        url: /assets/pdf/example_pdf.pdf
 ---
 
 ## Course Overview
 
 This course provides a comprehensive introduction to data science principles and practices. Students will:
 
-- Learn the end-to-end data science workflow
-- Gain practical experience with data manipulation tools
-- Develop skills in data visualization and communication
-- Apply statistical methods to derive insights from data
+- 1. Integrate diverse data sources
+Work with epidemiological, climate and genomic data to study infectious disease dynamics and evaluate intervention impact.
+
+- 2. Apply modeling approaches
+Use time series models, mechanistic mathematical models, and parameter inference techniques on real-world infectious disease data.
+
+- 3. Interpret & communicate Results
+Analyze model outputs critically and draw meaningful conclusions across different epidemiological contexts and applications.
+
+- 4. Perform Model Selection
+Critically evaluate model assumptions, limitations, and appropriateness for specific research questions and contexts.
 
 ## Prerequisites
 
-- Basic programming knowledge (preferably in Python)
+- Basic programming knowledge in R
 - Introductory statistics
 - Comfort with basic algebra
 
@@ -92,6 +80,6 @@ This course provides a comprehensive introduction to data science principles and
 
 ## Grading
 
-- Assignments: 50%
-- Project: 40%
-- Participation: 10%
+- Assignments: %
+- Project: %
+- Participation: %

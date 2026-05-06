@@ -1,11 +1,11 @@
 ---
 layout: course
 title: From data to impact - a practical guide to inference for infectious disease dynamics
-description: This course covers the foundational aspects of data science, including data collection, cleaning, analysis, and visualization. Students will learn practical skills for working with real-world datasets.
+description: This course offers a hands-on journey into the intervention quantification for infectious disease dynamics. Following two complementary models approaches, we show how to integrate various data sources in order to build population-level models of disease dynamics. Parameter inference and counterfactual modeling on a historical dataset of malaria cases in Sri Lanka will uncover strengths and limitations of modeling approaches to real-world situations where it is not possible to have a well-designed control.
 instructor: Monica Golumbeanu, Christian Selinger
 year: 2026
 term: Spring
-location: Science Building, Room 202
+location: Swiss TPH, Seminarraum 4
 time: Wednesdays, 4:15-6:00 PM
 course_id: data2impact
 schedule:

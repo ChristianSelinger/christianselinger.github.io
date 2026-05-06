@@ -55,17 +55,13 @@ schedule:
 
 This course provides a comprehensive introduction to data science principles and practices. Students will:
 
-- 1. Integrate diverse data sources
-Work with epidemiological, climate and genomic data to study infectious disease dynamics and evaluate intervention impact.
+1. Integrate **multimodal** data sources: Work with epidemiological, climate and genomic data to study infectious disease dynamics and evaluate intervention impact.
 
-- 2. Apply modeling approaches
-Use time series models, mechanistic mathematical models, and parameter inference techniques on real-world infectious disease data.
+2. Apply different modeling **approaches**: Use time series models, mechanistic mathematical models, and parameter inference techniques on real-world infectious disease data.
 
-- 3. Interpret & communicate Results
-Analyze model outputs critically and draw meaningful conclusions across different epidemiological contexts and applications.
+3. **Interpret** & **communicate** results: Analyze model outputs critically and draw meaningful conclusions across different epidemiological contexts and applications.
 
-- 4. Perform Model Selection
-Critically evaluate model assumptions, limitations, and appropriateness for specific research questions and contexts.
+4. Perform **model selection**: Critically evaluate model assumptions, limitations, and appropriateness for specific research questions and contexts.
 
 ## Prerequisites
 
@@ -75,8 +71,7 @@ Critically evaluate model assumptions, limitations, and appropriateness for spec
 
 ## Textbooks
 
-- "Python for Data Analysis" by Wes McKinney
-- "Data Science from Scratch" by Joel Grus
+- Modeling Infectious Disease by Matt Keeling and Pejman Rohani
 
 ## Grading
 

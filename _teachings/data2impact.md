@@ -61,7 +61,7 @@ schedule:
 
   - week: 6
     date: Apr 8
-    topic: Case study - retrospective impact quantification with Poisson regression models
+    topic: Case study, retrospective impact quantification with Poisson regression models
     description: Group work in class
     materials:
       - name: Lecture Notes
@@ -88,26 +88,6 @@ schedule:
         url: /assets/pdf/example_pdf.pdf
       - name: Coding Lab
         url: https://github.com/
-
-  - week: 9
-    date: Apr 29
-    topic: Disease transmission models
-    description: Flow diagrams, compartmental models, ordinary differential equations, time-dependent coefficients
-    materials:
-      - name: Lecture Notes
-        url: /assets/pdf/example_pdf.pdf
-      - name: Coding Lab
-        url: https://github.com/
-
-    - week: 10
-    date: May 5
-    topic: Transmission models for vector-borne disease, parameter inference
-    description: Maximum log-likelihood for count data
-    materials:
-      - name: Lecture Notes
-        url: /assets/pdf/example_pdf.pdf
-      - name: Coding Lab
-        url: https://github.com/  
 ---
 
 ## Course Overview

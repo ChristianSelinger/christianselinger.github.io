@@ -486,7 +486,7 @@ ninja.data = [{
               window.location.href = "/teachings/aidm2025/";
             },},{id: "teachings-from-data-to-impact-a-practical-guide-to-inference-for-infectious-disease-dynamics",
           title: 'From data to impact - a practical guide to inference for infectious disease...',
-          description: "This course covers the foundational aspects of data science, including data collection, cleaning, analysis, and visualization. Students will learn practical skills for working with real-world datasets.",
+          description: "This course offers a hands-on journey into the intervention quantification for infectious disease dynamics. Following two complementary models approaches, we show how to integrate various data sources in order to build population-level models of disease dynamics. Parameter inference and counterfactual modeling on a historical dataset of malaria cases in Sri Lanka will uncover strengths and limitations of modeling approaches to real-world situations where it is not possible to have a well-designed control.",
           section: "Teachings",handler: () => {
               window.location.href = "/teachings/data2impact/";
             },},{

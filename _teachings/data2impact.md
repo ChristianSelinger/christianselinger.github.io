@@ -49,6 +49,65 @@ schedule:
       - name: Coding Lab
         url: https://github.com/
 
+  - week: 5
+    date: Apr 1
+    topic: Statistical inference for malaria case count data, introduction to case study
+    description: Malaria data for Sri Lanka, climate data, intervention data
+    materials:
+      - name: Lecture Notes
+        url: /assets/pdf/example_pdf.pdf
+      - name: Coding Lab
+        url: https://github.com/
+
+  - week: 6
+    date: Apr 8
+    topic: Case study: retrospective impact quantification with Poisson regression models
+    description: Group work in class
+    materials:
+      - name: Lecture Notes
+        url: /assets/pdf/example_pdf.pdf
+      - name: Coding Lab
+        url: https://github.com/
+
+  - week: 7
+    date: Apr 15
+    topic: Case study presentations and role play
+    description: Group work presentations
+    materials:
+      - name: Lecture Notes
+        url: /assets/pdf/example_pdf.pdf
+      - name: Coding Lab
+        url: https://github.com/
+
+  - week: 8
+    date: Apr 22
+    topic: Simulating disease transmission
+    description: Feedback, comments on causality, analog simulator of epidemic, chain binomial model
+    materials:
+      - name: Lecture Notes
+        url: /assets/pdf/example_pdf.pdf
+      - name: Coding Lab
+        url: https://github.com/
+
+  - week: 9
+    date: Apr 29
+    topic: Disease transmission models
+    description: Flow diagrams, compartmental models, ordinary differential equations, time-dependent coefficients
+    materials:
+      - name: Lecture Notes
+        url: /assets/pdf/example_pdf.pdf
+      - name: Coding Lab
+        url: https://github.com/
+
+    - week: 10
+    date: May 5
+    topic: Transmission models for vector-borne disease, parameter inference
+    description: Maximum log-likelihood for count data
+    materials:
+      - name: Lecture Notes
+        url: /assets/pdf/example_pdf.pdf
+      - name: Coding Lab
+        url: https://github.com/
 ---
 
 ## Course Overview

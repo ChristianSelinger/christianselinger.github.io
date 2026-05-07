@@ -423,6 +423,11 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/kasy-means_prediction/";
+            },},{id: "books-the-book-of-why",
+          title: 'The book of why',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/pearl-why/";
             },},{id: "news-a-simple-inline-announcement",
           title: 'A simple inline announcement.',
           description: "",

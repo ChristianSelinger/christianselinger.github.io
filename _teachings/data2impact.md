@@ -99,7 +99,47 @@ schedule:
       - name: Coding Lab
         url: https://github.com/
 
+  - week: 10
+    date: May 6
+    topic: Disease transmission models for vector-borne disease & parameter inference
+    description: Flow diagrams, compartmental models, ordinary differential equations, likelihood
+    materials:
+      - name: Lecture Notes
+        url: /assets/pdf/example_pdf.pdf
+      - name: Coding Lab
+        url: https://github.com/
 
+  - week: 11
+    date: May 13
+    topic: Disease transmission models for Sri Lanka
+    description: Data integration, differential equations
+    materials:
+      - name: Lecture Notes
+        url: /assets/pdf/example_pdf.pdf
+      - name: Coding Lab
+        url: https://github.com/
+
+  - week: 12
+    date: May 20
+    topic: Disease transmission models for Sri Lanka
+    description: Data integration, differential equations, maximum likelihood
+    materials:
+      - name: Lecture Notes
+        url: /assets/pdf/example_pdf.pdf
+      - name: Coding Lab
+        url: https://github.com/
+
+  - week: 13
+    date: May 27
+    topic: Disease transmission models for Sri Lanka
+    description: Case study, counterfactuals
+    materials:
+      - name: Lecture Notes
+        url: /assets/pdf/example_pdf.pdf
+      - name: Coding Lab
+        url: https://github.com/
+
+        
 
 
 ---

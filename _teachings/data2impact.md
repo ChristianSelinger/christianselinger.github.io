@@ -165,6 +165,7 @@ This course provides a comprehensive introduction to data science principles and
 ## Textbooks
 
 - Modeling Infectious Disease by Matt Keeling and Pejman Rohani
+- Epidemics: Models and Data Using R by Ottar Bjørnstad
 
 ## Grading
 

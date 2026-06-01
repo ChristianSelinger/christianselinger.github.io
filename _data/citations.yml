@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-05-01'
+  last_updated: '2026-06-01'
 papers:
   382gxFoAAAAJ:-f6ydRqryjwC:
     citations: 17
@@ -10,15 +10,15 @@ papers:
     title: "\xC9pid\xE9miologie math\xE9matique et mod\xE9lisation de la pand\xE9mie de Covid-19: enjeux et diversit\xE9"
     year: '2020'
   382gxFoAAAAJ:3fE2CSJIrl8C:
-    citations: 1
+    citations: 3
     title: 'Mathematical epidemiology and modeling of the Covid-19 pandemic: issues and diversity'
     year: '2020'
   382gxFoAAAAJ:4JMBOYKVnBMC:
-    citations: 6
+    citations: 7
     title: 'Memory is key in capturing COVID-19 epidemiological dynamics. Epidemics. 2021; 35: 100459'
     year: '2021'
   382gxFoAAAAJ:4TOpqqG69KYC:
-    citations: 17
+    citations: 18
     title: HPV cervical infections and serological status in vaccinated and unvaccinated women
     year: '2020'
   382gxFoAAAAJ:5nxA0vEk-isC:
@@ -66,7 +66,7 @@ papers:
     title: Reconstructing contact network structure and cross-immunity patterns from multiple infection histories
     year: '2021'
   382gxFoAAAAJ:LkGwnXOMwfcC:
-    citations: 193
+    citations: 194
     title: Development of an oral once-weekly drug delivery system for HIV antiretroviral therapy
     year: '2018'
   382gxFoAAAAJ:M3NEmzRMIkIC:
@@ -82,11 +82,11 @@ papers:
     title: Wearing masks and establishing COVID-19 areas reduces secondary attack risk in nursing homes
     year: '2020'
   382gxFoAAAAJ:NMxIlDl6LWMC:
-    citations: 14
+    citations: 16
     title: Viral and immune dynamics of genital human papillomavirus infections in young women with high temporal resolution
     year: '2025'
   382gxFoAAAAJ:QIV2ME_5wuYC:
-    citations: 30
+    citations: 31
     title: The source of individual heterogeneity shapes infectious disease outbreaks
     year: '2022'
   382gxFoAAAAJ:R3hNpaxXUhUC:
@@ -186,7 +186,7 @@ papers:
     title: Predicting COVID-19 incidence in French hospitals using human contact network analytics
     year: '2021'
   382gxFoAAAAJ:e5wmG9Sq2KIC:
-    citations: 6
+    citations: 8
     title: Does exposure to different menstrual products affect the vaginal environment?
     year: '2023'
   382gxFoAAAAJ:hC7cP41nSMkC:
@@ -194,11 +194,11 @@ papers:
     title: 'Increased risk of fungal infection detection in women using menstrual cups vs. tampons: a cross-sectional study'
     year: '2021'
   382gxFoAAAAJ:hMod-77fHWUC:
-    citations: 10
+    citations: 11
     title: 'Episome partitioning and symmetric cell divisions: Quantifying the role of random events in the persistence of HPV infections'
     year: '2021'
   382gxFoAAAAJ:hqOjcs7Dif8C:
-    citations: 8
+    citations: 9
     title: 'The future of a partially effective HIV vaccine: assessing limitations at the population level'
     year: '2019'
   382gxFoAAAAJ:iH-uZ7U-co4C:
@@ -242,7 +242,7 @@ papers:
     title: 'The importance of the population age-structure: insights from Covid-dynamics model structured by age, time since infection and acquired immunity'
     year: Unknown Year
   382gxFoAAAAJ:qxL8FJ1GzNcC:
-    citations: 33
+    citations: 34
     title: 'Natural history, dynamics, and ecology of human papillomaviruses in genital infections of young women: protocol of the PAPCLEAR cohort study'
     year: '2019'
   382gxFoAAAAJ:r0BpntZqJG4C:

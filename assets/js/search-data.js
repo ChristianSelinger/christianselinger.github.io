@@ -37,7 +37,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/teaching/";
           },
-        },{id: "post-a-post-with-plotly-js",
+        },{id: "post-neural-disease-transmission-models-for-inference",
+        
+          title: "neural disease transmission models for inference",
+        
+        description: "starting from elementary compartmental models, we provide an introduction into inhomogeneous dynamical systems that are augmented by neural networks",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/math/";
+          
+        },
+      },{id: "post-a-post-with-plotly-js",
         
           title: "a post with plotly.js",
         
@@ -354,17 +365,6 @@ ninja.data = [{
         handler: () => {
           
             window.location.href = "/blog/2015/disqus-comments/";
-          
-        },
-      },{id: "post-a-post-with-math",
-        
-          title: "a post with math",
-        
-        description: "an example of a blog post with some math",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2015/math/";
           
         },
       },{id: "post-a-post-with-code",

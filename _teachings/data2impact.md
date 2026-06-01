@@ -121,8 +121,8 @@ schedule:
 
   - week: 12
     date: May 20
-    topic: Disease transmission models for Sri Lanka
-    description: Data integration, differential equations, maximum likelihood
+    topic: Case study: retrospective impact quantification with disease transmission models
+    description: Data integration, differential equations, maximum likelihood, counterfactuals
     materials:
       - name: Lecture Notes
         url: /assets/pdf/example_pdf.pdf
@@ -131,8 +131,8 @@ schedule:
 
   - week: 13
     date: May 27
-    topic: Disease transmission models for Sri Lanka
-    description: Case study, counterfactuals
+    topic: Casy study: presentations, comparison between modeling approaches, feedback
+    description: Presentation and discussion
     materials:
       - name: Lecture Notes
         url: /assets/pdf/example_pdf.pdf
@@ -154,7 +154,7 @@ This course provides a comprehensive introduction to data science principles and
 
 3. **Interpret** & **communicate** results: Analyze model outputs critically and draw meaningful conclusions across different epidemiological contexts and applications.
 
-4. Perform **model selection**: Critically evaluate model assumptions, limitations, and appropriateness for specific research questions and contexts.
+4. Perform **model selection** nad **parameter inference**: Critically evaluate model assumptions, limitations, and appropriateness for specific research questions and contexts.
 
 ## Prerequisites
 
@@ -168,8 +168,7 @@ This course provides a comprehensive introduction to data science principles and
 - Epidemics: Models and Data Using R by Ottar Bjørnstad
 - Applied Regression Analysis and Generalized Linear Models by John Fox
 
-## Grading
+## Further readings
 
-- Assignments: %
-- Project: %
-- Participation: %
+- The rules of contagion by Adam Kucharski
+

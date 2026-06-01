@@ -61,7 +61,7 @@ schedule:
 
   - week: 6
     date: Apr 8
-    topic: Case study, retrospective impact quantification with Poisson regression models
+    topic: Case study - retrospective impact quantification with Poisson regression models
     description: Group work in class
     materials:
       - name: Lecture Notes
@@ -71,7 +71,7 @@ schedule:
 
   - week: 7
     date: Apr 15
-    topic: Case study presentations and role play
+    topic: Case study - presentations and role play
     description: Group work presentations
     materials:
       - name: Lecture Notes
@@ -121,7 +121,7 @@ schedule:
 
   - week: 12
     date: May 20
-    topic: Case study: retrospective impact quantification with disease transmission models
+    topic: Case study - retrospective impact quantification with disease transmission models
     description: Data integration, differential equations, maximum likelihood, counterfactuals
     materials:
       - name: Lecture Notes
@@ -131,7 +131,7 @@ schedule:
 
   - week: 13
     date: May 27
-    topic: Casy study: presentations, comparison between modeling approaches, feedback
+    topic: Casy study - presentations, comparison between modeling approaches, feedback
     description: Presentation and discussion
     materials:
       - name: Lecture Notes

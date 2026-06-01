@@ -489,9 +489,9 @@ ninja.data = [{
           description: "The course starts with an introduction to compartmental models of disease transmission including calculations of basic reproductive numbers and final epidemic size. We continue with numerical simulations and we focus on parameter inference and sensitivity analysis. The lecture notes are accompanied by coding practicals in R.",
           section: "Teachings",handler: () => {
               window.location.href = "/teachings/aidm2025/";
-            },},{id: "teachings-",
-          title: '',
-          description: "",
+            },},{id: "teachings-from-data-to-impact-a-practical-guide-to-inference-for-infectious-disease-dynamics",
+          title: 'From data to impact - a practical guide to inference for infectious disease...',
+          description: "This course offers a hands-on journey into the intervention quantification for infectious disease dynamics. Following two complementary models approaches, we show how to integrate various data sources in order to build population-level models of disease dynamics. Parameter inference and counterfactual modeling on a historical dataset of malaria cases in Sri Lanka will uncover strengths and limitations of modeling approaches to real-world situations where it is not possible to have a well-designed control.",
           section: "Teachings",handler: () => {
               window.location.href = "/teachings/data2impact/";
             },},{

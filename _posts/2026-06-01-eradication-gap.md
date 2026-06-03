@@ -15,6 +15,10 @@ benefit of preventing infections but also to some nuisance cost. The second grou
 
 If we let the dynamics of disease transmission and individual preference co-evolve, what happens on the long run at the population level? Will the disease persist? Or will the parasite disappear from the population?
 
+![Image]({{ site.baseurl }}/assets/img/dec_sisgmae-x_I.png)
+
+
+
 #The SIS Epidemiological Model
 
 We consider a population divided into two  groups: Users ($$U$$) and Non-users ($$N$$). Each group is further divided into Susceptible ($$S$$) and Infectious ($$I$$) compartments. The total population is normalized to $$1$$ and remains constant:

@@ -144,7 +144,9 @@ $$\Delta=\bar{x}-x^e$$ is called the eradication gap. As the nuisance cost $$C_N
 Equality between the elimination threshold and the evolutionary stable strategy can only hold if $$\bar{I}=0$$, i.e. the nuisance cost of using a net is $$C_N=0$$. This means that as long as nets are effective and have a non-zero nuisance cost, non-users will free-ride at the expense of users and jeopardize the eradication.
 
 ![Image]({{ site.baseurl }}/assets/img/dec_sisgmae-x_I.png){: style="width: 50%; height: auto;" }
+
 The figure depicts the phase diagram of the coupled model of user frequency and disease prevalence for two different choices of efficacy and nuisance. The dynamical systems starts at the red point. At low efficacy and low nuisance, everyone will end up using the intervention and the equilibrium is at high prevalence. Increasing nuisance at low efficacy will result in no users and the entire population infected. Increasing efficacy but having low nuisance creates an opportunity for free-riders, resulting in lower endemic equilibrium and intermediate user frequency. Again, increasing nuisance in the high efficacy case will deter users and result in a high endemic equilibrium. The elimination threshold is located at the cube on the x-axis, at zero prevalence.
+
 
 **HEUREKA**
 

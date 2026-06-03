@@ -15,7 +15,7 @@ benefit of preventing infections but also to some nuisance cost. The second grou
 
 If we let the dynamics of disease transmission and individual preference co-evolve, what happens on the long run at the population level? Will the disease persist? Or will the parasite disappear from the population?
 
-![Image]({{ site.baseurl }}/assets/img/dec_sisgmae-x_I.png)
+![Image]({{ site.baseurl }}/assets/img/dec_sisgmae-x_I.png){: style="width: 50%; height: auto;" }
 
 
 

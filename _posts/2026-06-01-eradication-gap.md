@@ -120,7 +120,7 @@ $$I^* = \frac{-B + \sqrt{B^2 - 4AC}}{2A}$$ for $$A = \beta^2 (1-\sigma)$$, $$B =
 
 **EQUILIBRIUM FOR THE COUPLED DISEASE-REPLICATOR DYNAMICS**
 
-We can also solve the quadratic equation in $$I$$ for $$x$$ to obtain the user frequency at the endemic equilibrium. From the replicator equation we know that the user frequency is at equilibrium if the payoffs for users and non-users are equal: $$f_U = f_N$$ which amounts to mainting a specific prevalence $$\bar{I}$$:
+We can also solve the quadratic equation in $$I$$ for $$x$$ to obtain the user frequency at the endemic equilibrium. From the replicator equation we know that the user frequency is at equilibrium if the payoffs for users and non-users are equal: $$f_U = f_N$$ which amounts to mainting a specific prevalence:
 
    $$ \bar{I} = \frac{C_N}{\sigma\beta C_I }$$ in the population.
    
@@ -141,10 +141,10 @@ The difference
 
 $$\Delta=\bar{x}-x^e$$ is called the eradication gap. As the nuisance cost $$C_N$$ increases, the gap is widening,  
 
-Equality between the elimination threshold and the evolutionary stable strategy can only hold if $$\bar{I}=0$$, i.e. the nuisance cost of using a net is $$C_N=0$$. , and states that as long as nets are effective and have a non-zero nuisance cost, non-users will free-ride at the expense of users.
+Equality between the elimination threshold and the evolutionary stable strategy can only hold if $$\bar{I}=0$$, i.e. the nuisance cost of using a net is $$C_N=0$$. This means that as long as nets are effective and have a non-zero nuisance cost, non-users will free-ride at the expense of users and jeopardize the eradication.
 
 ![Image]({{ site.baseurl }}/assets/img/dec_sisgmae-x_I.png){: style="width: 50%; height: auto;" }
-
+The figure depicts the phase diagram of the coupled model for user frequence of the intervention and disease prevalence for two different choices of efficacy and nuisance. At low efficacy and low nuisance, everyone will use the intervention and the equilibrium is at high prevalence. Increasing nuisance at low efficacy will result in no users and the entire population infected. Increasing efficacy but having low nuisance creates an opportunity for free-riders, resulting in lower endemic equilibrium and intermediate user frequency. Again, increasing nuisance in the high efficacy case will deter users and result in a high endemic equilibrium. The elimination threshold is located at the cube on the x-axis, at zero prevalence.
 
 **HEUREKA**
 

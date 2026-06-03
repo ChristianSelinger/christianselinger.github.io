@@ -104,14 +104,18 @@ $$\beta^2 (1-\sigma) I^2 + \beta \left[ \gamma(2-\sigma) - \beta(1 - \sigma ) \r
 
 The positive root of this quadratic gives the unique endemic equilibrium level when $R_0(x,\sigma ) > 1$:$$I^* = \frac{-B + \sqrt{B^2 - 4AC}}{2A}$$ for $A = \beta^2 (1-\sigma)$, $B = \beta \gamma (2-\sigma) - \beta^2(1 - \sigma )$ and $C = \gamma^2 (1 - R_0(x,\sigma))$.
 
-\paragraph{Equilibrium for the coupled disease-replicator dynamics}
+
+**EQUILIBRIUM FOR THE COUPLED DISEASE-REPLICATOR DYNAMICS**
+
 We can also solve the quadratic equation in $I$ for $x$ to obtain the user frequency at the endemic equilbrium. From the replicator equation we know that the user frequency is at equilibrium if the payoffs for users and non-users are equal: $f_U = f_N$ which amounts to mainting a specific prevalence $\bar{I}$:
    $$ \bar{I} = \frac{C_N}{\sigma\beta C_I }$$ in the population.
 Combining both equations yields
 $$\bar{x} = \frac{\gamma}{\beta \sigma} \left( \frac{\beta}{\gamma} - 1 \right) - \frac{[ \gamma(2-\sigma) - \beta(1 - \sigma ) ] }{\gamma \sigma} \bar{I}- \frac{\beta (1-\sigma) }{\gamma \sigma}\bar{I}^2$$
 The strategy $\bar{x}$ is an \HandRight\underline{evolutionary stable} strategy for the case where the disease will persist and eventually reach an endemic equilbrium $\bar{I}$. The coupled disease-replicator dynamics is at equilibrium $(\bar{I},\bar{x})$, which depends on both disease or efficacy parameters $\beta, \gamma, \sigma$ and net usage behavior parameters $C_N$ and $C_I$.
 
-\paragraph{Elimination threshold and eradication gap}
+
+**ELIMINATION THRESHOLD AND ERADICATION GAP**
+
 Let us recall the elimination threshold of user frequency $$x^e = \frac{1}{\sigma} \left( 1 - \frac{\gamma}{\beta} \right)$$
 It follows that $$\bar{x} = x^e + \underbrace{\left[ \frac{\beta(1-\sigma) - \gamma(2-\sigma)}{\gamma \sigma} \right] \bar{I}}_{\text{Linear Interaction}} - \underbrace{\left[ \frac{\beta (1-\sigma)}{\gamma \sigma} \right] \bar{I}^2}_{\text{Quadratic Interaction}}$$
 The difference
@@ -119,5 +123,7 @@ $$\Delta=\bar{x}-x^e$$ is called the eradication gap. As the nuisance cost $C_N$
 
 Equality between the elimination threshold and the evolutionary stable strategy can only hold if $\bar{I}=0$, i.e. the nuisance cost of using a net is $C_N=0$. , and states that as long as nets are effective and have a non-zero nuisance cost, non-users will free-ride at the expense of users.
 
-\paragraph{Heureka}
+
+**HEUREKA**
+
 On the long term, the equilibrium $x^*$ is the optimum based on individual preference leading to endemic disease, whereas $x_e$ is the societal optimum leading to disease eradication. As efficacy $\sigma$ increases, $x_e$ decreases and $x^*$ increases, i.e. the eradication gap narrows. Nevertheless, the gap will never close.

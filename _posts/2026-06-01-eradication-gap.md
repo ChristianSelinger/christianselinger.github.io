@@ -33,7 +33,7 @@ $$\begin{align}
     \frac{dI_N}{dt} &= \beta S_N (I_U + I_N) - \gamma I_N
 \end{align}$$
 
-Let $$x$$ denote the frequency of bednet users in the population ($$x = S_U + I_U$$). Thus setting $$S_U=x-I_U$$ and $$S_V=(1-x)-I_V$$, the system can be reduced to
+Let $$x$$ denote the frequency of intervention users in the population ($$x = S_U + I_U$$). Thus setting $$S_U=x-I_U$$ and $$S_V=(1-x)-I_V$$, the system can be reduced to
 $$\begin{align}
     \frac{dI_U}{dt} &= (1-\sigma) \beta (x-I_U) (I_U + I_N) - \gamma I_U \\
     \frac{dI_N}{dt} &= \beta (1-x-I_N) (I_U + I_N) - \gamma I_N
@@ -48,9 +48,7 @@ $K = FV^{-1}$:
 
 $$K = \begin{pmatrix} \frac{(1-\sigma)\beta x}{\gamma} & \frac{(1-\sigma)\beta x}{\gamma} \\ \frac{\beta(1-x)}{\gamma} & \frac{\beta(1-x)}{\gamma} \end{pmatrix}$$ 
 
-$R_0$ is the spectral radius (the largest eigenvalue) of matrix $K$. 
-
-$$R_0(x,\sigma) = \frac{(1-\sigma)\beta x}{\gamma} + \frac{\beta(1-x)}{\gamma}$$ This gives $$R_0(x,\sigma) = \frac{\beta}{\gamma} \left\[ (1-\sigma)x + (1-x) \right\]=\frac{\beta}{\gamma} ( 1-\sigma x  )$$
+$R_0$ is the spectral radius (the largest eigenvalue) of matrix $K$ and reads $$R_0(x,\sigma) = \frac{(1-\sigma)\beta x}{\gamma} + \frac{\beta(1-x)}{\gamma}$$. This gives $$R_0(x,\sigma) = \frac{\beta}{\gamma} \left\[ (1-\sigma)x + (1-x) \right\]=\frac{\beta}{\gamma} ( 1-\sigma x  )$$
 
 The disease dies out if $$R_0(x,\sigma)<1 \Leftrightarrow  x > \frac{1}{\sigma} (1 - \frac{\gamma}{\beta})$$.
 
@@ -59,7 +57,7 @@ We call $x^e=\frac{1}{\sigma} (1 - \frac{\gamma}{\beta})$ the user frequency eli
 
 **REPLICATOR DYNAMICS FOR INTERVENTION USAGE**
 
-The decision to use a bednet is modeled as a game. Like in a lottery, each host can play two different strategies against the bank, which is here the pool of infectious hosts in the population. If the host decides to not use the net, she will suffer from the potential consequences of an infection at cost $C_I>0$. If the host decides to play as a user, he will suffer a little less from the consequences of an infection, but incur the nuisance cost $C_N>0$ of putting and maintaining the net every day. For both strategies we can write the indivdual payoff as negative values of the cost:
+The decision to use an intervention is modeled as a game. Like in a lottery, each host can play two different strategies against the bank, which is here the pool of infectious hosts in the population. If the host decides to not use the intervention, she will suffer from the potential consequences of an infection at cost $C_I>0$. If the host decides to play as a user, he will suffer a little less from the consequences of an infection, but incur the nuisance cost $C_N>0$ of putting and maintaining the net every day. For both strategies we can write the individual payoff as negative values of the cost:
 
  $$f_U =  -C_N - (1-\sigma) \beta I C_I$$$
 
@@ -67,7 +65,7 @@ The decision to use a bednet is modeled as a game. Like in a lottery, each host 
 
 The population payoff is
 
-$$$\bar{f}(x)= xf_U+ (1-x)f_N$$$
+$$\bar{f}(x)= xf_U+ (1-x)f_N$$
 
 We assume that individuals do not interact with other individuals’ strategies to determine their own cost, like it would be in a card game. To play against the entire infectious population is actually in accordance with the mass-action principle for disease transmission.
 

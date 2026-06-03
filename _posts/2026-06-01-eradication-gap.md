@@ -133,9 +133,13 @@ The strategy $$\bar{x}$$ is an **evolutionary stable strategy** for the case whe
 
 Let us recall the elimination threshold of user frequency $$x^e = \frac{1}{\sigma} \left( 1 - \frac{\gamma}{\beta} \right)$$
 
-It follows that $$\begin{equation}\bar{x} = x^e + \frac{\beta(1-\sigma) - \gamma(2-\sigma)}{\gamma \sigma} \bar{I} - \frac{\beta (1-\sigma)}{\gamma \sigma} \bar{I}^2>x^e-\frac{2-\sigma}{\sigma} \bar{I}=x^e-\frac{2-\sigma}{\sigma}\frac{C_N}{\sigma\beta C_I }\end{equation}$$
+It follows that $$\begin{equation}\bar{x} = x^e + \frac{\beta(1-\sigma) - \gamma(2-\sigma)}{\gamma \sigma} \bar{I} - \frac{\beta (1-\sigma)}{\gamma \sigma} \bar{I}^2\end{equation}$$
 
-The difference $$\Delta=x^e-\bar{x}>\frac{2-\sigma}{\sigma}\frac{C_N}{\sigma\beta C_I }$$ is called the **eradication gap**. As the nuisance cost $$C_N$$ increases, the gap is widening. Equality between the elimination threshold and the evolutionary stable strategy can only hold if the nuisance cost is $$C_N=0$$. This means that as long as nets are effective and have a non-zero nuisance cost, non-users will free-ride at the expense of users and jeopardize the eradication.
+The difference $$\Delta=x^e-\bar{x}$$ is called the **eradication gap**. 
+
+$$\Delta = \frac{I}{\sigma} (2 - \sigma - \frac{\beta}{\gamma}(1-\sigma) + \frac{\beta}{\gamma}(1-\sigma)I)>\frac{I}{\sigma} (2 - \sigma - \frac{\beta}{\gamma}(1-\sigma))$$
+
+As the nuisance cost $$C_N$$ increases, the gap is widening. Equality between the elimination threshold and the evolutionary stable strategy can only hold if the nuisance cost is $$C_N=0$$. This means that as long as nets are effective and have a non-zero nuisance cost, non-users will free-ride at the expense of users and jeopardize the eradication.
 
 ![Image]({{ site.baseurl }}/assets/img/dec_sisgmae-x_I.png){: style="width: 50%; height: auto;" }
 

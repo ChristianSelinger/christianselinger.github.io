@@ -126,7 +126,7 @@ Solving the quadratic equation for $$x$$ by using the expression for $$R_0(x,\si
 
 $$\bar{x} = \frac{1}{\sigma}(1-\frac{\gamma}{\beta})- \frac{(\gamma(2-\sigma) - \beta(1 - \sigma ))}{\gamma \sigma} \bar{I}- \frac{\beta (1-\sigma) }{\gamma \sigma}\bar{I}^2$$
 
-The strategy $$\bar{x}$$ is an **evolutionary stable strategy** for the case where the disease will persist and eventually reach an endemic equilbrium $$\bar{I}$$. The coupled disease-replicator dynamics is at equilibrium $$(\bar{I},\bar{x})$$, which depends on both disease or efficacy parameters $$\beta, \gamma, \sigma$$ and net usage behavior parameters $$C_N$$ and $$C_I$$.
+The strategy $$\bar{x}$$ is an **evolutionary stable strategy** for the case where the disease will persist and eventually reach an endemic equilbrium $$\bar{I}$$. The coupled disease-replicator dynamics is at equilibrium $$(\bar{I},\bar{x})$$, which depends on both disease or efficacy parameters $$\beta, \gamma, \sigma$$ and intervention usage behavior parameters $$C_N$$ and $$C_I$$.
 
 
 **ELIMINATION THRESHOLD AND ERADICATION GAP**

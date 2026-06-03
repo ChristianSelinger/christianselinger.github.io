@@ -49,7 +49,7 @@ $R_0$ is the spectral radius (the largest eigenvalue) of matrix $K$ and reads $$
 
 The disease dies out if $$R_0(x,\sigma)<1 \Leftrightarrow  x > \frac{1}{\sigma} (1 - \frac{\gamma}{\beta})$$.
 
-We call $x^e=\frac{1}{\sigma} (1 - \frac{\gamma}{\beta})$ the user frequency elimination threshold.
+We call $$x^e=\frac{1}{\sigma} (1 - \frac{\gamma}{\beta})$$ the user frequency elimination threshold.
 
 
 **REPLICATOR DYNAMICS FOR INTERVENTION USAGE**

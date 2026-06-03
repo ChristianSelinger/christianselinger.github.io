@@ -15,16 +15,13 @@ benefit of preventing infections but also to some nuisance cost. The second grou
 
 If we let the dynamics of disease transmission and individual preference co-evolve, what happens on the long run at the population level? Will the disease persist? Or will the parasite disappear from the population?
 
-![Image]({{ site.baseurl }}/assets/img/dec_sisgmae-x_I.png){: style="width: 50%; height: auto;" }
-
-
 
 **THE EPIDEMIOLOGICAL MODEL**
 
 We consider a population divided into two  groups: Users ($$U$$) and Non-users ($$N$$). Each group is further divided into Susceptible ($$S$$) and Infectious ($$I$$) compartments. The total population is normalized to $$1$$ and remains constant:
 $$S_U + I_U + S_N + I_N = 1$$.
 
-The transmission is governed by the force of infection $$\lambda = (1-\sigma)\beta (I_U + I_N)$$. where $$\beta$$ is the transmission rate and $$\sigma$$ is the protective efficacy of the bednet ($$0 \leq \sigma \leq 1$$). The recovery rate is $$\gamma$$. The system of differential equations is:
+The transmission is governed by the force of infection $$\lambda = (1-\sigma)\beta (I_U + I_N)$$, where $$\beta$$ is the transmission rate and $$\sigma$$ is the protective efficacy of the bednet ($$0 \leq \sigma \leq 1$$). The recovery rate is $$\gamma$$. The system of differential equations is:
 
 $$\begin{align}
     \frac{dS_U}{dt} &= -(1-\sigma) \beta S_U (I_U + I_N) + \gamma I_U \\
@@ -77,25 +74,26 @@ In our case, this equation simplifies to
 
 $$\begin{equation} \dot{x} = x [(1-x) f_U - (1-x) f_N] = x(1-x)(f_U-f_N) \end{equation}$$
 
-also known as **logistic growth** equation. The intervention user behavior dynamics is governed by 
+also known as **logistic growth** equation. 
+
+The intervention user behavior dynamics is governed by 
 $$\begin{equation}
     \dot{x} = x(1-x) \left[ \sigma\beta I C_I  - C_N \right]
 \end{equation}$$
 
-
-\begin{itemize}
-    \item \textbf{Adoption:} $x$ increases if $\beta I > \frac{C_N}{C_I \sigma}$. The risk-reduction benefit outweighs the nuisance cost.
-    \item \textbf{Abandonment:} $x$ decreases if $\beta I < \frac{C_N}{C_I \sigma}$. The nuisance cost is perceived as greater than the expected cost of infection.
-    \item \textbf{Evolutionary Stability:} A mixed equilibrium exists when $\beta I = \frac{C_N}{C_I \sigma}$.
-\end{itemize}
+We distinguish:
+- **Adoption:** $$x$$ increases if $$\beta I > \frac{C_N}{C_I \sigma}$$. The risk-reduction benefit outweighs the nuisance cost.
+- **Abandonment:** $$x$$ decreases if $$\beta I < \frac{C_N}{C_I \sigma}$$. The nuisance cost is perceived as greater than the expected cost of infection.
+- **Evolutionary Stability:** A mixed equilibrium exists when $$\beta I = \frac{C_N}{C_I \sigma}$$.
 
 
-\paragraph{Equilibrium for infectious disease dynamics}
+**EQUILIBRIUM FOR INFECTIOUS DISEASE DYNAMICS**
+
 To find the endemic equilibrium of the reduced system 
-\begin{align*}
+$$\begin{align}
     \frac{dI_U}{dt} &= (1-\sigma) \beta (x-I_U) (I_U + I_N) - \gamma I_U \\
     \frac{dI_N}{dt} &= \beta (1-x-I_N) (I_U + I_N) - \gamma I_N
-\end{align*}
+\end{align}$$
 we need to consider the case $R_0(x,\sigma)>1$ and solve $dI_U/dt = 0$ and $dI_N/dt = 0$.
 Let $I = I_U + I_N$ be the total prevalence. $$I_U^* = \frac{(1-\sigma) \beta x I}{(1-\sigma) \beta I + \gamma}$$$$I_N^* = \frac{\beta (1-x) I}{\beta I + \gamma}$$ Since $I = I_U + I_N$, we sum the two equations:$$I = \left[ \frac{(1-\sigma) \beta x}{(1-\sigma) \beta I + \gamma} + \frac{\beta (1-x)}{\beta I + \gamma} \right] I$$ If $I > 0$, we divide both sides by $I$:$$1 = \frac{(1-\sigma) \beta x}{(1-\sigma) \beta I + \gamma} + \frac{\beta (1-x)}{\beta I + \gamma}$$This is a quadratic equation in $I$: 
 $$\beta^2 (1-\sigma) I^2 + \beta \left[ \gamma(2-\sigma) - \beta(1 - \sigma ) \right] I + \gamma^2 \left[ 1 - R_0(x,\sigma) \right] = 0$$
@@ -120,6 +118,8 @@ The difference
 $$\Delta=\bar{x}-x^e$$ is called the eradication gap. As the nuisance cost $C_N$ increases, the gap is widening,  
 
 Equality between the elimination threshold and the evolutionary stable strategy can only hold if $\bar{I}=0$, i.e. the nuisance cost of using a net is $C_N=0$. , and states that as long as nets are effective and have a non-zero nuisance cost, non-users will free-ride at the expense of users.
+
+![Image]({{ site.baseurl }}/assets/img/dec_sisgmae-x_I.png){: style="width: 50%; height: auto;" }
 
 
 **HEUREKA**

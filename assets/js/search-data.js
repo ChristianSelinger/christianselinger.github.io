@@ -30,9 +30,9 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/teaching/";
           },
-        },{id: "post-benefits-and-nuisance-of-health-interventions",
+        },{id: "post-selfishness-and-eradication-of-disease",
         
-          title: "Benefits and nuisance of health interventions",
+          title: "Selfishness and eradication of disease",
         
         description: "Coupling disease transmission dynamics and game theory, we investigate how individual preference can lead to endemic disease and accepting some level nuisance will maximize societial benefits towards disease eradication",
         section: "Posts",

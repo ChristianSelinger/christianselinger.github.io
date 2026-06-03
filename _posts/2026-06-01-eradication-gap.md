@@ -110,14 +110,14 @@ The positive root of this quadratic gives the unique endemic equilibrium level w
 We can also solve the quadratic equation in $I$ for $x$ to obtain the user frequency at the endemic equilbrium. From the replicator equation we know that the user frequency is at equilibrium if the payoffs for users and non-users are equal: $f_U = f_N$ which amounts to mainting a specific prevalence $\bar{I}$:
    $$ \bar{I} = \frac{C_N}{\sigma\beta C_I }$$ in the population.
 Combining both equations yields
-$$\bar{x} = \frac{\gamma}{\beta \sigma} \left( \frac{\beta}{\gamma} - 1 \right) - \frac{[ \gamma(2-\sigma) - \beta(1 - \sigma ) ] }{\gamma \sigma} \bar{I}- \frac{\beta (1-\sigma) }{\gamma \sigma}\bar{I}^2$$
-The strategy $\bar{x}$ is an \HandRight\underline{evolutionary stable} strategy for the case where the disease will persist and eventually reach an endemic equilbrium $\bar{I}$. The coupled disease-replicator dynamics is at equilibrium $(\bar{I},\bar{x})$, which depends on both disease or efficacy parameters $\beta, \gamma, \sigma$ and net usage behavior parameters $C_N$ and $C_I$.
+$$\bar{x} = \frac{\gamma}{\beta \sigma} \left\( \frac{\beta}{\gamma} - 1 \right\) - \frac{\left\(\gamma(2-\sigma) - \beta(1 - \sigma )\right\(}{\gamma \sigma} \bar{I}- \frac{\beta (1-\sigma) }{\gamma \sigma}\bar{I}^2$$
+The strategy $$\bar{x}$$ is an **evolutionary stable strategy** for the case where the disease will persist and eventually reach an endemic equilbrium $$\bar{I}$$. The coupled disease-replicator dynamics is at equilibrium $$(\bar{I},\bar{x})$$, which depends on both disease or efficacy parameters $$\beta, \gamma, \sigma$$ and net usage behavior parameters $$C_N$$ and $$C_I$$.
 
 
 **ELIMINATION THRESHOLD AND ERADICATION GAP**
 
 Let us recall the elimination threshold of user frequency $$x^e = \frac{1}{\sigma} \left( 1 - \frac{\gamma}{\beta} \right)$$
-It follows that $$\bar{x} = x^e + \underbrace{\left[ \frac{\beta(1-\sigma) - \gamma(2-\sigma)}{\gamma \sigma} \right] \bar{I}}_{\text{Linear Interaction}} - \underbrace{\left[ \frac{\beta (1-\sigma)}{\gamma \sigma} \right] \bar{I}^2}_{\text{Quadratic Interaction}}$$
+It follows that $$\bar{x} = x^e + \underbrace{\left\[ \frac{\beta(1-\sigma) - \gamma(2-\sigma)}{\gamma \sigma} \right\] \bar{I}}_{\text{Linear Interaction}} - \underbrace{\left\[ \frac{\beta (1-\sigma)}{\gamma \sigma} \right\] \bar{I}^2}_{\text{Quadratic Interaction}}$$
 The difference
 $$\Delta=\bar{x}-x^e$$ is called the eradication gap. As the nuisance cost $C_N$ increases, the gap is widening,  
 

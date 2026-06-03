@@ -68,23 +68,25 @@ We assume that individuals do not interact with other individuals’ strategies 
 
 The evolution of user frequency $$x$$ satisfies the replicator equation:
 
-$$\begin{equation} = x [f_U - \bar{f}(x)] \end{equation}$$
+$$\begin{equation} = x (f_U - \bar{f}(x)) \end{equation}$$
 
 In our case, this equation simplifies to
 
-$$\begin{equation} \dot{x} = x [(1-x) f_U - (1-x) f_N] = x(1-x)(f_U-f_N) \end{equation}$$
+$$\begin{equation} \dot{x} = x ((1-x) f_U - (1-x) f_N) = x(1-x)(f_U-f_N) \end{equation}$$
 
 also known as **logistic growth** equation. 
 
 The intervention user behavior dynamics is governed by 
+
 $$\begin{equation}
-    \dot{x} = x(1-x) \left[ \sigma\beta I C_I  - C_N \right]
+    \dot{x} = x(1-x) ( \sigma\beta I C_I  - C_N )
 \end{equation}$$
 
 We distinguish:
 - **Adoption:** $$x$$ increases if $$\beta I > \frac{C_N}{C_I \sigma}$$. The risk-reduction benefit outweighs the nuisance cost.
 - **Abandonment:** $$x$$ decreases if $$\beta I < \frac{C_N}{C_I \sigma}$$. The nuisance cost is perceived as greater than the expected cost of infection.
 - **Evolutionary Stability:** A mixed equilibrium exists when $$\beta I = \frac{C_N}{C_I \sigma}$$.
+
 
 
 **EQUILIBRIUM FOR INFECTIOUS DISEASE DYNAMICS**
@@ -94,19 +96,38 @@ $$\begin{align}
     \frac{dI_U}{dt} &= (1-\sigma) \beta (x-I_U) (I_U + I_N) - \gamma I_U \\
     \frac{dI_N}{dt} &= \beta (1-x-I_N) (I_U + I_N) - \gamma I_N
 \end{align}$$
-we need to consider the case $R_0(x,\sigma)>1$ and solve $dI_U/dt = 0$ and $dI_N/dt = 0$.
-Let $I = I_U + I_N$ be the total prevalence. $$I_U^* = \frac{(1-\sigma) \beta x I}{(1-\sigma) \beta I + \gamma}$$$$I_N^* = \frac{\beta (1-x) I}{\beta I + \gamma}$$ Since $I = I_U + I_N$, we sum the two equations:$$I = \left[ \frac{(1-\sigma) \beta x}{(1-\sigma) \beta I + \gamma} + \frac{\beta (1-x)}{\beta I + \gamma} \right] I$$ If $I > 0$, we divide both sides by $I$:$$1 = \frac{(1-\sigma) \beta x}{(1-\sigma) \beta I + \gamma} + \frac{\beta (1-x)}{\beta I + \gamma}$$This is a quadratic equation in $I$: 
-$$\beta^2 (1-\sigma) I^2 + \beta \left[ \gamma(2-\sigma) - \beta(1 - \sigma ) \right] I + \gamma^2 \left[ 1 - R_0(x,\sigma) \right] = 0$$
+we need to consider the case $$R_0(x,\sigma)>1$$ and solve $$dI_U/dt = 0$ and $dI_N/dt = 0$$.
 
-The positive root of this quadratic gives the unique endemic equilibrium level when $R_0(x,\sigma ) > 1$:$$I^* = \frac{-B + \sqrt{B^2 - 4AC}}{2A}$$ for $A = \beta^2 (1-\sigma)$, $B = \beta \gamma (2-\sigma) - \beta^2(1 - \sigma )$ and $C = \gamma^2 (1 - R_0(x,\sigma))$.
+Let $$I = I_U + I_N$$ be the total prevalence. 
+
+Then $$I_U^* = \frac{(1-\sigma) \beta x I}{(1-\sigma) \beta I + \gamma}$$ and 
+
+$$I_N^* = \frac{\beta (1-x) I}{\beta I + \gamma}$$ 
+
+Since $I = I_U + I_N$, we sum the two equations:$$I =( \frac{(1-\sigma) \beta x}{(1-\sigma) \beta I + \gamma} + \frac{\beta (1-x)}{\beta I + \gamma} ) I$$
+
+If $I > 0$, we can divide both sides by $I$:
+
+$$1 = \frac{(1-\sigma) \beta x}{(1-\sigma) \beta I + \gamma} + \frac{\beta (1-x)}{\beta I + \gamma}$$
+
+This is a quadratic equation in $I$: 
+$$\beta^2 (1-\sigma) I^2 + \beta ( \gamma(2-\sigma) - \beta(1 - \sigma ) ) I + \gamma^2 ( 1 - R_0(x,\sigma) ) = 0$$
+
+The positive root of this quadratic gives the unique endemic equilibrium level when $$R_0(x,\sigma ) > 1$$:
+
+$$I^* = \frac{-B + \sqrt{B^2 - 4AC}}{2A}$$ for $$A = \beta^2 (1-\sigma)$$, $$B = \beta \gamma (2-\sigma) - \beta^2(1 - \sigma )$$ and $$C = \gamma^2 (1 - R_0(x,\sigma))$$.
 
 
 **EQUILIBRIUM FOR THE COUPLED DISEASE-REPLICATOR DYNAMICS**
 
-We can also solve the quadratic equation in $I$ for $x$ to obtain the user frequency at the endemic equilbrium. From the replicator equation we know that the user frequency is at equilibrium if the payoffs for users and non-users are equal: $f_U = f_N$ which amounts to mainting a specific prevalence $\bar{I}$:
+We can also solve the quadratic equation in $$I$$ for $$x$$ to obtain the user frequency at the endemic equilibrium. From the replicator equation we know that the user frequency is at equilibrium if the payoffs for users and non-users are equal: $$f_U = f_N$$ which amounts to mainting a specific prevalence $$\bar{I}$$:
+
    $$ \bar{I} = \frac{C_N}{\sigma\beta C_I }$$ in the population.
+   
 Combining both equations yields
+
 $$\bar{x} = \frac{\gamma}{\beta \sigma} \left\( \frac{\beta}{\gamma} - 1 \right\) - \frac{\left\(\gamma(2-\sigma) - \beta(1 - \sigma )\right\(}{\gamma \sigma} \bar{I}- \frac{\beta (1-\sigma) }{\gamma \sigma}\bar{I}^2$$
+
 The strategy $$\bar{x}$$ is an **evolutionary stable strategy** for the case where the disease will persist and eventually reach an endemic equilbrium $$\bar{I}$$. The coupled disease-replicator dynamics is at equilibrium $$(\bar{I},\bar{x})$$, which depends on both disease or efficacy parameters $$\beta, \gamma, \sigma$$ and net usage behavior parameters $$C_N$$ and $$C_I$$.
 
 

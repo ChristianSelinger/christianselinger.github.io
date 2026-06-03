@@ -96,15 +96,13 @@ $$\begin{align}
     \frac{dI_U}{dt} &= (1-\sigma) \beta (x-I_U) (I_U + I_N) - \gamma I_U \\
     \frac{dI_N}{dt} &= \beta (1-x-I_N) (I_U + I_N) - \gamma I_N
 \end{align}$$
-we need to consider the case $$R_0(x,\sigma)>1$$ and solve $$dI_U/dt = 0$ and $dI_N/dt = 0$$.
+We need to consider the case $$R_0(x,\sigma)>1$$ and solve $$dI_U/dt = 0$$ and $$dI_N/dt = 0$$.
 
 Let $$I = I_U + I_N$$ be the total prevalence. 
 
-Then $$I_U^* = \frac{(1-\sigma) \beta x I}{(1-\sigma) \beta I + \gamma}$$ and 
+Then $$I_U^* = \frac{(1-\sigma) \beta x I}{(1-\sigma) \beta I + \gamma}$$ and $$I_N^* = \frac{\beta (1-x) I}{\beta I + \gamma}.$$ 
 
-$$I_N^* = \frac{\beta (1-x) I}{\beta I + \gamma}$$ 
-
-Since $I = I_U + I_N$, we sum the two equations:$$I =( \frac{(1-\sigma) \beta x}{(1-\sigma) \beta I + \gamma} + \frac{\beta (1-x)}{\beta I + \gamma} ) I$$
+Since $I = I_U + I_N$, we sum the two equations: $$I =( \frac{(1-\sigma) \beta x}{(1-\sigma) \beta I + \gamma} + \frac{\beta (1-x)}{\beta I + \gamma} ) I$$
 
 If $I > 0$, we can divide both sides by $I$:
 

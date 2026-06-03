@@ -34,7 +34,7 @@ ninja.data = [{
         
           title: "Benefits and nuisance of health interventions",
         
-        description: "Coupling disease transmission dynamics and game theory, we investigate how individual preference can lead to endemic disease accepting some level nuisance individual sacrifice will open",
+        description: "Coupling disease transmission dynamics and game theory, we investigate how individual preference can lead to endemic disease and accepting some level nuisance will maximize societial benefits towards disease eradication",
         section: "Posts",
         handler: () => {
           

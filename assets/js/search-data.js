@@ -30,11 +30,11 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/teaching/";
           },
-        },{id: "post-eradication-gap",
+        },{id: "post-benefits-and-nuisance-of-health-interventions",
         
-          title: "Eradication Gap",
+          title: "Benefits and nuisance of health interventions",
         
-        description: "",
+        description: "Coupling disease transmission dynamics and game theory, we investigate how individual preference can lead to endemic disease accepting some level nuisance individual sacrifice will open",
         section: "Posts",
         handler: () => {
           

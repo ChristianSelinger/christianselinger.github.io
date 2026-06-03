@@ -144,8 +144,3 @@ As the nuisance cost $$C_N$$ increases, the gap is widening. Equality between th
 ![Image]({{ site.baseurl }}/assets/img/dec_sisgmae-x_I.png){: style="width: 50%; height: auto;" }
 
 The figure depicts the phase diagram of the coupled model of user frequency and disease prevalence for two different choices of efficacy and nuisance. The dynamical systems starts at the red point. At low efficacy and low nuisance, everyone will end up using the intervention and the equilibrium is at high prevalence. Increasing nuisance at low efficacy will result in no users and the entire population infected. Increasing efficacy but having low nuisance creates an opportunity for free-riders, resulting in lower endemic equilibrium and intermediate user frequency. Again, increasing nuisance in the high efficacy case will deter users and result in a high endemic equilibrium. The elimination threshold for $$\sigma=0.9$$ is located at the cube on the x-axis, at zero prevalence.
-
-
-**HEUREKA**
-
-On the long term, the equilibrium $$x^*$$ is the optimum based on individual preference leading to endemic disease, whereas $$x_e$$ is the societal optimum leading to disease eradication. As efficacy $$\sigma$$ increases, $$x_e$$ decreases and $$x^*$$ increases, i.e. the eradication gap narrows. Nevertheless, the gap will never close.

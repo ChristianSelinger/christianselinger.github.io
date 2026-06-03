@@ -44,31 +44,47 @@ Using the next generation matrix approach to calculate the basic reproduction nu
 $$F = \begin{pmatrix} (1-\sigma)\beta x & (1-\sigma)\beta x \\ \beta(1-x) & \beta(1-x) \end{pmatrix}, \quad V = \begin{pmatrix} \gamma & 0 \\ 0 & \gamma \end{pmatrix}$$ 
 
 The Next-Generation Matrix is 
-$K = FV^{-1}$:$$K = \begin{pmatrix} \frac{(1-\sigma)\beta x}{\gamma} & \frac{(1-\sigma)\beta x}{\gamma} \\ \frac{\beta(1-x)}{\gamma} & \frac{\beta(1-x)}{\gamma} \end{pmatrix}$$ 
+$K = FV^{-1}$:
 
-$R_0$ is the spectral radius (the largest eigenvalue) of matrix $K$. $$R_0(x,\sigma) = \frac{(1-\sigma)\beta x}{\gamma} + \frac{\beta(1-x)}{\gamma}$$ This gives $$R_0(x,\sigma) = \frac{\beta}{\gamma} \left\[ (1-\sigma)x + (1-x) \right\]=\frac{\beta}{\gamma} ( 1-\sigma x  )$$
+$$K = \begin{pmatrix} \frac{(1-\sigma)\beta x}{\gamma} & \frac{(1-\sigma)\beta x}{\gamma} \\ \frac{\beta(1-x)}{\gamma} & \frac{\beta(1-x)}{\gamma} \end{pmatrix}$$ 
 
-The disease dies out if $$R_0(x,\sigma)<1 \Leftrightarrow  x > \frac{1}{\sigma} (1 - \frac{\gamma}{\beta})$$ We call $x^e=\frac{1}{\sigma} (1 - \frac{\gamma}{\beta})$ the user frequency elimination threshold.
+$R_0$ is the spectral radius (the largest eigenvalue) of matrix $K$. 
+
+$$R_0(x,\sigma) = \frac{(1-\sigma)\beta x}{\gamma} + \frac{\beta(1-x)}{\gamma}$$ This gives $$R_0(x,\sigma) = \frac{\beta}{\gamma} \left\[ (1-\sigma)x + (1-x) \right\]=\frac{\beta}{\gamma} ( 1-\sigma x  )$$
+
+The disease dies out if $$R_0(x,\sigma)<1 \Leftrightarrow  x > \frac{1}{\sigma} (1 - \frac{\gamma}{\beta})$$.
+
+We call $x^e=\frac{1}{\sigma} (1 - \frac{\gamma}{\beta})$ the user frequency elimination threshold.
+
 
 **REPLICATOR DYNAMICS FOR INTERVENTION USAGE**
+
 The decision to use a bednet is modeled as a game. Like in a lottery, each host can play two different strategies against the bank, which is here the pool of infectious hosts in the population. If the host decides to not use the net, she will suffer from the potential consequences of an infection at cost $C_I>0$. If the host decides to play as a user, he will suffer a little less from the consequences of an infection, but incur the nuisance cost $C_N>0$ of putting and maintaining the net every day. For both strategies we can write the indivdual payoff as negative values of the cost:
 
  $$f_U =  -C_N - (1-\sigma) \beta I C_I$$$
+
  $$f_N =  -\beta I C_I$$
 
 The population payoff is
+
 $$$\bar{f}(x)= xf_U+ (1-x)f_N$$$
 
 We assume that individuals do not interact with other individuals’ strategies to determine their own cost, like it would be in a card game. To play against the entire infectious population is actually in accordance with the mass-action principle for disease transmission.
 
 The evolution of user frequency $$x$$ satisfies the replicator equation:
-\[\dot{x} = x [f_U - \bar{f}(x)]\]
+
+$$\begin{equation} = x [f_U - \bar{f}(x)] \end{equation}$$
+
 In our case, this equation simplifies to
-\[ \dot{x} = x [(1-x) f_U - (1-x) f_N] = x(1-x)(f_U-f_N) \]
-also known as \HandRight\underline{logistic growth} equation. The net user behavior dynamics is governed by 
-\begin{equation*}
+
+$$\begin{equation} \dot{x} = x [(1-x) f_U - (1-x) f_N] = x(1-x)(f_U-f_N) \end{equation}$$
+
+also known as **logistic growth** equation. The intervention user behavior dynamics is governed by 
+$$\begin{equation}
     \dot{x} = x(1-x) \left[ \sigma\beta I C_I  - C_N \right]
-\end{equation*}
+\end{equation}$$
+
+
 \begin{itemize}
     \item \textbf{Adoption:} $x$ increases if $\beta I > \frac{C_N}{C_I \sigma}$. The risk-reduction benefit outweighs the nuisance cost.
     \item \textbf{Abandonment:} $x$ decreases if $\beta I < \frac{C_N}{C_I \sigma}$. The nuisance cost is perceived as greater than the expected cost of infection.

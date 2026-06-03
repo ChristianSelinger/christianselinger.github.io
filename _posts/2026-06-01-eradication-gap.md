@@ -2,37 +2,39 @@
 layout: post
 title: Benefits and nuisance of health interventions
 date: 2026-01-01
-description: Coupling disease transmission dynamics and game theory, we investigate how individual preference can lead to endemic disease accepting some level nuisance individual sacrifice will open
+description: Coupling disease transmission dynamics and game theory, we investigate how individual preference can lead to endemic disease and accepting some level nuisance will maximize societial benefits towards disease eradication
 tags: game_theory differential_equations
 categories: sample-posts
 related_posts: false
 ---
 
-
 Consider a population at risk of an infectious disease, where individuals recover
-but will eventually become susceptible again. The population is divided into
+but will eventually become susceptible again. The population is divided
 into two groups. The first group decides to use some health intervention, which comes to the
-benefit of preventing infections but also to some nuisance cost. The non-users
-will not use the health intervention, they are at higher risk of infection, but do not bear the
-nuisance cost.
+benefit of preventing infections but also to some nuisance cost. The second group will not use the health intervention, they are at higher risk of infection, but do not bear the nuisance cost.
 
-\paragraph{The SIS Epidemiological Model}
-We consider a population divided into two strategy groups: Users ($U$) and Non-users ($N$). Each group is further divided into Susceptible ($S$) and Infectious ($I$) compartments. The total population is normalized to $1$, where:
-\[ S_U + I_U + S_N + I_N = 1 \]
+If we let the dynamics of disease transmission and individual preference co-evolve, what happens on the long run at the population level? Will the disease persist? Or will the parasite disappear from the population?
 
-The transmission is governed by the force of infection $\lambda = (1-\sigma)\beta (I_U + I_N)$, where $\beta$ is the transmission rate and $\sigma$ is the protective efficacy of the bednet ($0 \leq \sigma \leq 1$). The recovery rate is $\gamma$. The system of differential equations is:
+#The SIS Epidemiological Model
 
-\begin{align}
+We consider a population divided into two  groups: Users ($$U$$) and Non-users ($$N$$). Each group is further divided into Susceptible ($$S$$) and Infectious ($$I$$) compartments. The total population is normalized to $$1$$ and remains constant:
+$$S_U + I_U + S_N + I_N = 1$$.
+
+The transmission is governed by the force of infection $$\lambda = (1-\sigma)\beta (I_U + I_N)$$. where $$\beta$$ is the transmission rate and $$\sigma$$ is the protective efficacy of the bednet ($$0 \leq \sigma \leq 1$$). The recovery rate is $$\gamma$$. The system of differential equations is:
+
+$$\begin{align}
     \frac{dS_U}{dt} &= -(1-\sigma) \beta S_U (I_U + I_N) + \gamma I_U \\
     \frac{dI_U}{dt} &= (1-\sigma) \beta S_U (I_U + I_N) - \gamma I_U \\
     \frac{dS_N}{dt} &= -\beta S_N (I_U + I_N) + \gamma I_N \\
     \frac{dI_N}{dt} &= \beta S_N (I_U + I_N) - \gamma I_N
-\end{align}
-Let $x$ denote the frequency of bednet users in the population ($x = S_U + I_U$). Thus setting $S_U=x-I_U$ and $S_V=(1-x)-I_V$, the system can be reduced to
-\begin{align*}
+\end{align}$$
+
+Let $$x$$ denote the frequency of bednet users in the population ($$x = S_U + I_U$$). Thus setting $$S_U=x-I_U$$ and $$S_V=(1-x)-I_V$$, the system can be reduced to
+$$\begin{align}
     \frac{dI_U}{dt} &= (1-\sigma) \beta (x-I_U) (I_U + I_N) - \gamma I_U \\
     \frac{dI_N}{dt} &= \beta (1-x-I_N) (I_U + I_N) - \gamma I_N
-\end{align*}
+\end{align*}$$
+
 Using the next generation matrix approach to calculate the basic reproduction number $R_0$:$$F = \begin{pmatrix} (1-\sigma)\beta x & (1-\sigma)\beta x \\ \beta(1-x) & \beta(1-x) \end{pmatrix}, \quad V = \begin{pmatrix} \gamma & 0 \\ 0 & \gamma \end{pmatrix}$$ The Next-Generation Matrix is $K = FV^{-1}$:$$K = \begin{pmatrix} \frac{(1-\sigma)\beta x}{\gamma} & \frac{(1-\sigma)\beta x}{\gamma} \\ \frac{\beta(1-x)}{\gamma} & \frac{\beta(1-x)}{\gamma} \end{pmatrix}$$ $R_0$ is the spectral radius (the largest eigenvalue) of matrix $K$. $$R_0(x,\sigma) = \frac{(1-\sigma)\beta x}{\gamma} + \frac{\beta(1-x)}{\gamma}$$ This gives $$R_0(x,\sigma) = \frac{\beta}{\gamma} \left[ (1-\sigma)x + (1-x) \right]=\frac{\beta}{\gamma} ( 1-\sigma x  )$$
 The disease dies out if $$R_0(x,\sigma)<1 \Leftrightarrow  x > \frac{1}{\sigma} (1 - \frac{\gamma}{\beta})$$ We call $x^e=\frac{1}{\sigma} (1 - \frac{\gamma}{\beta})$ the user frequency elimination threshold.
 

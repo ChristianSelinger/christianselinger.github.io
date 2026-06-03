@@ -68,7 +68,7 @@ We assume that individuals do not interact with other individuals’ strategies 
 
 The evolution of user frequency $$x$$ satisfies the replicator equation:
 
-$$\begin{equation} = x (f_U - \bar{f}(x)) \end{equation}$$
+$$\begin{equation} \dot{x} = x (f_U - \bar{f}(x)) \end{equation}$$
 
 In our case, this equation simplifies to
 
@@ -133,9 +133,7 @@ The strategy $$\bar{x}$$ is an **evolutionary stable strategy** for the case whe
 
 Let us recall the elimination threshold of user frequency $$x^e = \frac{1}{\sigma} \left( 1 - \frac{\gamma}{\beta} \right)$$
 
-It follows that $$\begin{equation}\bar{x} = x^e + \underbrace{( \frac{\beta(1-\sigma) - \gamma(2-\sigma)}{\gamma \sigma} ) \bar{I}}_{\text{Linear Interaction}} - \underbrace{( \frac{\beta (1-\sigma)}{\gamma \sigma} ) \bar{I}^2}_{\text{Quadratic Interaction}}\end{equation}$$
-
- $$\begin{equation} \underbrace{( \frac{\beta (1-\sigma)}{\gamma \sigma} ) \bar{I}^2}_{\text{Quadratic Interaction}}\end{equation}-\underbrace{( \frac{\beta(1-\sigma) - \gamma(2-\sigma)}{\gamma \sigma} ) \bar{I}}_{\text{Linear Interaction}}= x^e-\bar{x}<\frac{\gamma(2-\sigma)}{\gamma \sigma}$$
+It follows that $$\begin{equation}\bar{x} = x^e + \underbrace{( \frac{\beta(1-\sigma) - \gamma(2-\sigma)}{\gamma \sigma} ) \bar{I}}_{\text{Linear Interaction}} - \underbrace{( \frac{\beta (1-\sigma)}{\gamma \sigma} ) \bar{I}^2}_{\text{Quadratic Interaction}}\end{equation}>x^e-\frac{\gamma(2-\sigma)}{\gamma \sigma} ) \bar{I}$$
 
 The difference $$\Delta=\bar{x}-x^e$$ is called the **eradication gap**. As the nuisance cost $$C_N$$ increases, the gap is widening. Equality between the elimination threshold and the evolutionary stable strategy can only hold if $$\bar{I}=0$$, i.e. the nuisance cost of using a net is $$C_N=0$$. This means that as long as nets are effective and have a non-zero nuisance cost, non-users will free-ride at the expense of users and jeopardize the eradication.
 

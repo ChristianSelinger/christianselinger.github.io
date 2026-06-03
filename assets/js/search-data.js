@@ -41,11 +41,11 @@ ninja.data = [{
             window.location.href = "/blog/2026/eradication-gap/";
           
         },
-      },{id: "post-neural-disease-transmission-models-for-inference",
+      },{id: "post-disease-transmission-models-going-neural",
         
-          title: "neural disease transmission models for inference",
+          title: "Disease transmission models going neural",
         
-        description: "starting from elementary compartmental models, we provide an introduction into inhomogeneous dynamical systems that are augmented by neural networks",
+        description: "Starting from elementary disease transmission models, we provide an introduction into inhomogeneous dynamical systems that are augmented by neural networks and show how such models can improve inference and predictive accuracy.",
         section: "Posts",
         handler: () => {
           

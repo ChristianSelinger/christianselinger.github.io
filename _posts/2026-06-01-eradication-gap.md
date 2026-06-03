@@ -124,4 +124,4 @@ Equality between the elimination threshold and the evolutionary stable strategy 
 
 **HEUREKA**
 
-On the long term, the equilibrium $x^*$ is the optimum based on individual preference leading to endemic disease, whereas $x_e$ is the societal optimum leading to disease eradication. As efficacy $\sigma$ increases, $x_e$ decreases and $x^*$ increases, i.e. the eradication gap narrows. Nevertheless, the gap will never close.
+On the long term, the equilibrium $$x^*$$ is the optimum based on individual preference leading to endemic disease, whereas $$x_e$$ is the societal optimum leading to disease eradication. As efficacy $$\sigma$$ increases, $$x_e$$ decreases and $$x^*$$ increases, i.e. the eradication gap narrows. Nevertheless, the gap will never close.

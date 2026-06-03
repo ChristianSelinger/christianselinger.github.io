@@ -56,7 +56,7 @@ We call $$x^e=\frac{1}{\sigma} (1 - \frac{\gamma}{\beta})$$ the user frequency e
 
 The decision to use an intervention is modeled as a game. Like in a lottery, each host can play two different strategies against the bank, which is here the pool of infectious hosts in the population. If the host decides to not use the intervention, she will suffer from the potential consequences of an infection at cost $$C_I>0$$. If the host decides to play as a user, he will suffer a little less from the consequences of an infection, but incur the nuisance cost $$C_N\geq 0$$ of putting and maintaining the net every day. For both strategies we can write the individual payoff as negative values of the cost:
 
- $$f_U =  -C_N - (1-\sigma) \beta I C_I$$$
+ $$f_U =  -C_N - (1-\sigma) \beta I C_I$$
 
  $$f_N =  -\beta I C_I$$
 

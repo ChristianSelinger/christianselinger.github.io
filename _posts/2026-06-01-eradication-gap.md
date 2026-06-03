@@ -45,7 +45,7 @@ $K = FV^{-1}$:
 
 $$K = \begin{pmatrix} \frac{(1-\sigma)\beta x}{\gamma} & \frac{(1-\sigma)\beta x}{\gamma} \\ \frac{\beta(1-x)}{\gamma} & \frac{\beta(1-x)}{\gamma} \end{pmatrix}$$ 
 
-$R_0$ is the spectral radius (the largest eigenvalue) of matrix $K$ and reads $$R_0(x,\sigma) = \frac{(1-\sigma)\beta x}{\gamma} + \frac{\beta(1-x)}{\gamma}$$. This gives $$R_0(x,\sigma) = \frac{\beta}{\gamma} \left\[ (1-\sigma)x + (1-x) \right\]=\frac{\beta}{\gamma} ( 1-\sigma x  )$$
+$R_0$ is the spectral radius (the largest eigenvalue) of matrix $K$ and reads $$R_0(x,\sigma) = \frac{(1-\sigma)\beta x}{\gamma} + \frac{\beta(1-x)}{\gamma}$$. This gives $$R_0(x,\sigma) = \frac{\beta}{\gamma} ( (1-\sigma)x + (1-x) )=\frac{\beta}{\gamma} ( 1-\sigma x  )$$
 
 The disease dies out if $$R_0(x,\sigma)<1 \Leftrightarrow  x > \frac{1}{\sigma} (1 - \frac{\gamma}{\beta})$$.
 
@@ -126,7 +126,7 @@ We can also solve the quadratic equation in $$I$$ for $$x$$ to obtain the user f
    
 Combining both equations yields
 
-$$\bar{x} = \frac{\gamma}{\beta \sigma} \left\( \frac{\beta}{\gamma} - 1 \right\) - \frac{\left\(\gamma(2-\sigma) - \beta(1 - \sigma )\right\(}{\gamma \sigma} \bar{I}- \frac{\beta (1-\sigma) }{\gamma \sigma}\bar{I}^2$$
+$$\bar{x} = \frac{\gamma}{\beta \sigma} ( \frac{\beta}{\gamma} - 1 )- \frac{(\gamma(2-\sigma) - \beta(1 - \sigma ))}{\gamma \sigma} \bar{I}- \frac{\beta (1-\sigma) }{\gamma \sigma}\bar{I}^2$$
 
 The strategy $$\bar{x}$$ is an **evolutionary stable strategy** for the case where the disease will persist and eventually reach an endemic equilbrium $$\bar{I}$$. The coupled disease-replicator dynamics is at equilibrium $$(\bar{I},\bar{x})$$, which depends on both disease or efficacy parameters $$\beta, \gamma, \sigma$$ and net usage behavior parameters $$C_N$$ and $$C_I$$.
 
@@ -134,11 +134,14 @@ The strategy $$\bar{x}$$ is an **evolutionary stable strategy** for the case whe
 **ELIMINATION THRESHOLD AND ERADICATION GAP**
 
 Let us recall the elimination threshold of user frequency $$x^e = \frac{1}{\sigma} \left( 1 - \frac{\gamma}{\beta} \right)$$
-It follows that $$\bar{x} = x^e + \underbrace{\left\[ \frac{\beta(1-\sigma) - \gamma(2-\sigma)}{\gamma \sigma} \right\] \bar{I}}_{\text{Linear Interaction}} - \underbrace{\left\[ \frac{\beta (1-\sigma)}{\gamma \sigma} \right\] \bar{I}^2}_{\text{Quadratic Interaction}}$$
-The difference
-$$\Delta=\bar{x}-x^e$$ is called the eradication gap. As the nuisance cost $C_N$ increases, the gap is widening,  
 
-Equality between the elimination threshold and the evolutionary stable strategy can only hold if $\bar{I}=0$, i.e. the nuisance cost of using a net is $C_N=0$. , and states that as long as nets are effective and have a non-zero nuisance cost, non-users will free-ride at the expense of users.
+It follows that $$\begin{equation}\bar{x} = x^e + \underbrace{\left\[ \frac{\beta(1-\sigma) - \gamma(2-\sigma)}{\gamma \sigma} \right\] \bar{I}}_{\text{Linear Interaction}} - \underbrace{\left\[ \frac{\beta (1-\sigma)}{\gamma \sigma} \right\] \bar{I}^2}_{\text{Quadratic Interaction}}\end{equation}$$
+
+The difference
+
+$$\Delta=\bar{x}-x^e$$ is called the eradication gap. As the nuisance cost $$C_N$$ increases, the gap is widening,  
+
+Equality between the elimination threshold and the evolutionary stable strategy can only hold if $$\bar{I}=0$$, i.e. the nuisance cost of using a net is $$C_N=0$$. , and states that as long as nets are effective and have a non-zero nuisance cost, non-users will free-ride at the expense of users.
 
 ![Image]({{ site.baseurl }}/assets/img/dec_sisgmae-x_I.png){: style="width: 50%; height: auto;" }
 

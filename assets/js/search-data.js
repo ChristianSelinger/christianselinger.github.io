@@ -30,7 +30,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/teaching/";
           },
-        },{id: "post-neural-disease-transmission-models-for-inference",
+        },{id: "post-eradication-gap",
+        
+          title: "Eradication Gap",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/eradication-gap/";
+          
+        },
+      },{id: "post-neural-disease-transmission-models-for-inference",
         
           title: "neural disease transmission models for inference",
         

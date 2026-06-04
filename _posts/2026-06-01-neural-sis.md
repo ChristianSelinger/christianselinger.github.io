@@ -44,7 +44,7 @@ Let's come back to the rather opaque parameter $$\beta>0$$. We admitted that we 
 \end{equation}
 Periodicity of $\beta$ makes sense for a parasite such as influenza virus from the point of view of its biochemistry. It is in dry and cold climate during winter that the protecting lipid layer becomes solid-like, the virus persists in the environment. The surface protein so important for cell entry is conserved in its polymer structure, the virus remains infectious. Not to speak of hosts crowding in trains and classrooms during cold season.
 Letting $\beta$ depend on time and including the amplitiude and period parameters $$\theta=(\theta_1,\theta_2)$$ requires some updates to the vector field $f$ of our differential equation. In its simplest form, $f$ depends only on the position $x$, but in our cases, the vector field depends also on time $t$ and $$\theta$$:
-\begin{equation}f_{\theta}(t,x)=(\theta_1( 1+ \sin \tfrac{2\pi t}{\theta_2}) - \gamma) x - \tfrac{(\theta_1( 1+ \sin \tfrac{2\pi t}{\theta_2})}{N}x^2\end{equation}
+\begin{equation}f_{\theta}(t,x)=(\beta(t,\theta_1,\theta_2) - \gamma) x - \tfrac{\beta(t,\theta_1,\theta_2)}{N}x^2\end{equation}
 How scary is that formula?
 
 

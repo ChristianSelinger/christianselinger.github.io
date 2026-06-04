@@ -42,7 +42,15 @@ Let's come back to the rather opaque parameter $$\beta>0$$. We admitted that we 
 \begin{equation}
 \beta\equiv\beta(t)\equiv\beta(t,\theta_1,\theta_2)=\theta_1\left( 1+ \sin \tfrac{2\pi t}{\theta_2}\right)
 \end{equation}
-Periodicity of $\beta$ makes sense for a parasite such as influenza virus from the point of view of its biochemistry. It is in dry and cold climate during winter that the protecting lipid layer becomes solid-like, the virus persists in the environment. The surface protein so important for cell entry is conserved in its polymer structure, the virus remains infectious. Not to speak of hosts crowding in trains and classrooms during cold season. Packing all the biochemical complexity into a sine function seems like a mathematical leap of faith bound to fail. Let's put our model to the test of observations. 
+Periodicity of $\beta$ makes sense for a parasite such as influenza virus from the point of view of its biochemistry. It is in dry and cold climate during winter that the protecting lipid layer becomes solid-like, the virus persists in the environment. The surface protein so important for cell entry is conserved in its polymer structure, the virus remains infectious. Not to speak of hosts crowding in trains and classrooms during cold season.
+Letting $\beta$ depend on time and including the amplitiude and period parameters $$\theta=(\theta_1,\theta_2)$$ requires some updates to the vector field $f$ of our differential equation. In its simplest form, $f$ depends only on the position $x$, but in our cases, the vector field depends also on time $t$ and $$\theta$$:
+\begin{equation}f_{\theta}(t,x)=(\theta_1( 1+ \sin \tfrac{2\pi t}{\theta_2}) - \gamma) x - \tfrac{(\theta_1( 1+ \sin \tfrac{2\pi t}{\theta_2})}{N}x^2\end{equation}
+How scary is that formula?
+
+
+
+
+Packing all the biochemical complexity into a sine function seems like a mathematical leap of faith bound to fail. Let's put our model to the test of observations. 
 
 Coming back from a lengthy field trip to a remote island, your epidemiologist neighbour carries a dataset full of observations in his backpack. After some data cleaning, he gives you the number of infectious hosts recorded at $$K$$ distinct time points: $$\iota(t_1),\dots,\iota(t_K)$$. From his anectotal notebook about the disease you calculate the recovery rate $$\gamma$$. So far, so good. In order to compare this data to model outputs, we define how far the model outputs are away from the data by an **error function**:
 $$\begin{equation}
@@ -50,6 +58,7 @@ J = \frac{1}{K}\sum_{j=1}^{K} g(I(t_j), \iota(t_j))
 \end{equation}$$
 To make things easier, we use the error function $$g(x,y)=\tfrac{1}{2}|x-y|^2$$ and $$J$$ is called the **residual sum of squares**. But there is yet another way to look at $J$. It is a functional. A functional is like a function, only that it is defined on a larger, often infinite-dimensional space such as the space of all possible solution curves to our SIS model. Remember, we keep initial condition and $$\gamma$$ fixed since we trust our epidemiologist neighbour, and the only other parameter $$\beta$$ was now written in a form where it depends on amplitude and period $$\theta=(\theta_1,\theta_2)$$. Thus, a particular choice for $$\theta$$ yields a unique solution curve $$\{I(t);t\geq 0\}$$. The functional $$J$$ maps the solution curve to a real number, the error between the model and the observations. The task of parameter inference is to find values for $$(\theta_1,\theta_2)$$ such that this number $$J[\{I_{\theta}(t);t\geq 0\}]$$ is minimal.  
 
+Optimization, sounds familiar? Let's take a step back. 
 
 
 Lagrangian multiplier

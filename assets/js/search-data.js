@@ -30,7 +30,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/teaching/";
           },
-        },{id: "post-selfishness-and-eradication-of-disease",
+        },{id: "post-disease-transmission-models-going-neural",
+        
+          title: "Disease transmission models going neural",
+        
+        description: "Starting from elementary disease transmission models, we provide an introduction into inhomogeneous dynamical systems that are augmented by neural networks and show how such models can improve inference and predictive accuracy.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/neural-sis/";
+          
+        },
+      },{id: "post-selfishness-and-eradication-of-disease",
         
           title: "Selfishness and eradication of disease",
         

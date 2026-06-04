@@ -52,17 +52,6 @@ ninja.data = [{
             window.location.href = "/blog/2026/eradication-gap/";
           
         },
-      },{id: "post-disease-transmission-models-going-neural",
-        
-          title: "Disease transmission models going neural",
-        
-        description: "Starting from elementary disease transmission models, we provide an introduction into inhomogeneous dynamical systems that are augmented by neural networks and show how such models can improve inference and predictive accuracy.",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2026/math/";
-          
-        },
       },{id: "post-a-post-with-plotly-js",
         
           title: "a post with plotly.js",

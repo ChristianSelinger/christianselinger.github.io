@@ -16,7 +16,7 @@ For microbiologists, this description of a parasite's lifecycle might sound like
 
 Let's start again with an elementary system of differential equations, which models the temporal evoluation of only two compartments, susceptible (S) and infectious hosts (I). Let's denote the total population size with $$N=S+I$$ and assume that $$N$$ remains constant. We posit two ad-hoc rules of transitioning between compartments. 
 
-First, for each susceptible host, the probability of finding an infectious host in the population is $$\tfrac{I}{N}$$, and since there are $$S$$ susceptible hosts, we would have on average $$\beta S \tfrac{I}{N}$$ susceptible hosts moving to the (I) compartment. The parameter $$\beta>0$$ encapsulates all the biochemical and eco-evolutionary complexities that we were so proud to be ignorant of. 
+First, for each susceptible host, the probability of finding an infectious host in the population is $$\tfrac{I}{N}$$, and since there are $$S$$ susceptible hosts, we would have on average $$\beta S \tfrac{I}{N}$$ susceptible hosts moving to the (I) compartment. The parameter $$\beta>0$$ encapsulates all the biochemical and eco-evolutionary complexities that we proudly ignored. 
 
 Second, infectious hosts might also recover from infection and move to the susceptible compartment with rate $$\gamma$$, and we would end up with $$\gamma I$$ hosts on overage moving from the (I) compartment to the (S) compartment. 
 
@@ -44,11 +44,11 @@ Let's come back to the rather opaque parameter $$\beta>0$$. We admitted that we 
 \end{equation}
 Periodicity of $\beta$ makes sense for a parasite such as influenza virus from the point of view of its biochemistry. It is in dry and cold climate during winter that the protecting lipid layer becomes solid-like, the virus persists in the environment. The surface protein so important for cell entry is conserved in its polymer structure, the virus remains infectious. Not to speak of hosts crowding in trains and classrooms during cold season. Packing all the biochemical complexity into a sine function seems like a mathematical leap of faith bound to fail. Let's put our model to the test of observations. 
 
-Coming back from a lengthy field trip to a remote island, your epidemiologist neighbour carries a dataset full of observations in his backpack. After some data cleaning, he gives you the number of infectious hosts recorded at $$K$$ distinct time points: $$\iota(t_1),\dots,\iota(t_K)$$. From his anectotal notebook about the disease you calculate the recovery rate $$\gamma$$. So far, so good. In order to compare this data to model outputs, we define how far the model outputs are away from the data by an error function:
-\begin{equation}
-J = \sum_{j=1}^{K} g(I(t_j), \iota(t_j))
-\end{equation}
-To make things easier, we use the error function $$g(x,y)=\tfrac{1}{2}|x-y|^2$$ and $$J$$ is called the **residual sum of squares**. But there is yet another way to look at $J$. It is a functional. A functional is like a function, only that it is defined on a larger, often infinite-dimensional space such as the space of all possible solution curves to our SIS model with parameters $$(\theta_1,\theta_2)$$. Remember, we keep $$\gamma$$ fixed since we trust our epidemiologist neighbour, and $\beta$ was defined by the amplitude and the period. The functional $$J$$ maps the solution curve $$I(t)$$ to a real number, the error between the model and the observations. The task of parameter inference is to find values for  $$(\theta_1,\theta_2)$$ such that $$J$$ is minimal. 
+Coming back from a lengthy field trip to a remote island, your epidemiologist neighbour carries a dataset full of observations in his backpack. After some data cleaning, he gives you the number of infectious hosts recorded at $$K$$ distinct time points: $$\iota(t_1),\dots,\iota(t_K)$$. From his anectotal notebook about the disease you calculate the recovery rate $$\gamma$$. So far, so good. In order to compare this data to model outputs, we define how far the model outputs are away from the data by an **error function**:
+$$\begin{equation}
+J = \frac{1}{K}\sum_{j=1}^{K} g(I(t_j), \iota(t_j))
+\end{equation}$$
+To make things easier, we use the error function $$g(x,y)=\tfrac{1}{2}|x-y|^2$$ and $$J$$ is called the **residual sum of squares**. But there is yet another way to look at $J$. It is a functional. A functional is like a function, only that it is defined on a larger, often infinite-dimensional space such as the space of all possible solution curves to our SIS model. Remember, we keep initial condition and $$\gamma$$ fixed since we trust our epidemiologist neighbour, and the only other parameter $$\beta$$ was now written in a form where it depends on amplitude and period $$\theta=(\theta_1,\theta_2)$$. Thus, a particular choice for $$\theta$$ yields a unique solution curve $$\{I(t);t\geq 0\}$$. The functional $$J$$ maps the solution curve to a real number, the error between the model and the observations. The task of parameter inference is to find values for $$(\theta_1,\theta_2)$$ such that this number $$J[\{I_{\theta}(t);t\geq 0\}]$$ is minimal.  
 
 
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Disease transmission models going neural
+title: A neural journey into disease transmission models
 date: 2026-01-01
 description: Starting from elementary disease transmission models, we provide an introduction into inhomogeneous dynamical systems that are augmented by neural networks and show how such models can improve inference and predictive accuracy.
 tags: neural_networks differential_equations
@@ -52,9 +52,26 @@ Coming back from a lengthy field trip to a remote island, your epidemiologist ne
 $$\begin{equation}
 {\cal J} = \frac{1}{K}\sum_{j=1}^{K} g(I(t_j), \iota(t_j))
 \end{equation}$$
-To make things easier, we use $$g(x,y)=\tfrac{1}{2}|x-y|^2$$ and $$J$$ is called the **residual sum of squares**. But there is yet another way to look at ${\cal J}$. It is a functional. A functional is like a function, only that it is defined on a larger, often infinite-dimensional space such as the space of all possible solution curves to our SIS model. Remember, we keep initial conditions and $$\gamma$$ fixed since we trust our epidemiologist neighbour, and the only other parameter $$\beta$$ is  written in a form where it depends on amplitude and period $$\theta=(\theta_1,\theta_2)$$. Thus, a particular choice for $$\theta$$ yields a unique solution curve $$\{I_{\theta}(t);t\geq 0\}$$. The functional $${\cal J}$$ maps the solution curve to a real number, the error between the model and observations. The task of parameter inference is to find values for $$(\theta_1,\theta_2)$$ such that this number $${\cal J}[\{I_{\theta}(t);t\geq 0\}]$$ is minimal.  
+To make things easier, we use $$g(x,y)=\tfrac{1}{2}|x-y|^2$$ and $$J$$ is called the **residual sum of squares**. But there is yet another way to look at ${\cal J}$. It is a functional. A functional is like a function, only that it is defined on a larger, often infinite-dimensional space such as the space of all possible solution curves to our SIS model. Remember, we keep initial conditions and $$\gamma$$ fixed since we trust our epidemiologist neighbour, and the only other parameter $$\beta$$ is  written in a form where it depends on amplitude and period $$\theta=(\theta_1,\theta_2)$$. Thus, a particular choice for $$\theta$$ yields a unique solution curve $$\{I_{\theta}(t);t\geq 0\}$$. The functional $${\cal J}$$ maps the solution curve to a real number, the error between the model and observations. 
 
-Optimization, sounds familiar? Let's take a step back. 
+The task of parameter **inference** is to find values for $$(\theta_1,\theta_2)$$ such that this number $${\cal J}[\{I_{\theta}(t);t\geq 0\}]$$ is minimal. When minimizing functionals over a spaces of curves, we enter the calculus of variation, a mathematical field dating back to Euler and which has been properly formalized only in the last century under the name of functional analysis. Parameter inference emerged from statistics and should be considered rather a cognitive task with different computational approaches such as hypothesis testing, maximum likelihood and Bayesian updating. Whether parameter inference should actually be considered an optimization problem will spur important philosophical discussions. What is reality? The data that your epidemiologist neighbour brought back from his trip? The biochemical laws underlying disease transmission which our models seeks to mimick to the point of a caricature?
+
+Let's go back to our error function:
+
+$$\begin{equation}
+{\cal J} = \frac{1}{K}\sum_{j=1}^{K} g(I(t_j), \iota(t_j))
+\end{equation}$$
+
+If we had infinitesimal time increments of observations, we can write ${\cal J}$ as an integral:
+
+$$\begin{equation}
+{\cal J} = \int_{t_1}^{t^K} g(I(t), \iota(t))dt
+\end{equation}$$
+
+So far, so good. 
+
+
+Let's take a step back. 
 
 
 Lagrangian multiplier

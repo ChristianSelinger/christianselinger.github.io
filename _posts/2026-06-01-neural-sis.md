@@ -56,7 +56,7 @@ To make things easier, we use $$g(x,y)=\tfrac{1}{2}|x-y|^2$$ and $$J$$ is called
 
 The task of parameter **inference** is to find values for $$(\theta_1,\theta_2)$$ such that this number $${\cal J}[\{I_{\theta}(t);t\geq 0\}]$$ is minimal. When minimizing functionals over a spaces of curves, we enter the calculus of variation, a mathematical field dating back to Euler and which has been properly formalized only in the last century under the name of functional analysis. Parameter inference emerged from statistics and should be considered rather a cognitive task with different computational approaches such as hypothesis testing, maximum likelihood and Bayesian updating. Whether parameter inference should actually be considered an optimization problem will spur important philosophical discussions. What is reality? The data that your epidemiologist neighbour brought back from his trip? The biochemical laws underlying disease transmission which our models seeks to mimick to the point of a caricature?
 
-Let's go back to our error function:
+Let's go back to the error function:
 
 $$\begin{equation}
 {\cal J} = \frac{1}{K}\sum_{j=1}^{K} g(I(t_j), \iota(t_j))
@@ -65,13 +65,20 @@ $$\begin{equation}
 If we had infinitesimal time increments of observations, we can write ${\cal J}$ as an integral:
 
 $$\begin{equation}
-{\cal J} = \int_{t_1}^{t^K} g(I(t), \iota(t))dt
+{\cal J} = \int_{t_1}^{t_K} g(I(t), \iota(t))dt
 \end{equation}$$
 
-So far, so good. 
+So far, so good. There is actually a way in which the model can observe itself. Let's revert back to our elementary model $\ref{eq:sis_simple}$, but with the addition of a control function $t\mapsto u(t)$:
 
+$\begin{equation}
+\frac{dI_u}{dt} = (u(t)\beta - \gamma)I_u- \tfrac{u(t)\beta}{N}I_u^2
+$\end{equation}
 
-Let's take a step back. 
+You can think of $u$ as a way to stir the dynamical system into a certain state. E.g. we could look for a function that will minimize the number of infections during a defined time horizon
+$$\begin{equation}
+{\cal J} = \int_{t_1}^{t_K} I_u(t) dt
+\end{equation}$$
+Instead of minimizing over $$\theta$$, we would now minimize over the space of admissible control functions.
 
 
 Lagrangian multiplier

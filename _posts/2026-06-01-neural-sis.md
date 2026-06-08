@@ -72,7 +72,7 @@ So far, so good. There is actually a way in which the model can observe itself. 
 
 $\begin{equation}
 \frac{dI_u}{dt} = (u(t)\beta - \gamma)I_u- \tfrac{u(t)\beta}{N}I_u^2
-$\end{equation}
+\end{equation}$
 
 You can think of $u$ as a way to stir the dynamical system into a certain state. E.g. we could look for a function that will minimize the number of infections during a defined time horizon
 $$\begin{equation}

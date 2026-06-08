@@ -21,7 +21,7 @@ If we let the dynamics of disease transmission and individual preference co-evol
 We consider a population divided into two  groups: Users ($$U$$) and Non-users ($$N$$). Each group is further divided into Susceptible ($$S$$) and Infectious ($$I$$) compartments. The total population is normalized to $$1$$ and remains constant:
 $$S_U + I_U + S_N + I_N = 1$$.
 
-The transmission is governed by the force of infection $$\lambda = (1-\sigma)\beta (I_U + I_N)$$, where $$\beta$$ is the transmission rate and $$\sigma$$ is the protective efficacy of the bednet ($$0 \leq \sigma \leq 1$$). The recovery rate is $$\gamma$$. The system of differential equations is:
+The transmission is governed by the force of infection $$\lambda = (1-\sigma)\beta (I_U + I_N)$$, where $$\beta$$ is the transmission rate and $$\sigma$$ is the protective efficacy of the intervention ($$0 \leq \sigma \leq 1$$). The recovery rate is $$\gamma$$. The system of differential equations is:
 
 $$\begin{align}
     \frac{dS_U}{dt} &= -(1-\sigma) \beta S_U (I_U + I_N) + \gamma I_U \\
@@ -109,7 +109,9 @@ If $I > 0$, we can divide both sides by $I$:
 $$1 = \frac{(1-\sigma) \beta x}{(1-\sigma) \beta I + \gamma} + \frac{\beta (1-x)}{\beta I + \gamma}$$
 
 This is a quadratic equation in $I$: 
-$$\beta^2 (1-\sigma) I^2 + \beta ( \gamma(2-\sigma) - \beta(1 - \sigma ) ) I + \gamma^2 ( 1 - R_0(x,\sigma) ) = 0$$
+$$\begin{equation}
+\beta^2 (1-\sigma) I^2 + \beta ( \gamma(2-\sigma) - \beta(1 - \sigma ) ) I + \gamma^2 ( 1 - R_0(x,\sigma) ) = 0
+\end{equation}$$
 
 The positive root of this quadratic gives the unique endemic equilibrium level when $$R_0(x,\sigma ) > 1$$:
 

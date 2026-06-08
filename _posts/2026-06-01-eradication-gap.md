@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Selfishness and eradication of disease
+title: No free-ride to disease eradication
 date: 2026-01-01
 description: Coupling disease transmission dynamics and game theory, we investigate how individual preference can lead to endemic disease and accepting some level nuisance will maximize societial benefits towards disease eradication
 tags: game_theory differential_equations eradication behaviour
@@ -141,7 +141,7 @@ The difference $$\Delta=x^e-\bar{x}$$ is called the **eradication gap**.
 
 $$\Delta = \frac{\bar{I}}{\sigma} (2 - \sigma - \frac{\beta}{\gamma}(1-\sigma) + \frac{\beta}{\gamma}(1-\sigma)\bar{I})>\frac{\bar{I}}{\sigma} (2 - \sigma - \frac{\beta}{\gamma}(1-\sigma))= \frac{C_N}{\beta C_I }(1 + (1-\sigma)(1-\frac{\beta}{\gamma}))$$
 
-As the nuisance cost $$C_N$$ increases, the gap is widening. Equality between the elimination threshold and the evolutionary stable strategy can only hold if the nuisance cost is $$C_N=0$$. This means that as long as interventions are effective and have a non-zero nuisance cost, non-users will free-ride at the expense of users and jeopardize the eradication.
+As the nuisance cost $$C_N$$ increases, the gap is widening. Equality between the elimination threshold and the evolutionary stable strategy can only hold if the nuisance cost is $$C_N=0$$. This means that as long as interventions are effective and have a non-zero nuisance cost, non-users will free-ride and jeopardize the eradication.
 
 ![Image]({{ site.baseurl }}/assets/img/dec_sisgmae-x_I.png){: style="width: 50%; height: auto;" }
 

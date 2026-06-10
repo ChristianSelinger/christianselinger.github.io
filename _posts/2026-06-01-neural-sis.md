@@ -37,25 +37,21 @@ Under the assumptions of constant population size we set $$S=N-I$$ and the SIS s
 \end{equation}
 
 Our differential is $$\frac{dI}{dt}$$ and the vector field reads
-$$f(x)=(\beta - \gamma) x - \tfrac{\beta}{N}x^2$$. The linear part $$x\mapsto (\beta - \gamma)x$$ of the vector field describes how the balance between new infections and recovery relates to the growth of (I), especially in the beginning. If $$\beta - \gamma<0$$, negative growth will push eventually the system to the state $$I=0$$, the so-called **disease-free equilibrium**. If $$\beta - \gamma>0$$, the non-linear part $$x\mapsto -\tfrac{\beta}{N}x^2$$ of the vector field helps to keep the system in place: there cannot be more than $$N$$ host! If $$I$$ is close to $$N$$, the $$\beta N$$ terms cancel out and $$x\mapsto -\gamma x$$ will push the sytem to lower values of $$I$$, it will eventually reach $$I=N\tfrac{\beta - \gamma}{\beta}=N\left(1-\tfrac{\gamma}{\beta}\right)$$, the so-called **endemic equilibrium**.
+$$f(x)=(\beta - \gamma) x - \tfrac{\beta}{N}x^2$$. The linear part $$x\mapsto (\beta - \gamma)x$$ of the vector field describes how the balance between new infections and recovery relates to the growth of (I), especially in the beginning. If $$\beta - \gamma<0$$, negative growth will push eventually the system to the state $$I=0$$, the so-called **disease-free equilibrium**. If $$\beta - \gamma>0$$, the non-linear part $$x\mapsto -\tfrac{\beta}{N}x^2$$ of the vector field helps to keep the system in place: there cannot be more than $$N$$ hosts! If $$I$$ is close to $$N$$, the $$\beta N$$ terms cancel out and $$x\mapsto -\gamma x$$ will push the sytem to lower values of $$I$$, it will eventually reach $$I=N\tfrac{\beta - \gamma}{\beta}=N\left(1-\tfrac{\gamma}{\beta}\right)$$, the so-called **endemic equilibrium**.
 
-To solve the differential equation with the vector field $f$:
-
-$\begin{equation}
-\label{eq:sis_simple_vf}
-\frac{dI}{dt} = f(I)
-\end{equation}$
-we evaluate the equation at discrete, equidistant time points $t_i=t_0+i\Delta$:
+To solve the differential equation with the vector field $\frac{dI}{dt} = f(I)$:
+we evaluate the vector field at discrete, equidistant time points $t_i=t_0+i\Delta$:
 
 $\begin{equation}
 \label{eq:sis_simple_num}
 \frac{I(t_{i+1})-I(t_i)}{\Delta} = f(I(t_i))
 \end{equation}$
-and rewrite the equation as a recurrence relationship
+and rewrite the equation as a recurrence relationship $I(t_{i+1})=I(t_i)+\Delta f(I(t_i))$. If you know the initial condition $I(t_0)$, then you can calculate $I(t_1), I(t_2),\dots$!
+But what if you would integrate the differential equation $\int_{t_i}^{t_{i+1}} \frac{dI}{dt} dt = \int_{t_i}^{t_{i+1}} f(I(t)) dt$? 
+Well, by definition you obtain $I(t_{i+1})-I(t_i)= \int_{t_i}^{t_{i+1}} f(I(t)) dt$ and for small $\Delta>0$ we can assume $\int_{t_i}^{t_{i+1}} f(I(t)) dt\sim \Delta f(I(t_i)) $. 
+We obtained solutions to our differential equation by integrating along the vector field $f$. For this reason $t\mapsto I(t)$ is also called an **integral curve**. 
 
-$I(t_{i+1})=I(t_i)+\Delta f(I(t_i))$ 
 
-If you know the initial condition $I(t_0)$, then you can calculate $I(t_1), I(t_2),\dots$!
 
 
 

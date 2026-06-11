@@ -37,31 +37,32 @@ Under the assumptions of constant population size we set $$S=N-I$$ and the SIS s
 \end{equation}
 
 Our differential is $$\frac{dI}{dt}$$ and the vector field reads
-$$f(x)=(\beta - \gamma) x - \tfrac{\beta}{N}x^2$$. The linear part $$x\mapsto (\beta - \gamma)x$$ of the vector field describes how the balance between new infections and recovery relates to the growth of (I), especially in the beginning. If $$\beta - \gamma<0$$, negative growth will push eventually the system to the state $$I=0$$, the so-called **disease-free equilibrium**. If $$\beta - \gamma>0$$, the non-linear part $$x\mapsto -\tfrac{\beta}{N}x^2$$ of the vector field helps to keep the system in place: there cannot be more than $$N$$ hosts! If $$I$$ is close to $$N$$, the $$\beta N$$ terms cancel out and $$x\mapsto -\gamma x$$ will push the sytem to lower values of $$I$$, it will eventually reach $$I=N\tfrac{\beta - \gamma}{\beta}=N\left(1-\tfrac{\gamma}{\beta}\right)$$, the so-called **endemic equilibrium**.
+$$f(x)=(\beta - \gamma) x - \tfrac{\beta}{N}x^2$$. The linear part $$x\mapsto (\beta - \gamma)x$$ of the vector field describes how the balance between new infections and recovery relates to the growth of (I), especially in the beginning. If $$\beta - \gamma<0$$, negative growth will push eventually the system to the state $$I=0$$, the so-called **disease-free equilibrium**. If $$\beta - \gamma>0$$, the non-linear part $$x\mapsto -\tfrac{\beta}{N}x^2$$ of the vector field helps to keep the system in place: there cannot be more than $$N$$ hosts! If $$I$$ is close to $$N$$, the $$\beta / N$$ terms cancel out and $$x\mapsto -\gamma x$$ will push the sytem to lower values of $$I$$, it will eventually reach $$I=N\tfrac{\beta - \gamma}{\beta}=N\left(1-\tfrac{\gamma}{\beta}\right)$$, the so-called **endemic equilibrium**.
 
-To solve the differential equation with the vector field $\frac{dI}{dt} = f(I)$:
-we evaluate the vector field at discrete, equidistant time points $t_i=t_0+i\Delta$:
+To solve the differential equation $\frac{dI}{dt} = f(I)$ we evaluate the vector field at discrete, equidistant time points $t_i=t_0+i\Delta$:
 
 $\begin{equation}
 \label{eq:sis_simple_num}
 \frac{I(t_{i+1})-I(t_i)}{\Delta} = f(I(t_i))
 \end{equation}$
-and rewrite the equation as a recurrence relationship $I(t_{i+1})=I(t_i)+\Delta f(I(t_i))$. If you know the initial condition $I(t_0)$, then you can calculate $I(t_1), I(t_2),\dots$!
-But what if you would integrate the differential equation $\int_{t_i}^{t_{i+1}} \frac{dI}{dt} dt = \int_{t_i}^{t_{i+1}} f(I(t)) dt$? 
-Well, by definition you obtain $I(t_{i+1})-I(t_i)= \int_{t_i}^{t_{i+1}} f(I(t)) dt$ and for small $\Delta>0$ we can assume $\int_{t_i}^{t_{i+1}} f(I(t)) dt\sim \Delta f(I(t_i)) $. 
-We obtained solutions to our differential equation by integrating along the vector field $f$. For this reason $t\mapsto I(t)$ is also called an **integral curve**. 
+and rewrite the equation as a recurrence relationship $I(t_{i+1})=I(t_i)+\Delta f(I(t_i))$. If you know the initial condition $I(t_0)$, then you can calculate $I(t_1), I(t_2),\dots$
+
+Instead, we can also integrate the differential equation. By definition, we obtain $I(t_{i+1})-I(t_i)= \int_{t_i}^{t_{i+1}} f(I(t)) dt$ and for small $\Delta>0$ we can assume $\int_{t_i}^{t_{i+1}} f(I(t)) dt\sim \Delta f(I(t_i)) $. We obtained solutions to our differential equation by integrating along the vector field $f$. For this reason $t\mapsto I(t)$ is also called an **integral curve**. By definition, the vector field is tangent to the integral curve. If we know the tangent directions and strength for every state of our system, we can construct integral curves. If we now integral curves from every possible initial condition, we can construct vector fields.
 
 
 
-
-
-Let's come back to the rather opaque parameter $$\beta>0$$. We admitted that we packed all the biochemical and eco-evolutionary complexities that modulate the infectiousness of the parasite into this parameter. Let's put in some effort and make it at least time-dependent. To keep things simple, let us assume that $$t\mapsto \beta(t)$$ is non-negative and periodic with fixed amplitude $$\theta_1>0$$ and period $$\theta_2>0$$: 
+With our expert knowledge about disease transmission we were highly confident about the structure of the vector field $f$. Let's come back to the rather opaque parameter $$\beta>0$$. We admitted that we packed all the biochemical and eco-evolutionary complexities that modulate the infectiousness of the parasite into this parameter. Let's put in some effort and make it at least time-dependent. To keep things simple, let us assume that $$t\mapsto \beta(t)$$ is non-negative and periodic with fixed amplitude $$\theta_1>0$$ and period $$\theta_2>0$$: 
 \begin{equation}
 \beta\equiv\beta(t)\equiv\beta(t,\theta_1,\theta_2)=\theta_1\left( 1+ \sin \tfrac{2\pi t}{\theta_2}\right)
 \end{equation}
 Periodicity of $\beta$ makes sense for a parasite such as seasonal influenza virus from the point of view of its biochemistry. It is in dry and cold climate during winter that the protecting lipid layer becomes solid-like, the virus persists in the environment. The surface protein so important for cell entry is conserved in its polymer structure, the virus remains infectious. Not to speak of hosts crowding in trains and classrooms during cold season.
 Letting $\beta$ depend on time and including the amplitude and period parameters $$\theta=(\theta_1,\theta_2)$$ requires some updates to the vector field $f$ of our differential equation. In its simplest form, $f$ depends only on the position $x$, but in our cases, the vector field depends also on time $t$ and $$\theta$$:
 $\begin{equation}f_{\theta,t}(x)=(\beta(t,\theta_1,\theta_2) - \gamma) x - \tfrac{\beta(t,\theta_1,\theta_2)}{N}x^2\end{equation}$
+
+Our differential equation know reads $\frac{dI}{dt} = f(I)$
+
+
+
 Packing all this complexity into a sine function seems like a leap of faith bound to fail. And what is the purpose of all of this? Let's put our model to the test of observations. 
 
 Coming back from a lengthy field trip to a remote island, your epidemiologist neighbour carries a dataset full of observations in his backpack. After some data cleaning, he gives you the number of infectious hosts recorded at $$K$$ distinct time points: $$\iota(t_1),\dots,\iota(t_K)$$. From his anectotal notebook about the disease you calculate the recovery rate $$\gamma$$. So far, so good. In order to compare data to model outputs, we need to quantifiy how far these model outputs are away from the data by an **error function**:

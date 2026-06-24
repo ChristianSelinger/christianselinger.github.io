@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-06-05'
+  last_updated: '2026-06-24'
 papers:
   382gxFoAAAAJ:-f6ydRqryjwC:
     citations: 17
@@ -66,7 +66,7 @@ papers:
     title: Reconstructing contact network structure and cross-immunity patterns from multiple infection histories
     year: '2021'
   382gxFoAAAAJ:LkGwnXOMwfcC:
-    citations: 194
+    citations: 195
     title: Development of an oral once-weekly drug delivery system for HIV antiretroviral therapy
     year: '2018'
   382gxFoAAAAJ:M3NEmzRMIkIC:
@@ -82,15 +82,19 @@ papers:
     title: Wearing masks and establishing COVID-19 areas reduces secondary attack risk in nursing homes
     year: '2020'
   382gxFoAAAAJ:NMxIlDl6LWMC:
-    citations: 16
+    citations: 18
     title: Viral and immune dynamics of genital human papillomavirus infections in young women with high temporal resolution
     year: '2025'
+  382gxFoAAAAJ:NaGl4SEjCO4C:
+    citations: 0
+    title: Development of an oral once-weekly drug delivery system for HIV antiretroviral therapy
+    year: '2018'
   382gxFoAAAAJ:QIV2ME_5wuYC:
     citations: 31
     title: The source of individual heterogeneity shapes infectious disease outbreaks
     year: '2022'
   382gxFoAAAAJ:R3hNpaxXUhUC:
-    citations: 7
+    citations: 8
     title: 'Concomitant and productive genital infections by HSV-2 and HPV in two young women: A case report'
     year: '2022'
   382gxFoAAAAJ:RGFaLdJalmkC:
@@ -118,7 +122,7 @@ papers:
     title: Multiple low-dose challenges in a rhesus macaque AIDS vaccine trial result in an evolving host response that affects protective outcome
     year: '2014'
   382gxFoAAAAJ:ULOm3_A8WrAC:
-    citations: 66
+    citations: 67
     title: Memory is key in capturing COVID-19 epidemiological dynamics
     year: '2021'
   382gxFoAAAAJ:UebtZRa9Y70C:
@@ -126,7 +130,7 @@ papers:
     title: Targeting and vaccine durability are key for population-level impact and cost-effectiveness of a pox-protein HIV vaccine regimen in South Africa
     year: '2019'
   382gxFoAAAAJ:W7OEmFMy1HYC:
-    citations: 40
+    citations: 41
     title: The 1918 influenza virus PB2 protein enhances virulence through the disruption of inflammatory and Wnt-mediated signaling in mice
     year: '2016'
   382gxFoAAAAJ:WF5omc3nYNoC:
@@ -134,7 +138,7 @@ papers:
     title: 'Integrated omics analysis of pathogenic host responses during pandemic H1N1 influenza virus infection: the crucial role of lipid metabolism'
     year: '2016'
   382gxFoAAAAJ:Wp0gIr-vW9MC:
-    citations: 8
+    citations: 9
     title: Optimizing the early detection of low pathogenic avian influenza H7N9 virus in live bird markets
     year: '2021'
   382gxFoAAAAJ:Y0pCki6q_DkC:
@@ -178,7 +182,7 @@ papers:
     title: 'HPV detection patterns in young women from the PAPCLEAR longitudinal study: implications for HPV screening policies'
     year: '2023'
   382gxFoAAAAJ:blknAaTinKkC:
-    citations: 3
+    citations: 4
     title: 'Incidence and duration of human papillomavirus infections in young women: insights from a bimonthly follow-up cohort'
     year: '2025'
   382gxFoAAAAJ:dhFuZR0502QC:

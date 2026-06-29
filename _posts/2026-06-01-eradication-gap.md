@@ -141,6 +141,14 @@ The difference $$\Delta=x^e-\bar{x}$$ is called the **eradication gap**.
 
 $$\Delta = \frac{\bar{I}}{\sigma} (2 - \sigma - \frac{\beta}{\gamma}(1-\sigma) + \frac{\beta}{\gamma}(1-\sigma)\bar{I})>\frac{\bar{I}}{\sigma} (2 - \sigma - \frac{\beta}{\gamma}(1-\sigma))= \frac{C_N}{\beta C_I }(1 + (1-\sigma)(1-\frac{\beta}{\gamma}))$$
 
+The lower bound for the eradication gap 
+
+$$\Delta > \frac{C_N}{\beta C_I }(1 + (1-\sigma)(1-\frac{\beta}{\gamma}))$$
+
+is positive if the basic reproduction number and intervention efficacy satisfy:
+
+$$\frac{\beta}{\gamma}<\frac{2-\sigma}{1-\sigma}$$
+
 As the nuisance cost $$C_N$$ increases, the gap is widening. Equality between the elimination threshold and the evolutionary stable strategy can only hold if the nuisance cost is $$C_N=0$$. This means that as long as interventions are effective and have a non-zero nuisance cost, non-users will free-ride and jeopardize the eradication.
 
 ![Image]({{ site.baseurl }}/assets/img/dec_sisgmae-x_I.png){: style="width: 50%; height: auto;" }

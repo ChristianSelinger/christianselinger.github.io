@@ -47,6 +47,15 @@ $\begin{equation}
 \end{equation}$
 and rewrite the equation as a recurrence relationship $I(t_{i+1})=I(t_i)+\Delta f(I(t_i))$. If you know the initial condition $I(t_0)$, then you can calculate $I(t_1), I(t_2),\dots$
 
+This recurrence relationship is also known as (forward) Euler schema. It is the first among many numerical methods to solve differential equations. In the machine learning community, similar algorithms have been utilized under the name of residual neural networks.
+Again, we have information blocks (e.g. vectors or tensors of real numbers) that are indexed with $i, i+1,\dots$. In order to move from the $i$th block to the $i+1$th block, a neural network element $f$ (e.g. a vector-valued function) is used. Here, $f$ could be any continuous function that takes a vector of size $n$ into a vector of size $m$.
+Often, neural network elements use elementary functions such as step functions or sigmoids and combine them by algebraic operations. You can think of combining resistors, capacitators and switches in your electric circuit board to form a electric network. Like a resistors in your electric circuit controls the electric current, every operation between two elementary functions carries a weight. One can even switch off entire parts the network, or keep the weights at a very low level. Like capacitators that can store and release electric energy more or less quickly, the elements of neural networks can be tuned to smooth out the outgoing signal. In machine learning this is called hyperparameter tuning. Imagine you have a source of electric energy, and the only thing you observe is a flinkering LED. What you are looking for are the weights and hyperparameter of a hidden electric circuit board of which you only know the given number of resistors, capacitators and switches.
+
+In our differential equation model, we had an explicit form for $f$, 
+
+
+
+
 Instead, we can also integrate the differential equation. By definition, we obtain $I(t_{i+1})-I(t_i)= \int_{t_i}^{t_{i+1}} f(I(t)) dt$ and for small $\Delta>0$ we can assume $\int_{t_i}^{t_{i+1}} f(I(t)) dt\sim \Delta f(I(t_i)) $. We obtained solutions to our differential equation by integrating along the vector field $f$. For this reason $t\mapsto I(t)$ is also called an **integral curve**. By definition, the vector field is tangent to the integral curve. If we know the tangent directions and strength for every state of our system, we can construct integral curves. If we now integral curves from every possible initial condition, we can construct vector fields.
 
 ![Image]({{ site.baseurl }}/assets/img/neuralode-sir.png){: style="width: 50%; height: auto;" }

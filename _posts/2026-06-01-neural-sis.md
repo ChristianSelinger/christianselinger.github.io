@@ -53,13 +53,13 @@ Often, neural network elements use elementary functions such as step functions o
 
 In our differential equation model, we had an explicit form for $\mathfrak{f}$. Seen as a neural network element, it takes a real number and produces another real number with unknown weights $w_1, w_2, w_3$: 
 
-$$\mathfrak{f}: I(t_i) \mapsto  w_1 I(t_i) \oplus w_2 I(t_i) \oplus w_3 I(t_i)\otimes I(t_i) $$ 
+$$\mathfrak{f}: I(t_i) \mapsto  w_1 I(t_i) \oplus w_2 I(t_i) \oplus (w_3 I(t_i)\otimes I(t_i)) $$ 
 
 The neural network element $$\mathfrak{f}$$ should look very familiar. If we set $w_1=\beta, w_2=-\gamma, w_3=-\tfrac{\beta}{N}$,  it is exactly our vector field $$f(x)=(\beta - \gamma) x - \tfrac{\beta}{N}x^2$$. The operators $\otimes$ resp. $\oplus$ are called tensor product resp. direct sum.
 
 Residual neural networks (ResNets) translate the idea of explicit Euler scheme to neural networks:
 
-$$I(t_{i+1})=I(t_i) \oplus \mathfrak{f}f(I(t_i))$
+$$I(t_{i+1})=I(t_i) \oplus \mathfrak{f}(I(t_i))$$
 
 
 Instead, we can also integrate the differential equation. By definition, we obtain $I(t_{i+1})-I(t_i)= \int_{t_i}^{t_{i+1}} f(I(t)) dt$ and for small $\Delta>0$ we can assume $\int_{t_i}^{t_{i+1}} f(I(t)) dt\sim \Delta f(I(t_i)) $. We obtained solutions to our differential equation by integrating along the vector field $f$. For this reason $t\mapsto I(t)$ is also called an **integral curve**. By definition, the vector field is tangent to the integral curve. If we know the tangent directions and strength for every state of our system, we can construct integral curves. If we now integral curves from every possible initial condition, we can construct vector fields.

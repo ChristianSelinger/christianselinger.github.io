@@ -30,7 +30,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/teaching/";
           },
-        },{id: "post-a-neural-journey-into-disease-transmission-models",
+        },{id: "post-nn-analog",
+        
+          title: "Nn_analog",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/nn_analog/";
+          
+        },
+      },{id: "post-a-neural-journey-into-disease-transmission-models",
         
           title: "A neural journey into disease transmission models",
         

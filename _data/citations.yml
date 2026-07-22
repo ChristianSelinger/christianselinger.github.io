@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-06-24'
+  last_updated: '2026-07-22'
 papers:
   382gxFoAAAAJ:-f6ydRqryjwC:
     citations: 17
@@ -36,9 +36,9 @@ papers:
   382gxFoAAAAJ:BqipwSGYUEgC:
     citations: 0
     title: Genome wide association study of vaginal microbiota genetic diversity in French women
-    year: '2026'
+    year: '2025'
   382gxFoAAAAJ:GnPB-g6toBAC:
-    citations: 7
+    citations: 9
     title: Factors shaping vaginal microbiota long-term community dynamics in young adult women
     year: '2025'
   382gxFoAAAAJ:HDshCWvjkbEC:
@@ -46,7 +46,7 @@ papers:
     title: "Early Release-Detection of Rapid SARS-CoV-2 Variant Spread, France, January 26\u2013February 16, 2021"
     year: Unknown Year
   382gxFoAAAAJ:IWHjjKOFINEC:
-    citations: 17
+    citations: 18
     title: Non-Markovian modelling highlights the importance of age structure on Covid-19 epidemiological dynamics
     year: '2022'
   382gxFoAAAAJ:IjCSPb-OGe4C:
@@ -62,11 +62,11 @@ papers:
     title: Epidemiological and clinical insights from SARS-CoV-2 RT-PCR cycle amplification values
     year: '2021'
   382gxFoAAAAJ:L8Ckcad2t8MC:
-    citations: 1
+    citations: 2
     title: Reconstructing contact network structure and cross-immunity patterns from multiple infection histories
     year: '2021'
   382gxFoAAAAJ:LkGwnXOMwfcC:
-    citations: 195
+    citations: 196
     title: Development of an oral once-weekly drug delivery system for HIV antiretroviral therapy
     year: '2018'
   382gxFoAAAAJ:M3NEmzRMIkIC:
@@ -74,7 +74,7 @@ papers:
     title: Wearing masks and establishing COVID-19 areas reduces secondary attack risk in nursing homes (preprint)
     year: '2020'
   382gxFoAAAAJ:M3ejUd6NZC8C:
-    citations: 2
+    citations: 3
     title: "Mod\xE9lisation de l\u2019\xE9pid\xE9mie de COVID-19: mod\xE8le SEAIR"
     year: '2020'
   382gxFoAAAAJ:MXK_kJrjxJIC:
@@ -82,7 +82,7 @@ papers:
     title: Wearing masks and establishing COVID-19 areas reduces secondary attack risk in nursing homes
     year: '2020'
   382gxFoAAAAJ:NMxIlDl6LWMC:
-    citations: 18
+    citations: 20
     title: Viral and immune dynamics of genital human papillomavirus infections in young women with high temporal resolution
     year: '2025'
   382gxFoAAAAJ:NaGl4SEjCO4C:
@@ -90,7 +90,7 @@ papers:
     title: Development of an oral once-weekly drug delivery system for HIV antiretroviral therapy
     year: '2018'
   382gxFoAAAAJ:QIV2ME_5wuYC:
-    citations: 31
+    citations: 32
     title: The source of individual heterogeneity shapes infectious disease outbreaks
     year: '2022'
   382gxFoAAAAJ:R3hNpaxXUhUC:
@@ -130,15 +130,15 @@ papers:
     title: Targeting and vaccine durability are key for population-level impact and cost-effectiveness of a pox-protein HIV vaccine regimen in South Africa
     year: '2019'
   382gxFoAAAAJ:W7OEmFMy1HYC:
-    citations: 41
+    citations: 42
     title: The 1918 influenza virus PB2 protein enhances virulence through the disruption of inflammatory and Wnt-mediated signaling in mice
     year: '2016'
   382gxFoAAAAJ:WF5omc3nYNoC:
-    citations: 96
+    citations: 97
     title: 'Integrated omics analysis of pathogenic host responses during pandemic H1N1 influenza virus infection: the crucial role of lipid metabolism'
     year: '2016'
   382gxFoAAAAJ:Wp0gIr-vW9MC:
-    citations: 9
+    citations: 10
     title: Optimizing the early detection of low pathogenic avian influenza H7N9 virus in live bird markets
     year: '2021'
   382gxFoAAAAJ:Y0pCki6q_DkC:
@@ -182,7 +182,7 @@ papers:
     title: 'HPV detection patterns in young women from the PAPCLEAR longitudinal study: implications for HPV screening policies'
     year: '2023'
   382gxFoAAAAJ:blknAaTinKkC:
-    citations: 4
+    citations: 5
     title: 'Incidence and duration of human papillomavirus infections in young women: insights from a bimonthly follow-up cohort'
     year: '2025'
   382gxFoAAAAJ:dhFuZR0502QC:
@@ -202,7 +202,7 @@ papers:
     title: 'Episome partitioning and symmetric cell divisions: Quantifying the role of random events in the persistence of HPV infections'
     year: '2021'
   382gxFoAAAAJ:hqOjcs7Dif8C:
-    citations: 9
+    citations: 10
     title: 'The future of a partially effective HIV vaccine: assessing limitations at the population level'
     year: '2019'
   382gxFoAAAAJ:iH-uZ7U-co4C:
@@ -246,7 +246,7 @@ papers:
     title: 'The importance of the population age-structure: insights from Covid-dynamics model structured by age, time since infection and acquired immunity'
     year: Unknown Year
   382gxFoAAAAJ:qxL8FJ1GzNcC:
-    citations: 34
+    citations: 35
     title: 'Natural history, dynamics, and ecology of human papillomaviruses in genital infections of young women: protocol of the PAPCLEAR cohort study'
     year: '2019'
   382gxFoAAAAJ:r0BpntZqJG4C:

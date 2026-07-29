@@ -1,12 +1,12 @@
 metadata:
-  last_updated: '2026-07-22'
+  last_updated: '2026-07-29'
 papers:
   382gxFoAAAAJ:-f6ydRqryjwC:
     citations: 17
     title: Epidemiological and clinical insights from SARS-CoV-2 RT-PCR crossing threshold values, France, January to November 2020
     year: '2022'
   382gxFoAAAAJ:0EnyYjriUFMC:
-    citations: 24
+    citations: 26
     title: "\xC9pid\xE9miologie math\xE9matique et mod\xE9lisation de la pand\xE9mie de Covid-19: enjeux et diversit\xE9"
     year: '2020'
   382gxFoAAAAJ:3fE2CSJIrl8C:
@@ -92,7 +92,7 @@ papers:
   382gxFoAAAAJ:QIV2ME_5wuYC:
     citations: 32
     title: The source of individual heterogeneity shapes infectious disease outbreaks
-    year: '2022'
+    year: '2021'
   382gxFoAAAAJ:R3hNpaxXUhUC:
     citations: 8
     title: 'Concomitant and productive genital infections by HSV-2 and HPV in two young women: A case report'
@@ -108,7 +108,7 @@ papers:
   382gxFoAAAAJ:Se3iqnhoufwC:
     citations: 43
     title: Assessing the stability of polio eradication after the withdrawal of oral polio vaccine
-    year: '2018'
+    year: '2016'
   382gxFoAAAAJ:TFP_iSt0sucC:
     citations: 0
     title: Optimising the early detection of avian influenza H7N9 viruses in live bird markets.
@@ -126,9 +126,9 @@ papers:
     title: Memory is key in capturing COVID-19 epidemiological dynamics
     year: '2021'
   382gxFoAAAAJ:UebtZRa9Y70C:
-    citations: 19
+    citations: 20
     title: Targeting and vaccine durability are key for population-level impact and cost-effectiveness of a pox-protein HIV vaccine regimen in South Africa
-    year: '2019'
+    year: '2018'
   382gxFoAAAAJ:W7OEmFMy1HYC:
     citations: 42
     title: The 1918 influenza virus PB2 protein enhances virulence through the disruption of inflammatory and Wnt-mediated signaling in mice

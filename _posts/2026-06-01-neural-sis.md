@@ -65,9 +65,8 @@ In order to move to the next block, you simple take the value of your current bl
 
 We have invistigated our differential equation with vector field and neural network glasses. But there is yet another way of looking at it. We can also integrate the differential equation. By definition of the integral, we obtain $I(t_{i+1})-I(t_i)= \int_{t_i}^{t_{i+1}} f(I(t)) dt$ and for small $\Delta>0$ we can assume $\int_{t_i}^{t_{i+1}} f(I(t)) dt\sim \Delta f(I(t_i)) $. We solve our differential equation by literally integrating along the vector field $f$. For this reason $t\mapsto I(t)$ is also called an **integral curve**. By definition, the vector field is tangent to the integral curve. If we know the tangent directions and strength for every state of our system, we can construct integral curves. If we now integral curves from every possible initial condition, we can construct vector fields.
 
-![Image]({{ site.baseurl }}/assets/img/neuralode-sir.png){: style="width: 50%; height: auto;" }
+![Image]({{ site.baseurl }}/assets/img/neuralode-sir_phase.png){: style="width: 90%; height: auto;" }
 
-![Image]({{ site.baseurl }}/assets/img/neuralode-vf.png){: style="width: 50%; height: auto;" }
 
 With our expert knowledge about disease transmission we were highly confident about the structure of the vector field $f$. Let's come back to the rather opaque parameter $$\beta>0$$. We admitted that we packed all the biochemical and eco-evolutionary complexities that modulate the infectiousness of the parasite into this parameter. Let's put in some effort and make it at least time-dependent. To keep things simple, let us assume that $$t\mapsto \beta(t)$$ is non-negative and periodic with fixed amplitude $$\theta_1>0$$ and period $$\theta_2>0$$: 
 $\begin{equation}

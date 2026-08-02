@@ -39,6 +39,17 @@ Under the assumptions of constant population size we set $$S=N-I$$ and the SIS s
 Our differential is $$\frac{dI}{dt}$$ and the vector field reads
 $$f(x)=(\beta - \gamma) x - \tfrac{\beta}{N}x^2$$. The linear part $$x\mapsto (\beta - \gamma)x$$ of the vector field describes how the balance between new infections and recovery relates to the growth of (I), especially in the beginning. If $$\beta - \gamma<0$$, negative growth will push eventually the system to the state $$I=0$$, the so-called **disease-free equilibrium**. If $$\beta - \gamma>0$$, the non-linear part $$x\mapsto -\tfrac{\beta}{N}x^2$$ of the vector field helps to keep the system in place: there cannot be more than $$N$$ hosts! If $$I$$ is close to $$N$$, the $$\beta / N$$ terms cancel out and $$x\mapsto -\gamma x$$ will push the sytem to lower values of $$I$$, it will eventually reach $$I=N\tfrac{\beta - \gamma}{\beta}=N\left(1-\tfrac{\gamma}{\beta}\right)$$, the so-called **endemic equilibrium**.
 
+One picture is worth a thousand words goes the saying. In the figure below on the left panel you can inspect the solution curve to the SIS system for parameters set to $\beta =0.5$, $\gamma=0.1$ and $N=100$.
+![Image]({{ site.baseurl }}/assets/img/neuralode-sir_phase.png){: style="width: 90%; height: auto;" }
+Try to follow the curve from the initial condition at time $t=0$! The red arrows indicate the strength of the vector field $f$, i.e. how much more infections we would expect at the following time point. As we reach the endemic equilibrium, the arrows become shorter and shorter. As the number of infected individuals becomes large, the **depletion of susceptibles** will make difficult to create new infections. The panel on the right-hand side is called a phase diagram. We remove the time axis, and plot the number of infected individuals against its time derivative. According to our SIS system, this time derivative equals the vector field evaluated at the state of the system:   
+
+$$\mathfrak{d}{dt}I(t) = f(I(t)) $$ 
+
+From the phase diagram we can clearly witness what the depletion of susceptibles means to the vector field. As we approach the grey line, the red arrows become smaller and smaller and would eventually go to zero. Had we started our SIS system at a very high number of infected individuals, e.g. $I(0)=95$, then the vector field evaluated at I(0)$ would have negative values, since the blue curve is below zero in this case. Again, the SIS system would have eventually reached its endemic equilibrium.
+
+
+
+
 To solve the differential equation $\frac{dI}{dt} = f(I)$ we evaluate the vector field at discrete, equidistant time points $t_i=t_0+i\Delta$:
 
 $\begin{equation}
@@ -65,7 +76,6 @@ In order to move to the next block, you simple take the value of your current bl
 
 We have invistigated our differential equation with vector field and neural network glasses. But there is yet another way of looking at it. We can also integrate the differential equation. By definition of the integral, we obtain $I(t_{i+1})-I(t_i)= \int_{t_i}^{t_{i+1}} f(I(t)) dt$ and for small $\Delta>0$ we can assume $\int_{t_i}^{t_{i+1}} f(I(t)) dt\sim \Delta f(I(t_i)) $. We solve our differential equation by literally integrating along the vector field $f$. For this reason $t\mapsto I(t)$ is also called an **integral curve**. By definition, the vector field is tangent to the integral curve. If we know the tangent directions and strength for every state of our system, we can construct integral curves. If we now integral curves from every possible initial condition, we can construct vector fields.
 
-![Image]({{ site.baseurl }}/assets/img/neuralode-sir_phase.png){: style="width: 90%; height: auto;" }
 
 
 With our expert knowledge about disease transmission we were highly confident about the structure of the vector field $f$. Let's come back to the rather opaque parameter $$\beta>0$$. We admitted that we packed all the biochemical and eco-evolutionary complexities that modulate the infectiousness of the parasite into this parameter. Let's put in some effort and make it at least time-dependent. To keep things simple, let us assume that $$t\mapsto \beta(t)$$ is non-negative and periodic with fixed amplitude $$\theta_1>0$$ and period $$\theta_2>0$$: 

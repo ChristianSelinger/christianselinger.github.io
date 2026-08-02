@@ -10,15 +10,24 @@ related_posts: false
 
 Let's start with an elementary, but yet insightful equation system commonly known as the SIS disease transmission model. Full  stop. Let's start from somewhere else. 
 
+
+## Phenomenology of infectious diseases
+
 The fact that biological entitities such as viruses, bacteria and fungi have durably colonized the human body sets the stage for a life-long antagonistic relationship between them and us - the parasites and the hosts. But not only this unfriendly relationship sets them apart from each other, these best enemies live on distinct spatial and temporal scales. Viruses are sized in the micrometers and can only be observed via electronic microscopy, and one virus can produce offspring in the tens of thousands within hours or days. On the other hand, multicellular tissue heaps known as humans are sized in meters, and it takes decades for them to reproduce, if at all. The action starts when parasites enter human cells, mainly by tricking their surface proteins and making it into the cellular reproduction machinery. Parasites exploit the host cell for their own metabolism or reproduction. Eventually the host cell will disintegrate, parasite offspring is released into the cellular environment to find its next victim. But one host is not enough. Insatiable as they are, the parasites need to transmit in order to continue living, as their fate is bound to the host. In order to enter into new hosts, parasites undergo continuous selection, their genetic makeup changes randomly as they replicate. Full stop. 
 
 For microbiologists, this description of a parasite's lifecycle might sound like an overly simplified vulgarisation, yet it is a physicist's nightmare: biochemical entities interacting at multiple scales. From the medical perspective, we are dealing with discrete, host-centric events: life, death, infection, symptoms, recovery. This is where disease transmission models start from. Disregarding the complexities of biochemical interactions that allow the parasites to enter host cells and ignoring the evolutionary ecology of parasite population dynamics, they assign each host to a compartment. Like in the old days, when train coachs were divided into compartments, one could comfortably talk, eat and smoke (sic!) in the compartment, granted that all individuals in the compartment would be alike. In the same way, all hosts that share attributes such as susceptible (to infection), infectious (to other hosts) or recovered (from infection) are put into their respective compartment. A rather ad-hoc set of rules defines how hosts can change between compartments, e.g. an infectious host might recover after some time, in the same way as people move from the non-smoking to the smoking compartment on the train. Disease transmission models track the size of the compartments over time. Differential equation techniques of the ordinary, stochastic, delay or partial kind have been invoked to produce model solution curves to be aligned with epidemiological observations.
 
-Let's start again with an elementary system of differential equations, which models the temporal evoluation of only two compartments, susceptible (S) and infectious hosts (I). Let's denote the total population size with $$N=S+I$$ and assume that $$N$$ remains constant. We posit two ad-hoc rules of transitioning between compartments. 
+
+## Infection disease dynamics
+
+Let's start again with an elementary system of differential equations, which models the temporal evaluation of only two compartments, susceptible (S) and infectious hosts (I). Let's denote the total population size with $$N=S+I$$ and assume that $$N$$ remains constant. We posit two ad-hoc rules of transitioning between compartments. 
 
 First, for each susceptible host, the probability of finding an infectious host in the population is $$\tfrac{I}{N}$$, and since there are $$S$$ susceptible hosts, we would have on average $$\beta S \tfrac{I}{N}$$ susceptible hosts moving to the (I) compartment. The parameter $$\beta>0$$ encapsulates all the biochemical and eco-evolutionary complexities that we proudly ignored. 
 
 Second, infectious hosts might also recover from infection and move to the susceptible compartment with rate $$\gamma$$, and we would end up with $$\gamma I$$ hosts on overage moving from the (I) compartment to the (S) compartment. 
+
+
+## Differential equations
 
 Differential equations bear their name from the physical principle of motion. In order to describe the trajectory of an object, we only need to know its initial position and its velocity. From the point of view of measurement, velocity should be seen as change of position between two consecutive time points. Mathematicians would paraphrase this measurement of change as difference quotient, and as the distance between consecutive time points gets very small, they would refer to the change as differential quotient or short **differential**. In its simplest form, this differential depends only on the position itself. So, differential equation, here you are! On your left-hand side, we put the differential to measure infinitesimal change in position, on your right-hand side we put some function of position and other things to quantify the strength of change. Mathematicians are fond of definitions, and even have a name for your right-hand side: they call it a **vector field**.
 
@@ -41,14 +50,15 @@ $$f(x)=(\beta - \gamma) x - \tfrac{\beta}{N}x^2$$. The linear part $$x\mapsto (\
 
 One picture is worth a thousand words goes the saying. In the figure below on the left panel you can inspect the solution curve to the SIS system for parameters set to $\beta =0.5$, $\gamma=0.1$ and $N=100$.
 ![Image]({{ site.baseurl }}/assets/img/neuralode-sir_phase.png){: style="width: 90%; height: auto;" }
+
+
 Try to follow the curve from the initial condition at time $t=0$! The red arrows indicate the strength of the vector field $f$, i.e. how much more infections we would expect at the following time point. As we reach the endemic equilibrium, the arrows become shorter and shorter. As the number of infected individuals becomes large, the **depletion of susceptibles** will make difficult to create new infections. The panel on the right-hand side is called a phase diagram. We remove the time axis, and plot the number of infected individuals against its time derivative. According to our SIS system, this time derivative equals the vector field evaluated at the state of the system:   
 
-$$\mathfrak{d}{dt}I(t) = f(I(t)) $$ 
+$$\frac{d}{dt}I(t) = f(I(t)) $$ 
 
-From the phase diagram we can clearly witness what the depletion of susceptibles means to the vector field. As we approach the grey line, the red arrows become smaller and smaller and would eventually go to zero. Had we started our SIS system at a very high number of infected individuals, e.g. $I(0)=95$, then the vector field evaluated at I(0)$ would have negative values, since the blue curve is below zero in this case. Again, the SIS system would have eventually reached its endemic equilibrium.
+From the phase diagram we can clearly witness what the depletion of susceptibles means to the vector field. As we approach the grey line, the red arrows become smaller and smaller and would eventually go to zero. Had we started our SIS system at a very high number of infected individuals, e.g. $I(0)=95$, then the vector field evaluated at $I(0)$ would have negative values, since the blue curve is below zero in this case. Again, the SIS system would have eventually reached its endemic equilibrium.
 
-
-
+## One step at a time: differential equations and residual neural networks
 
 To solve the differential equation $\frac{dI}{dt} = f(I)$ we evaluate the vector field at discrete, equidistant time points $t_i=t_0+i\Delta$:
 
@@ -60,9 +70,7 @@ and rewrite the equation as a recurrence relationship $I(t_{i+1})=I(t_i)+\Delta 
 
 This recurrence relationship is also known as (forward) Euler schema. It is the first among many numerical methods to solve differential equations. In the machine learning community, similar algorithms have been utilized under the name of residual neural networks.
 Again, we have "information blocks" (e.g. vectors or tensors of real numbers) that are indexed with $i, i+1,\dots$. In order to move from the $$i$$ th block to the $$(i+1)$$ th block, a neural network element $\mathfrak{f}$ (e.g. a vector-valued function) is used. Here, $\mathfrak{f}$ could be any continuous mapping that takes a vector of size $n$ into a vector of size $m$.
-Often, neural network elements use elementary functions such as step functions or sigmoids and combine them by algebraic operations. You can think of combining resistors, capacitators and switches in your electric circuit board to form a electric network. In the same way as resistors in your electric circuit control the electric current, every operation between two elementary functions carries a weight. One can even switch off entire parts the network, or keep the weights at a very low level. Like capacitators that can store and release electric energy more or less quickly, the elements of neural networks can be tuned to smooth the outgoing signal. In machine learning this is called hyperparameter tuning. The machine learning task is to infer the weights such that the electric energy that you put into your circuit reproduces the flinkering LED as the output of your particular circuit.
-
-Let us think of our differential equation model as a simple, serial electrical circuit. We had an explicit form for $\mathfrak{f}$. Seen as a neural network element, it takes a real number and produces another real number with unknown weights $w=(w_1, w_2, w_3)$: 
+Often, neural network elements use elementary functions such as step functions or sigmoids and combine them by algebraic operations. We had an explicit form for $\mathfrak{f}$. Seen as a neural network element, it takes a real number and produces another real number with unknown weights $w=(w_1, w_2, w_3)$: 
 
 $$\mathfrak{f}_w: x \mapsto  w_1 x \oplus w_2 x \oplus (w_3 x\otimes x) $$ 
 
@@ -73,6 +81,17 @@ Residual neural networks (ResNets) translate the idea of Euler schema to neural 
 $$I(t_{i+1})=I(t_i) \oplus \mathfrak{f}(I(t_i))$$
 
 In order to move to the next block, you simple take the value of your current block and update it in the direction of the neural network element. 
+
+## Inference problem
+
+
+
+
+
+
+You can think of combining resistors, capacitators and switches in your electric circuit board to form a electric network. In the same way as resistors in your electric circuit control the electric current, every operation between two elementary functions carries a weight. One can even switch off entire parts the network, or keep the weights at a very low level. Like capacitators that can store and release electric energy more or less quickly, the elements of neural networks can be tuned to smooth the outgoing signal. In machine learning this is called hyperparameter tuning. The machine learning task is to infer the weights such that the electric energy that you put into your circuit reproduces the flinkering LED as the output of your particular circuit.
+
+Let us think of our differential equation model as a simple, serial electrical circuit. 
 
 We have invistigated our differential equation with vector field and neural network glasses. But there is yet another way of looking at it. We can also integrate the differential equation. By definition of the integral, we obtain $I(t_{i+1})-I(t_i)= \int_{t_i}^{t_{i+1}} f(I(t)) dt$ and for small $\Delta>0$ we can assume $\int_{t_i}^{t_{i+1}} f(I(t)) dt\sim \Delta f(I(t_i)) $. We solve our differential equation by literally integrating along the vector field $f$. For this reason $t\mapsto I(t)$ is also called an **integral curve**. By definition, the vector field is tangent to the integral curve. If we know the tangent directions and strength for every state of our system, we can construct integral curves. If we now integral curves from every possible initial condition, we can construct vector fields.
 

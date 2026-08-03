@@ -70,7 +70,11 @@ and rewrite the equation as a recurrence relationship $I(t_{i+1})=I(t_i)+\Delta 
 
 $${\cal L}(\beta,\gamma)=\sum_i (\iota(t_i)-I(t_i))^2$$
 
-The task of **parameter inference** is to find $\beta, \gamma >0$ such that ${\cal L}$ is minimal. Sounds straight-forward? In principle it is, but if observed disease data is sparse and we don't know how possible external factors like climate or mobility influence the number of infectious individuals in our model, we could end up with a perfectly minimized loss for a meaningless model that would not stand the test of validation.
+The task of **parameter inference** is to find $\beta, \gamma >0$ such that ${\cal L}$ is minimal. Sounds straight-forward? In principle it is, but if observed disease data is sparse and we don't know how possible external factors like climate or mobility influence the number of infectious individuals in our model, we could end up with a perfectly minimized loss for a meaningless model that would not stand the test of validation. To include externalities, the obvious straws to clutch at would be to replace the parameter $\beta$ by a time-dependent function 
+
+$$t\mapsto \beta(t)\equiv\beta(t,\theta_1,\theta_2)=\theta_1\left( 1+ \sin \tfrac{2\pi t}{\theta_2}\right)$$
+
+which could for instance represent seasonality patterns of new infections. There is of course a price to pay when we increase model complexity. In this example  we have to infer two parameters $\theta_1, \theta_2>0$ instead of one. In the old days, seasoned modelers would warn you to increase the number of parameters, and the **Akaike information criterion** would guide modelers, as it quantifies the trade-off between minimizing the loss while limiting the number of parameters to infer. But these times have revolved. In the days when computing clusters are filled up with graphic processing units that allow to perform fast computations on large amounts of features (such as seasonality), the inference task is less heroic. We still aim to minimize the loss, but now we allow millions of parameters (called neural network weights) to vary.
 
 ## Residual neural networks 
 In the machine learning community, similar algorithms have been utilized under the name of residual neural networks.
@@ -88,6 +92,8 @@ $$I(t_{i+1})=I(t_i) \oplus \mathfrak{f}(I(t_i))$$
 In order to move to the next block, you simple take the value of your current block and update it in the direction of the neural network element. 
 
 ## Where vector fields live: tangent bundles
+
+Let's have another look at the phase diagram on the left of our figure.
 
 ## Inference problem
 

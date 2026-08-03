@@ -445,6 +445,11 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/kasy-means_prediction/";
+            },},{id: "books-das-periodische-system",
+          title: 'Das periodische System',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/levi-periodische_system/";
             },},{id: "books-the-book-of-why",
           title: 'The book of why',
           description: "",

@@ -74,7 +74,13 @@ The task of **parameter inference** is to find $\beta, \gamma >0$ such that ${\c
 
 $$t\mapsto \beta(t)\equiv\beta(t,\theta_1,\theta_2)=\theta_1\left( 1+ \sin \tfrac{2\pi t}{\theta_2}\right)$$
 
-which could for instance represent seasonality patterns of new infections. There is of course a price to pay when we increase model complexity. In this example  we have to infer two parameters $\theta_1, \theta_2>0$ instead of one. In the old days, seasoned modelers would warn you to increase the number of parameters, and the **Akaike information criterion** would guide modelers, as it quantifies the trade-off between minimizing the loss while limiting the number of parameters to infer. But these times have revolved. In the days when computing clusters are filled up with graphic processing units that allow to perform fast computations on large amounts of features (such as seasonality), the inference task is less heroic. We still aim to minimize the loss, but now we allow millions of parameters (called neural network weights) to vary.
+which could for instance represent seasonality patterns of new infections. There is of course a price to pay when we increase model complexity. In this example  we have to infer two parameters $\theta_1, \theta_2>0$ instead of one.
+
+![Image]({{ site.baseurl }}/assets/img/neuralode-sir_periodic_phase.png){: style="width: 90%; height: auto;" }
+
+
+
+In the old days, seasoned modelers would warn you to increase the number of parameters, and the **Akaike information criterion** would guide modelers, as it quantifies the trade-off between minimizing the loss while limiting the number of parameters to infer. But these times have revolved. In the days when computing clusters are filled up with graphic processing units that allow to perform fast computations on large amounts of features (such as seasonality), the inference task is less heroic. We still aim to minimize the loss, but now we allow millions of parameters (called neural network weights) to vary.
 
 ## Residual neural networks 
 In the machine learning community, similar algorithms have been utilized under the name of residual neural networks.

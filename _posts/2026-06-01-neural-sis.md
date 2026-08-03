@@ -58,7 +58,7 @@ $$\frac{d}{dt}I(t) = f(I(t)) $$
 
 From the phase diagram we can clearly witness what the depletion of susceptibles means to the vector field. As we approach the grey line, the red arrows become smaller and smaller and would eventually go to zero. Had we started our SIS system at a very high number of infected individuals, e.g. $I(0)=95$, then the vector field evaluated at $I(0)$ would have negative values, since the blue curve is below zero in this case. Again, the SIS system would have eventually reached its endemic equilibrium.
 
-## One step at a time: differential equations and residual neural networks
+## Numerics of differential equations and residual neural networks
 
 To solve the differential equation $\frac{dI}{dt} = f(I)$ we evaluate the vector field at discrete, equidistant time points $t_i=t_0+i\Delta$:
 
@@ -84,14 +84,6 @@ In order to move to the next block, you simple take the value of your current bl
 
 ## Inference problem
 
-
-
-
-
-
-You can think of combining resistors, capacitators and switches in your electric circuit board to form a electric network. In the same way as resistors in your electric circuit control the electric current, every operation between two elementary functions carries a weight. One can even switch off entire parts the network, or keep the weights at a very low level. Like capacitators that can store and release electric energy more or less quickly, the elements of neural networks can be tuned to smooth the outgoing signal. In machine learning this is called hyperparameter tuning. The machine learning task is to infer the weights such that the electric energy that you put into your circuit reproduces the flinkering LED as the output of your particular circuit.
-
-Let us think of our differential equation model as a simple, serial electrical circuit. 
 
 We have invistigated our differential equation with vector field and neural network glasses. But there is yet another way of looking at it. We can also integrate the differential equation. By definition of the integral, we obtain $I(t_{i+1})-I(t_i)= \int_{t_i}^{t_{i+1}} f(I(t)) dt$ and for small $\Delta>0$ we can assume $\int_{t_i}^{t_{i+1}} f(I(t)) dt\sim \Delta f(I(t_i)) $. We solve our differential equation by literally integrating along the vector field $f$. For this reason $t\mapsto I(t)$ is also called an **integral curve**. By definition, the vector field is tangent to the integral curve. If we know the tangent directions and strength for every state of our system, we can construct integral curves. If we now integral curves from every possible initial condition, we can construct vector fields.
 

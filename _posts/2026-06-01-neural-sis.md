@@ -58,7 +58,7 @@ $$\frac{d}{dt}I(t) = f(I(t)) $$
 
 From the phase diagram we can clearly witness what the depletion of susceptibles means to the vector field. As we approach the grey line, the red arrows become smaller and smaller and would eventually go to zero. Had we started our SIS system at a very high number of infected individuals, e.g. $I(0)=95$, then the vector field evaluated at $I(0)$ would have negative values, since the blue curve is below zero in this case. Again, the SIS system would have eventually reached its endemic equilibrium.
 
-## Numerics of differential equations and residual neural networks
+## Numerics of differential equations and inference
 
 To solve the differential equation $\frac{dI}{dt} = f(I)$ we evaluate the vector field at discrete, equidistant time points $t_i=t_0+i\Delta$:
 
@@ -66,9 +66,14 @@ $\begin{equation}
 \label{eq:sis_simple_num}
 \frac{I(t_{i+1})-I(t_i)}{\Delta} = f(I(t_i))
 \end{equation}$
-and rewrite the equation as a recurrence relationship $I(t_{i+1})=I(t_i)+\Delta f(I(t_i))$. If you know the initial condition $I(t_0)$, then you can calculate $I(t_1), I(t_2),\dots$
+and rewrite the equation as a recurrence relationship $I(t_{i+1})=I(t_i)+\Delta f(I(t_i))$. If you know the initial condition $I(t_0)$, then you can calculate $I(t_1)=I(t_0)+\Delta f(I(t_1))$ and so forth for $I(t_2))$ etc. This recurrence relationship is also known as (forward) Euler schema. It is the first among many numerical methods to solve differential equations. In our concise style of writing down the recurrence relationship we have omitted that the vector field $f$ depends on real-valued parameters $\beta, \gamma>0$ and the population size $N$. Let us assume that we know $N$ and that we have observatios $\iota(t_i)$ of the number of infected individuals at time points $t_i$. Let us align observations and model outputs and compare them with some sort of metric ${\cal L}$. One could choose for instance the sum of squares as loss function:
 
-This recurrence relationship is also known as (forward) Euler schema. It is the first among many numerical methods to solve differential equations. In the machine learning community, similar algorithms have been utilized under the name of residual neural networks.
+$${\cal L}(\beta,\gamma)=\sum_i (\iota(t_i)-I(t_i))^2$$
+
+The task of **parameter inference** is to find $\beta, \gamma >0$ such that ${\cal L}$ is minimal. Sounds straight-forward? In principle it is, but if observed disease data is sparse and we don't know how possible external factors like climate or mobility influence the number of infectious individuals in our model, we could end up with a perfectly minimized loss for a meaningless model that would not stand the test of validation.
+
+## Residual neural networks 
+In the machine learning community, similar algorithms have been utilized under the name of residual neural networks.
 Again, we have "information blocks" (e.g. vectors or tensors of real numbers) that are indexed with $i, i+1,\dots$. In order to move from the $$i$$ th block to the $$(i+1)$$ th block, a neural network element $\mathfrak{f}$ (e.g. a vector-valued function) is used. Here, $\mathfrak{f}$ could be any continuous mapping that takes a vector of size $n$ into a vector of size $m$.
 Often, neural network elements use elementary functions such as step functions or sigmoids and combine them by algebraic operations. We had an explicit form for $\mathfrak{f}$. Seen as a neural network element, it takes a real number and produces another real number with unknown weights $w=(w_1, w_2, w_3)$: 
 
@@ -81,6 +86,8 @@ Residual neural networks (ResNets) translate the idea of Euler schema to neural 
 $$I(t_{i+1})=I(t_i) \oplus \mathfrak{f}(I(t_i))$$
 
 In order to move to the next block, you simple take the value of your current block and update it in the direction of the neural network element. 
+
+## Where vector fields live: tangent bundles
 
 ## Inference problem
 

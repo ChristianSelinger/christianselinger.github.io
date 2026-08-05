@@ -106,7 +106,7 @@ Here, state space designates the space where our dynamical system can have its s
 Let's assume our dynamical system is currently located at $I(t)$, then the tangent to this particular state is $\tfrac{dI}{dt}(I(t))=f(I(t))$. This tangent is a vector, it has a direction and a length, determined by the coefficients of our vector field $f$. In our case the tangent is a straight line embedded in the plane.
 If we now collect from time $t=0$ to some time $t=T>0$ all our states and tangents, we obtain a tangent bundle:  
 
-$$TM=\Bigcup_{t\in [0,T]} T_{I(t)}M=\Bigcup_{t\in [0,T]} (I_t,f(I(t))$$
+$$TM=\bigcup_{t\in [0,T]} T_{I(t)}M=\bigcup_{t\in [0,T]} (I_t,f(I(t))$$
 
 Again, in our simple case $$TM=f(I)$$, which is the graph of our solution curve $I$ under the real-valued function $f$. Think of the tangent bundle as a cord with straws attached.
 

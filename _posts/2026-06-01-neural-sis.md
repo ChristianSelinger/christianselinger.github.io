@@ -66,7 +66,7 @@ $\begin{equation}
 \label{eq:sis_simple_num}
 \frac{I(t_{i+1})-I(t_i)}{\Delta} = f(I(t_i))
 \end{equation}$
-and rewrite the equation as a recurrence relationship $I(t_{i+1})=I(t_i)+\Delta f(I(t_i))$. If you know the initial condition $I(t_0)$, then you can calculate $I(t_1)=I(t_0)+\Delta f(I(t_0))$ and so forth for $I(t_2))$ etc. This recurrence relationship is also known as (forward) Euler schema. It is the first among many numerical methods to solve differential equations. In our concise style of writing down the recurrence relationship we have omitted that the vector field $f$ depends on real-valued parameters $\beta, \gamma>0$ and the population size $N$. Let us assume that we know $N$ and that we have observatios $\iota(t_i)$ of the number of infected individuals at time points $t_i$. Let us align observations and model outputs and compare them with some sort of metric ${\cal L}$. One could choose for instance the sum of squares as loss function:
+and rewrite the equation as a recurrence relationship $I(t_{i+1})=I(t_i)+\Delta f(I(t_i))$. If you know the initial condition $I(t_0)$, then you can calculate $I(t_1)=I(t_0)+\Delta f(I(t_0))$ and so forth for $I(t_2))$ etc. This recurrence relationship is also known as (forward) Euler method. It is the first among many numerical methods to solve differential equations. In our concise style of writing down the recurrence relationship we have omitted that the vector field $f$ depends on real-valued parameters $\beta, \gamma>0$ and the population size $N$. Let us assume that we know $N$ and that we have observatios $\iota(t_i)$ of the number of infected individuals at time points $t_i$. Let us align observations and model outputs and compare them with some sort of metric ${\cal L}$. One could choose for instance the sum of squares as loss function:
 
 $${\cal L}(\beta,\gamma)=\sum_i (\iota(t_i)-I(t_i))^2$$
 
@@ -78,28 +78,42 @@ which could for instance represent seasonality patterns of new infections. There
 
 ![Image]({{ site.baseurl }}/assets/img/neuralode-sir_periodic_phase.png){: style="width: 90%; height: auto;" }
 
+We plot again the phase diagram for an ODE with time-dependent, periodic coefficients. Depending on the position of the epidemic, the vector field changes sign resulting in a endemic equilibrium which is no longer a point but aperiodic function.
 
 
 In the old days, seasoned modelers would warn you to increase the number of parameters, and the **Akaike information criterion** would guide modelers, as it quantifies the trade-off between minimizing the loss while limiting the number of parameters to infer. But these times have revolved. In the days when computing clusters are filled up with graphic processing units that allow to perform fast computations on large amounts of features (such as seasonality), the inference task is less heroic. We still aim to minimize the loss, but now we allow millions of parameters (called neural network weights) to vary.
 
 ## Residual neural networks 
-In the machine learning community, similar algorithms have been utilized under the name of residual neural networks.
-Again, we have "information blocks" (e.g. vectors or tensors of real numbers) that are indexed with $i, i+1,\dots$. In order to move from the $$i$$ th block to the $$(i+1)$$ th block, a neural network element $\mathfrak{f}$ (e.g. a vector-valued function) is used. Here, $\mathfrak{f}$ could be any continuous mapping that takes a vector of size $n$ into a vector of size $m$.
-Often, neural network elements use elementary functions such as step functions or sigmoids and combine them by algebraic operations. We had an explicit form for $\mathfrak{f}$. Seen as a neural network element, it takes a real number and produces another real number with unknown weights $w=(w_1, w_2, w_3)$: 
+In machine learning, algorithms such as the Euler method have been utilized under the name of residual neural networks.
+Again, we have "information blocks" $I$ (e.g. vectors or tensors of real numbers) that are indexed with $k, k+1,\dots$. In order to move from block $k$ to block $k+1$, a neural network element $\mathfrak{f}$ (e.g. a vector-valued function) is used. Here, $\mathfrak{f}$ could be any continuous mapping that takes a vector of size $n$ into a vector of size $m$.
+Often, neural network elements use elementary functions such as step functions or sigmoids and combine them by algebraic operations. We had an explicit form for $\mathfrak{f}$. Seen as a neural network element, it takes a real number and produces another real number, with some fixed weights $w=(w_1, w_2, w_3)$: 
 
 $$\mathfrak{f}_w: x \mapsto  w_1 x \oplus w_2 x \oplus (w_3 x\otimes x) $$ 
 
 This neural network element $$\mathfrak{f}$$ should look very familiar. If we set $w_1=\beta, w_2=-\gamma, w_3=-\tfrac{\beta}{N}$,  it is exactly our vector field $$f(x)=(\beta - \gamma) x - \tfrac{\beta}{N}x^2$$. The operators $\otimes$ resp. $\oplus$ are called tensor product resp. direct sum.
 
-Residual neural networks (ResNets) translate the idea of Euler schema to neural networks:
+Thus formally, residual neural networks translate the idea of Euler to neural networks:
 
 $$I(t_{i+1})=I(t_i) \oplus \mathfrak{f}(I(t_i))$$
 
-In order to move to the next block, you simple take the value of your current block and update it in the direction of the neural network element. 
+In order to move to the next block, you simple take the value of your current block and update it in the direction of the neural network element $$\mathfrak{f}$$. 
 
-## Where vector fields live: tangent bundles
+## Where vector fields live
 
-Let's have another look at the phase diagram on the left of our figure.
+Let's have another look at the phase diagram on the left of our figure. We have seen that with numerical integration, we can transform a vector field into a solution curve, given any initial condition. The phase diagram shows how the solution curve is shadowed by the vector field, as if a magic, invisible hand was guiding us through the unknown territory of the state spaces.
+Here, state space designates the space where our dynamical system can have its solution. In our case we know that $0\leq I(t) \leq N$, so our state space is ${I(t); 0\leq t\leq T}=I([0,T])\subset [0,N]$. 
+
+Let's assume our dynamical system is currently located at $I(t)$, then the tangent to this particular state is $\tfrac{dI}{dt}(I(t))=f(I(t))$. This tangent is a vector, it has a direction and a length, determined by the coefficients of our vector field $f$. In our case the tangent is a straight line embedded in the plane.
+If we now collect from time $t=0$ to some time $t=T>0$ all our states and tangents, we obtain a tangent bundle:  
+
+$$TM=\Bigcup_{t\in [0,T]} T_{I(t)}M=\Bigcup_{t\in [0,T]} (I_t,f(I(t))$$
+
+Again, in our simple case $$TM=f(I)$$, which is the graph of our solution curve $I$ under the real-valued function $f$. Think of the tangent bundle as a cord with straws attached.
+
+Tangent bundles are mathematical objects of their own wright. Each fiber $T_xM$ for $x=I(t)$ is a vector space, where we can perform the usual operations such as addition, scalar product, scalar multiplication or rotations.
+
+
+
 
 ## Inference problem
 

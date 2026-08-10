@@ -1,12 +1,12 @@
 metadata:
-  last_updated: '2026-07-29'
+  last_updated: '2026-08-10'
 papers:
   382gxFoAAAAJ:-f6ydRqryjwC:
-    citations: 17
+    citations: 18
     title: Epidemiological and clinical insights from SARS-CoV-2 RT-PCR crossing threshold values, France, January to November 2020
     year: '2022'
   382gxFoAAAAJ:0EnyYjriUFMC:
-    citations: 26
+    citations: 23
     title: "\xC9pid\xE9miologie math\xE9matique et mod\xE9lisation de la pand\xE9mie de Covid-19: enjeux et diversit\xE9"
     year: '2020'
   382gxFoAAAAJ:3fE2CSJIrl8C:
@@ -18,7 +18,7 @@ papers:
     title: 'Memory is key in capturing COVID-19 epidemiological dynamics. Epidemics. 2021; 35: 100459'
     year: '2021'
   382gxFoAAAAJ:4TOpqqG69KYC:
-    citations: 18
+    citations: 19
     title: HPV cervical infections and serological status in vaccinated and unvaccinated women
     year: '2020'
   382gxFoAAAAJ:5nxA0vEk-isC:
@@ -36,9 +36,9 @@ papers:
   382gxFoAAAAJ:BqipwSGYUEgC:
     citations: 0
     title: Genome wide association study of vaginal microbiota genetic diversity in French women
-    year: '2025'
+    year: '2026'
   382gxFoAAAAJ:GnPB-g6toBAC:
-    citations: 9
+    citations: 10
     title: Factors shaping vaginal microbiota long-term community dynamics in young adult women
     year: '2025'
   382gxFoAAAAJ:HDshCWvjkbEC:
@@ -46,11 +46,11 @@ papers:
     title: "Early Release-Detection of Rapid SARS-CoV-2 Variant Spread, France, January 26\u2013February 16, 2021"
     year: Unknown Year
   382gxFoAAAAJ:IWHjjKOFINEC:
-    citations: 18
+    citations: 19
     title: Non-Markovian modelling highlights the importance of age structure on Covid-19 epidemiological dynamics
     year: '2022'
   382gxFoAAAAJ:IjCSPb-OGe4C:
-    citations: 66
+    citations: 65
     title: MicroRNAs establish robustness and adaptability of a critical gene network to regulate progenitor fate decisions during cortical neurogenesis
     year: '2014'
   382gxFoAAAAJ:JV2RwH3_ST0C:
@@ -66,7 +66,7 @@ papers:
     title: Reconstructing contact network structure and cross-immunity patterns from multiple infection histories
     year: '2021'
   382gxFoAAAAJ:LkGwnXOMwfcC:
-    citations: 196
+    citations: 193
     title: Development of an oral once-weekly drug delivery system for HIV antiretroviral therapy
     year: '2018'
   382gxFoAAAAJ:M3NEmzRMIkIC:
@@ -90,9 +90,9 @@ papers:
     title: Development of an oral once-weekly drug delivery system for HIV antiretroviral therapy
     year: '2018'
   382gxFoAAAAJ:QIV2ME_5wuYC:
-    citations: 32
+    citations: 35
     title: The source of individual heterogeneity shapes infectious disease outbreaks
-    year: '2021'
+    year: '2022'
   382gxFoAAAAJ:R3hNpaxXUhUC:
     citations: 8
     title: 'Concomitant and productive genital infections by HSV-2 and HPV in two young women: A case report'
@@ -108,7 +108,7 @@ papers:
   382gxFoAAAAJ:Se3iqnhoufwC:
     citations: 43
     title: Assessing the stability of polio eradication after the withdrawal of oral polio vaccine
-    year: '2016'
+    year: '2018'
   382gxFoAAAAJ:TFP_iSt0sucC:
     citations: 0
     title: Optimising the early detection of avian influenza H7N9 viruses in live bird markets.
@@ -118,7 +118,7 @@ papers:
     title: 'Supplementary Information: The source of individual heterogeneity shapes infectious disease outbreaks'
     year: '2022'
   382gxFoAAAAJ:Tyk-4Ss8FVUC:
-    citations: 15
+    citations: 16
     title: Multiple low-dose challenges in a rhesus macaque AIDS vaccine trial result in an evolving host response that affects protective outcome
     year: '2014'
   382gxFoAAAAJ:ULOm3_A8WrAC:
@@ -126,15 +126,15 @@ papers:
     title: Memory is key in capturing COVID-19 epidemiological dynamics
     year: '2021'
   382gxFoAAAAJ:UebtZRa9Y70C:
-    citations: 20
+    citations: 21
     title: Targeting and vaccine durability are key for population-level impact and cost-effectiveness of a pox-protein HIV vaccine regimen in South Africa
-    year: '2018'
+    year: '2019'
   382gxFoAAAAJ:W7OEmFMy1HYC:
     citations: 42
     title: The 1918 influenza virus PB2 protein enhances virulence through the disruption of inflammatory and Wnt-mediated signaling in mice
     year: '2016'
   382gxFoAAAAJ:WF5omc3nYNoC:
-    citations: 97
+    citations: 96
     title: 'Integrated omics analysis of pathogenic host responses during pandemic H1N1 influenza virus infection: the crucial role of lipid metabolism'
     year: '2016'
   382gxFoAAAAJ:Wp0gIr-vW9MC:
@@ -142,7 +142,7 @@ papers:
     title: Optimizing the early detection of low pathogenic avian influenza H7N9 virus in live bird markets
     year: '2021'
   382gxFoAAAAJ:Y0pCki6q_DkC:
-    citations: 54
+    citations: 53
     title: Cytokine systems approach demonstrates differences in innate and pro-inflammatory host responses between genetically distinct MERS-CoV isolates
     year: '2014'
   382gxFoAAAAJ:YFjsv_pBGBYC:
@@ -170,7 +170,7 @@ papers:
     title: HPV cervical infections and serological status in vaccinated and unvaccinated French women
     year: '2020'
   382gxFoAAAAJ:_kc_bZDykSQC:
-    citations: 44
+    citations: 42
     title: "Detecting rapid spread of SARS-cov-2 variants, france, january 26\u2013february 16, 2021"
     year: '2021'
   382gxFoAAAAJ:aqlVkmm33-oC:
@@ -182,7 +182,7 @@ papers:
     title: 'HPV detection patterns in young women from the PAPCLEAR longitudinal study: implications for HPV screening policies'
     year: '2023'
   382gxFoAAAAJ:blknAaTinKkC:
-    citations: 5
+    citations: 4
     title: 'Incidence and duration of human papillomavirus infections in young women: insights from a bimonthly follow-up cohort'
     year: '2025'
   382gxFoAAAAJ:dhFuZR0502QC:
@@ -190,7 +190,7 @@ papers:
     title: Predicting COVID-19 incidence in French hospitals using human contact network analytics
     year: '2021'
   382gxFoAAAAJ:e5wmG9Sq2KIC:
-    citations: 8
+    citations: 9
     title: Does exposure to different menstrual products affect the vaginal environment?
     year: '2023'
   382gxFoAAAAJ:hC7cP41nSMkC:
@@ -202,8 +202,8 @@ papers:
     title: 'Episome partitioning and symmetric cell divisions: Quantifying the role of random events in the persistence of HPV infections'
     year: '2021'
   382gxFoAAAAJ:hqOjcs7Dif8C:
-    citations: 10
-    title: 'The future of a partially effective HIV vaccine: assessing limitations at the population level'
+    citations: 9
+    title: 'The future of a partially effective HIV vaccine: assessing limitations at the population level: C. Selinger et al.'
     year: '2019'
   382gxFoAAAAJ:iH-uZ7U-co4C:
     citations: 3
@@ -218,7 +218,7 @@ papers:
     title: 'Modelling the COVID-19 epidemics: an SEAIR model'
     year: '2020'
   382gxFoAAAAJ:kNdYIx-mwKoC:
-    citations: 14
+    citations: 16
     title: Cytokine response following perturbation of the cervicovaginal milieu during HPV genital infection
     year: '2021'
   382gxFoAAAAJ:k_IJM867U9cC:
@@ -239,14 +239,14 @@ papers:
     year: '2023'
   382gxFoAAAAJ:ns9cj8rnVeAC:
     citations: 0
-    title: Clearance in asymptomatic genital HPV infections in young adult women is shaped by host immune response
+    title: Clearance of asymptomatic genital HPV infections in young adult women is shaped by host immune response
     year: '2025'
   382gxFoAAAAJ:qUcmZB5y_30C:
     citations: 0
     title: 'The importance of the population age-structure: insights from Covid-dynamics model structured by age, time since infection and acquired immunity'
     year: Unknown Year
   382gxFoAAAAJ:qxL8FJ1GzNcC:
-    citations: 35
+    citations: 34
     title: 'Natural history, dynamics, and ecology of human papillomaviruses in genital infections of young women: protocol of the PAPCLEAR cohort study'
     year: '2019'
   382gxFoAAAAJ:r0BpntZqJG4C:

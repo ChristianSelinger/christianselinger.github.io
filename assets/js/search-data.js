@@ -63,7 +63,7 @@ ninja.data = [{
         
           title: "No free ride to disease eradication",
         
-        description: "Coupling disease transmission dynamics and game theory, we investigate how individual preference can lead to endemic disease and accepting some level nuisance will maximize societial benefits towards disease eradication.",
+        description: "Coupling disease transmission dynamics and game theory, we investigate how individual preference can lead to endemic disease despite efficacious prevention tools such as vaccines or insecticide-treated nets. On the other hand, if individuals accept the nuisance of those tools (e.g. secondary effects of vaccination), individual preference maximizes societial benefits leading to disease eradication.",
         section: "Posts",
         handler: () => {
           

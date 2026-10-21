@@ -2,7 +2,7 @@
 layout: post
 title: No free ride to disease eradication
 date: 2026-01-01
-description: Coupling disease transmission dynamics and game theory, we investigate how individual preference can lead to endemic disease and accepting some level nuisance will maximize societial benefits towards disease eradication.
+description: Coupling disease transmission dynamics and game theory, we investigate how individual preference can lead to endemic disease despite efficacious prevention tools such as vaccines or insecticide-treated nets. On the other hand, if individuals accept the nuisance of those tools (e.g. secondary effects of vaccination), individual preference maximizes societial benefits leading to disease eradication.
 tags: game_theory differential_equations eradication behaviour
 categories: disease_modeling
 related_posts: false
@@ -149,7 +149,7 @@ is positive if the basic reproduction number and intervention efficacy satisfy:
 
 $$\frac{\beta}{\gamma}<\frac{2-\sigma}{1-\sigma}$$
 
-As the nuisance cost $$C_N$$ increases, the gap is widening. Equality between the elimination threshold and the evolutionary stable strategy can only hold if the nuisance cost is $$C_N=0$$. This means that as long as interventions are effective and have a non-zero nuisance cost, non-users will free-ride and jeopardize the eradication.
+As the nuisance cost $$C_N$$ increases, the gap is widening. Equality between the elimination threshold and the evolutionary stable strategy can only hold if the nuisance cost $$C_N=0$$. This means that as long as interventions are effective and have a non-zero nuisance cost, non-users will free ride and jeopardize eradication.
 
 ![Image]({{ site.baseurl }}/assets/img/dec_sisgmae-x_I.png){: style="width: 50%; height: auto;" }
 

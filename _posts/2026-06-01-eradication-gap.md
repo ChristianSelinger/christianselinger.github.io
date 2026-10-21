@@ -1,8 +1,8 @@
 ---
 layout: post
-title: No free-ride to disease eradication
+title: No free ride to disease eradication
 date: 2026-01-01
-description: Coupling disease transmission dynamics and game theory, we investigate how individual preference can lead to endemic disease and accepting some level nuisance will maximize societial benefits towards disease eradication
+description: Coupling disease transmission dynamics and game theory, we investigate how individual preference can lead to endemic disease and accepting some level nuisance will maximize societial benefits towards disease eradication.
 tags: game_theory differential_equations eradication behaviour
 categories: disease_modeling
 related_posts: false

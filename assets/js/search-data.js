@@ -37,18 +37,7 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/teaching/";
           },
-        },{id: "post-nn-analog",
-        
-          title: "Nn_analog",
-        
-        description: "",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2026/nn_analog/";
-          
-        },
-      },{id: "post-no-free-ride-to-disease-eradication",
+        },{id: "post-no-free-ride-to-disease-eradication",
         
           title: "No free ride to disease eradication",
         

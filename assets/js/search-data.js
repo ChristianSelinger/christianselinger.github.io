@@ -48,17 +48,6 @@ ninja.data = [{
             window.location.href = "/blog/2026/nn_analog/";
           
         },
-      },{id: "post-a-neural-journey-into-disease-transmission-models",
-        
-          title: "A neural journey into disease transmission models",
-        
-        description: "Starting from elementary disease transmission models, we provide an introduction into inhomogeneous dynamical systems that are augmented by neural networks and show how such models can improve inference and predictive accuracy.",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2026/neural-sis/";
-          
-        },
       },{id: "post-no-free-ride-to-disease-eradication",
         
           title: "No free ride to disease eradication",

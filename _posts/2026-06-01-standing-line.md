@@ -25,14 +25,25 @@ For any susceptible host in the interior of the queue, the probability that at l
 
 $$P_{\text{interior}}=(1-p)(1-(1-p)^2)=p(2-p)$$
 
+
+<div class="row justify-content-center">
+  <div class="col-sm-10 col-md-8">
+    {% include figure.liquid path="assets/img/post_standing_line-fig1.png" class="img-fluid rounded" alt="Initial queue with three infectious hosts chosen at random." zoomable=true %}
+  </div>
+</div>
+
+
+
+
 Now we add up over all positions (2 hosts at the boundary, $N-2$ in the interior), under the assumption that all positions are equally likely to carry infectious hosts. The expected number of new infections within a period is:
 
 $$ \lambda=\mathbb{E}(I)= 2 p(1-p) + (N-2)p(1-p)(2-p)$$
 
-But what does the quantitity $\lambda$ tell us about the spread of the disease in the population?
-Let's step back from our general formula and assume that only one host is infectious, i.e. $\tfrac{1}{N}$. In this case
+But what does the quantity $\lambda$ tell us about the spread of the disease in the population?
+Let's step back from our general formula and assume that only one host is infectious, i.e. $p=\tfrac{1}{N}$. In this case 
 
 
+##Transmission uncertainty
 
 
 Here we implicitely assumed that $\beta=1$, i.e. that the probability of transmission was certain, given that a susceptible host is located next to an infectious host. It is straight-forward to change the probability of transmission from an infectious host:

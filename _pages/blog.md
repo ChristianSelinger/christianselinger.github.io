@@ -124,7 +124,7 @@ pagination:
 <div class="post-row">
 <a class="post-thumb" href="{% if post.redirect contains '://' %}{{ post.redirect }}{% elsif post.redirect %}{{ post.redirect | relative_url }}{% else %}{{ post.url | relative_url }}{% endif %}" aria-hidden="true" tabindex="-1">
 {% if post.thumbnail %}
-<img src="{{ post.thumbnail | relative_url }}" alt="" loading="lazy" width="96" height="96" style="width: 96px; height: 96px; object-fit: cover; object-position: left center;">
+<img src="{{ post.thumbnail | relative_url }}" alt="" loading="lazy" width="192" height="192" style="width: 192px; height: 192px; object-fit: cover; object-position: left center;">
 {% else %}
 <span class="post-thumb-placeholder"><i class="fa-solid fa-square-root-variable"></i></span>
 {% endif %}

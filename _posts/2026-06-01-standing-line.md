@@ -61,7 +61,7 @@ $$ \lambda(p,\beta)=\mathbb{E}(I)= (1-p)\left[ 2 \beta p + (N-2)(1-(1-\beta p)^2
 
 <div class="row justify-content-center">
   <div class="col-sm-10 col-md-8">
-    {% include figure.liquid path="assets/img/post_standing_line-fig2_lambda.png" class="img-fluid rounded" alt="Expected new infections with transmission uncertainty. The cross shows that in our ideal case with certain transmission at lowest prevalence, the diseaes would spread to the entire population. The colored dots show the prevalence levels above which disease spread becomes supercritical for realistic transmission probabilities." zoomable=true %}
+    {% include figure.liquid path="assets/img/post_standing_line-fig2-lambda.png" class="img-fluid rounded" alt="Expected new infections with transmission uncertainty. The cross shows that in our ideal case with certain transmission at lowest prevalence, the diseaes would spread to the entire population. The colored dots show the prevalence levels above which disease spread becomes supercritical for realistic transmission probabilities." zoomable=true %}
   </div>
 </div>  
 

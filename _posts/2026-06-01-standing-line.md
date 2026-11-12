@@ -93,18 +93,14 @@ $$k>\frac{N-3}{2} - \frac{2N-1}{2(N-1)^2}$$
 
 but since $k$ needs to be an integer, the smallest number of cuts such that the disease dynamics becomes subcritical is
 
-$$k_{\text{min}}=\lfloor \frac{N}{2} \rfloor $$
+$$k_{\text{min}}=\left\lfloor \frac{N}{2} \right\rfloor $$
 
-which means that only by cutting the queue into pairs, we can achieve subcriticality.
+which means that only by cutting the queue into pairs, we can achieve subcriticality. But in our case we had only $1$ initial infectious individuals. By definition it can only infect its neighbour in the queue, and all other queues would remain uninfected. As we increase the prevalence, even more cuts are needed to remain subcritical, resulting in more and more queues with single individuals. From the point of view of public health, this is effectively imposing physical distancing between individuals. But there is another lever in our model. In lowering the transmission probability $\beta$ by wearing masks, we would need less cuts and could allow queues with larger population size. But this is exactly the trade-off which we experience during the beginning of the most recent pandemic.
 
-
-
-$$\begin{align}
-    \frac{dS_U}{dt} &= -(1-\sigma) \beta S_U (I_U + I_N) + \gamma I_U \\
-    \frac{dI_U}{dt} &= (1-\sigma) \beta S_U (I_U + I_N) - \gamma I_U \\
-    \frac{dS_N}{dt} &= -\beta S_N (I_U + I_N) + \gamma I_N \\
-    \frac{dI_N}{dt} &= \beta S_N (I_U + I_N) - \gamma I_N
-\end{align}$$
+<div class="row justify-content-center">
+  <div class="col-sm-10 col-md-8">
+    {% include figure.liquid path="assets/img/post_standing_line-fig3.png" class="img-fluid rounded" alt="Minimum number of cuts to achieve subcriticality" zoomable=true %}
+  </div>                                                                                                                    </div>  
 
 Let $$x$$ denote the frequency of intervention users in the population ($$x = S_U + I_U$$). Thus setting $$S_U=x-I_U$$ and $$S_V=(1-x)-I_V$$, the system can be reduced to
 $$\begin{align}

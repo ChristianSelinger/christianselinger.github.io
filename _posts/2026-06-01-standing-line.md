@@ -38,7 +38,7 @@ Now we add up over all positions (2 hosts at the boundary, $N-2$ in the interior
 $$ \lambda=\mathbb{E}(I)= 2 p(1-p) + (N-2)p(1-p)(2-p)$$
 
 But what does the quantity $\lambda$ tell us about the spread of the disease in the population?
-Let's step back from our general formula and assume that only one host is infectious, i.e. $p=\tfrac{1}{N}$. In this case, within in one queue period (e.g. 15 minutes), $\lambda$ new infections would have arised. The queue moves forward in a first-in first-out fashion, the head position leaves the queue, and the tail position is populated by a newly arriving host. Since we assumed uniformly random initial conditions, we know that the queue movement does not change the dynamics: on average there is $\lamba$ more infectious hosts in the queue.  
+Let's step back from our general formula and assume that only one host is infectious, i.e. $p=\tfrac{1}{N}$. In this case, within in one queue period (e.g. 15 minutes), $\lambda$ new infections would have arised. The queue moves forward in a first-in first-out fashion, the head position leaves the queue, and the tail position is populated by a newly arriving host. Since we assumed uniformly random initial conditions, we know that the queue movement does not change the dynamics: on average there the number of infectious hosts rises from $1$ to $1+\lamba$ within a queueing period. Moving to the next queueing period and assuming large $N$, we would end up with $(1+\lambda)^T$ after $T$ periods. This holds only for small $T$ at the beginning of the queueing, at some point, the queue would contain mostly infectious hosts, such that it would be difficult to find a susceptible host for new infections. In epidemiology, this phenomenon is called "depletion of susceptibles".   
 
 
 ## Transmission uncertainty
@@ -54,6 +54,10 @@ $$ P_{\text{interior}}=(1-p)(1-(1-\beta p)^2) $$
 such that
 
 $$ \mathbb{E}(I)= (1-p)\left[ 2 \beta p + (N-2)(1-(1-\beta p)^2)\right] $$
+
+
+
+
 
 
 ## Splitting the queue

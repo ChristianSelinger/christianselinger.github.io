@@ -61,7 +61,7 @@ $$ \lambda(p,\beta)=\mathbb{E}(I)= (1-p)\left[ 2 \beta p + (N-2)(1-(1-\beta p)^2
 
 <div class="row justify-content-center">
   <div class="col-sm-10 col-md-8">
-    {% include figure.liquid path="assets/img/post_standing_line-fig2_lambda.png" class="img-fluid rounded" alt="Expected new infections with transmission uncertainty. The cross shows that in our ideal case, the diseaes would spread to the entire population. The colored dots show the prevalence levels above which disease spread becomes supercritical for realistic transmission probabilities." zoomable=true %}
+    {% include figure.liquid path="assets/img/post_standing_line-fig2_lambda.png" class="img-fluid rounded" alt="Expected new infections with transmission uncertainty. The cross shows that in our ideal case with certain transmission at lowest prevalence, the diseaes would spread to the entire population. The colored dots show the prevalence levels above which disease spread becomes supercritical for realistic transmission probabilities." zoomable=true %}
   </div>
 </div>  
 
@@ -69,18 +69,33 @@ $$ \lambda(p,\beta)=\mathbb{E}(I)= (1-p)\left[ 2 \beta p + (N-2)(1-(1-\beta p)^2
 
 ## Splitting the queue
 
+Let's move to our initial question of splitting the initial queue into two independent queues. It is tempting to split the calculations for $\lambda$ into two parts for $N=2M$:
 
+$$\lambda_2=2 p(1-p) + (M-2)p(1-p)(2-p) + 2 p(1-p) + (M-2)p(1-p)(2-p)$$
 
+From our figure below we can see that the cut creates more boundary points for which by definition the probability of infection is lower than for the interior points:
 <div class="row justify-content-center">
   <div class="col-sm-10 col-md-8">
     {% include figure.liquid path="assets/img/post_standing_line-fig2.png" class="img-fluid rounded" alt="Expected new infections with transmission uncertainty. The colored dots show the prevalence levels above which disease spread becomes supercritical." zoomable=true %}
   </div>
 </div>                                                                                                                      
+Without doing the calculations it follows that cutting the queue in two equal parts would decrease the compound number of new infections. From our above interpretation of $\lambda$ we are actually rather interested in the threshold of switching from supercriticality to subcriticality. Elementary calculations show that
 
+$$\lambda_k=\lambda_1-2kp(1-p)^2$$
 
+such that the condition $\lambda_k$ to become subcritical reads:
 
+$$k>\frac{\lambda_1-1}{2p(1-p)^2}
 
+For our ideal case of $\beta=1$ and $p=\tfrac{1}{N}$ this becomes:
 
+$$k>\frac{N-3}{2} - \frac{2N-1}{2(N-1)^2}
+
+but since $k$ needs to be an integer, the smallest number of cuts such that the disease dynamics becomes subcritical is
+
+$$k_{\text{min}}=\lfloor \frac{N}{2} \rfloor $$
+
+which means that only by cutting the queue into pairs, we can achieve subcriticality.
 
 
 

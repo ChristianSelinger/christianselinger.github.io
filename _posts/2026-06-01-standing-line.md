@@ -6,7 +6,7 @@ description: Physical distancing and mask wearing have become ubiquitous non-pha
 tags: probability
 categories: disease_modeling
 related_posts: false
-thumbnail: assets/img/dec_sisgmae-x_I.png
+thumbnail: assets/img/post_standing_line-fig1.png
 toc:
   sidebar: left
 ---
@@ -17,24 +17,41 @@ at a counter (e.g. your favourite bakery, security check at the airport). A high
 ## The transmission model
 
 We consider a population of $N$ hosts standing in line. Since the disease is asymptomatic, we do not know who is infectious and assume that the probability for a host to be infectious is $$p=\tfrac{k}{N}$$ for $0 < k < N$. The disease is highly contagious such that the probability of transmission $$\beta$$ while standing in the queue for at least 15 minutes is non-negligible (e.g. 0.01 for seasonal influenza, 0.03 for pandemic influenza, 0.1 for on omicron-like covid and 0.9 for measles). 
-In our model, we seek to calculate the average number of new infections within a queueing period. To do this, we distinguishhosts with regards to their position in the queue. For hosts at the boundary (i.e. head or tail) of the queue, a new infection arises if the boundary host is not infectious and the immediate neighbour is infectious: 
+In our model, we seek to calculate the average number of new infections within a queueing period. To do this, we distinguish hosts with regards to their position in the queue. For hosts at the boundary (i.e. head or tail) of the queue, a new infection arises if the boundary host is not infectious and the immediate neighbour is infectious: 
+
 $$P_{\text{boundary}}=(1-p)p$$
+
 For any susceptible host in the interior of the queue, the probability that at least one of the two possible neighbours is infectious is the complement of the fact the neither of the two is infectious:
+
 $$P_{\text{interior}}=(1-p)(1-(1-p)^2)=p(2-p)$$
 
 Now we add up over all positions (2 hosts at the boundary, $N-2$ in the interior), under the assumption that all positions are equally likely to carry infectious hosts. The expected number of new infections within a period is:
 
-$$ \mathbb{E}(I)= 2 p(1-p) + (N-2)p(1-p)(2-p)$$
+$$ \lambda=\mathbb{E}(I)= 2 p(1-p) + (N-2)p(1-p)(2-p)$$
+
+But what does the quantitity $\lambda$ tell us about the spread of the disease in the population?
+Let's step back from our general formula and assume that only one host is infectious, i.e. $\tfrac{1}{N}$. In this case
+
+
+
 
 Here we implicitely assumed that $\beta=1$, i.e. that the probability of transmission was certain, given that a susceptible host is located next to an infectious host. It is straight-forward to change the probability of transmission from an infectious host:
 
 $$ P_{\text{boundary}}=(1-p)\beta p $$
+
 and
+
 $$ P_{\text{interior}}=(1-p)(1-(1-\beta p)^2) $$
+
 such that
+
 $$ \mathbb{E}(I)= (1-p)\left[ 2 \beta p + (N-2)(1-(1-\beta p)^2)\right] $$
 
-But what does the quantitity $\mathbb{E}(I)$ tell us about the spread of the disease in the population?
+But what does the quantitity $\lambda=\mathbb{E}(I)$ tell us about the spread of the disease in the population?
+Let's step back from our general formula and assume that only one host is infectious, i.e. $\tfrac{1}{N}$. In this case 
+
+
+
 
 ## Splitting the queue
 

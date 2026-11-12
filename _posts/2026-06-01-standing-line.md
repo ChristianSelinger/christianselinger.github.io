@@ -85,11 +85,11 @@ $$\lambda_k=\lambda_1-2kp(1-p)^2$$
 
 such that the condition $\lambda_k$ to become subcritical reads:
 
-$$k>\frac{\lambda_1-1}{2p(1-p)^2}
+$$k>\frac{\lambda_1-1}{2p(1-p)^2}$$
 
 For our ideal case of $\beta=1$ and $p=\tfrac{1}{N}$ this becomes:
 
-$$k>\frac{N-3}{2} - \frac{2N-1}{2(N-1)^2}
+$$k>\frac{N-3}{2} - \frac{2N-1}{2(N-1)^2}$$
 
 but since $k$ needs to be an integer, the smallest number of cuts such that the disease dynamics becomes subcritical is
 

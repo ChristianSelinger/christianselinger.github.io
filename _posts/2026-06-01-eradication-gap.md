@@ -6,6 +6,9 @@ description: Coupling disease transmission dynamics and game theory, we investig
 tags: game_theory differential_equations eradication behaviour
 categories: disease_modeling
 related_posts: false
+thumbnail: assets/img/dec_sisgmae-x_I.png
+toc:
+  sidebar: left
 ---
 
 Consider a population at risk of an infectious disease, where individuals recover
@@ -16,7 +19,7 @@ benefit of preventing infections but also to some nuisance cost. The second grou
 If we let the dynamics of disease transmission and individual preference co-evolve, what happens on the long run at the population level? Will the disease persist? Or will the parasite disappear from the population?
 
 
-**THE EPIDEMIOLOGICAL MODEL**
+## The epidemiological model
 
 We consider a population divided into two  groups: Users ($$U$$) and Non-users ($$N$$). Each group is further divided into Susceptible ($$S$$) and Infectious ($$I$$) compartments. The total population is normalized to $$1$$ and remains constant:
 $$S_U + I_U + S_N + I_N = 1$$.
@@ -52,7 +55,7 @@ The disease dies out if $$R_0(x,\sigma)<1 \Leftrightarrow  x > \frac{1}{\sigma} 
 We call $$x^e=\frac{1}{\sigma} (1 - \frac{\gamma}{\beta})$$ the user frequency elimination threshold.
 
 
-**REPLICATOR DYNAMICS FOR INTERVENTION USAGE**
+## Replicator dynamics for intervention usage
 
 The decision to use an intervention is modeled as a game. Like in a lottery, each host can play two different strategies against the bank, which is here the pool of infectious hosts in the population. If the host decides to not use the intervention, she will suffer from the potential consequences of an infection at cost $$C_I>0$$. If the host decides to play as a user, he will suffer a little less from the consequences of an infection, but incur the nuisance cost $$C_N\geq 0$$ of using the health intervention. For both strategies, we can write the individual payoff as negative values of the cost:
 
@@ -89,7 +92,7 @@ We distinguish:
 
 
 
-**EQUILIBRIUM FOR INFECTIOUS DISEASE DYNAMICS**
+## Equilibrium for infectious disease dynamics
 
 To find the endemic equilibrium of the reduced system 
 $$\begin{align}
@@ -118,7 +121,7 @@ The positive root of this quadratic gives the unique endemic equilibrium level w
 $$I^* = \frac{-B + \sqrt{B^2 - 4AC}}{2A}$$ for $$A = \beta^2 (1-\sigma)$$, $$B = \beta \gamma (2-\sigma) - \beta^2(1 - \sigma )$$ and $$C = \gamma^2 (1 - R_0(x,\sigma))$$.
 
 
-**EQUILIBRIUM FOR THE COUPLED DISEASE-REPLICATOR DYNAMICS**
+## Equilibrium for the coupled disease–replicator dynamics
 
 We can also solve the quadratic equation in $$I$$ for $$x$$ to obtain the user frequency at the endemic equilibrium. From the replicator equation we know that the user frequency is at equilibrium if the payoffs for users and non-users are equal: $$f_U = f_N$$ which amounts to mainting a specific prevalence:
 
@@ -131,7 +134,7 @@ $$\bar{x} = \frac{1}{\sigma}(1-\frac{\gamma}{\beta})- \frac{(\gamma(2-\sigma) - 
 The strategy $$\bar{x}$$ is an **evolutionary stable strategy** for the case where the disease will persist and eventually reach an endemic equilbrium $$\bar{I}$$. The coupled disease-replicator dynamics is at equilibrium $$(\bar{I},\bar{x})$$, which depends on both disease or efficacy parameters $$\beta, \gamma, \sigma$$ and intervention usage behavior parameters $$C_N$$ and $$C_I$$.
 
 
-**ELIMINATION THRESHOLD AND ERADICATION GAP**
+## Elimination threshold and eradication gap
 
 Let us recall the elimination threshold of user frequency $$x^e = \frac{1}{\sigma} \left( 1 - \frac{\gamma}{\beta} \right)$$
 
@@ -151,6 +154,10 @@ $$\frac{\beta}{\gamma}<\frac{2-\sigma}{1-\sigma}$$
 
 As the nuisance cost $$C_N$$ increases, the gap is widening. Equality between the elimination threshold and the evolutionary stable strategy can only hold if the nuisance cost $$C_N=0$$. This means that as long as interventions are effective and have a non-zero nuisance cost, non-users will free ride and jeopardize eradication.
 
-![Image]({{ site.baseurl }}/assets/img/dec_sisgmae-x_I.png){: style="width: 50%; height: auto;" }
+<div class="row justify-content-center">
+  <div class="col-sm-10 col-md-8">
+    {% include figure.liquid path="assets/img/dec_sisgmae-x_I.png" class="img-fluid rounded" alt="Phase diagram of user frequency versus disease prevalence" zoomable=true %}
+  </div>
+</div>
 
-The figure depicts the phase diagram of the coupled model of user frequency and disease prevalence for two different choices of efficacy and nuisance. The dynamical systems starts at the red point. At <span style="color: orange;">low efficacy and low nuisance</span>, everyone will end up using the intervention and the equilibrium is at high prevalence. Increasing nuisance at low efficacy will result in no users and the entire population infected. <span style="color: blue;">Increasing efficacy but having low nuisance</span> creates an opportunity for free-riders, resulting in lower endemic equilibrium and intermediate user frequency. Again, increasing nuisance in the high efficacy case will deter users and result in a high endemic equilibrium. The elimination threshold for $$\sigma=0.9$$ is located at the cube on the x-axis, at zero prevalence. The disease parameters are fixed at $\beta=0.5$ and $\gamma=0.1$.
+The figure depicts the phase diagram of the coupled model of user frequency and disease prevalence for two different choices of efficacy and nuisance. The dynamical systems starts at the red point. At <span class="fig-orange">low efficacy and low nuisance</span>, everyone will end up using the intervention and the equilibrium is at high prevalence. Increasing nuisance at low efficacy will result in no users and the entire population infected. <span class="fig-blue">Increasing efficacy but having low nuisance</span> creates an opportunity for free-riders, resulting in lower endemic equilibrium and intermediate user frequency. Again, increasing nuisance in the high efficacy case will deter users and result in a high endemic equilibrium. The elimination threshold for $$\sigma=0.9$$ is located at the cube on the x-axis, at zero prevalence. The disease parameters are fixed at $\beta=0.5$ and $\gamma=0.1$.

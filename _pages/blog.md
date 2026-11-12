@@ -121,12 +121,15 @@ pagination:
     {% assign categories = post.categories | join: "" %}
 
     <li>
-
+<div class="post-row">
+<a class="post-thumb" href="{% if post.redirect contains '://' %}{{ post.redirect }}{% elsif post.redirect %}{{ post.redirect | relative_url }}{% else %}{{ post.url | relative_url }}{% endif %}" aria-hidden="true" tabindex="-1">
 {% if post.thumbnail %}
-
-<div class="row">
-          <div class="col-sm-9">
+<img src="{{ post.thumbnail | relative_url }}" alt="" loading="lazy">
+{% else %}
+<span class="post-thumb-placeholder"><i class="fa-solid fa-square-root-variable"></i></span>
 {% endif %}
+</a>
+<div class="post-body">
         <h3>
         {% if post.redirect == blank %}
           <a class="post-title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
@@ -173,16 +176,8 @@ pagination:
               {% endfor %}
           {% endif %}
     </p>
-
-{% if post.thumbnail %}
-
 </div>
-
-  <div class="col-sm-3">
-    <img class="card-img" src="{{ post.thumbnail | relative_url }}" style="object-fit: cover; height: 90%" alt="image">
-  </div>
 </div>
-{% endif %}
     </li>
 
     {% endfor %}

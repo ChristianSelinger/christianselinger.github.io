@@ -5,12 +5,94 @@
 .header-bar {
   border-bottom: 1px solid var(--global-divider-color);
   text-align: center;
-  padding-top: 2rem;
-  padding-bottom: 3rem;
+  padding-top: 2.5rem;
+  padding-bottom: 2rem;
 
   h1 {
     color: var(--global-theme-color);
-    font-size: 5rem;
+    font-size: clamp(2.25rem, 6vw, 3.25rem);
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    margin-bottom: 0.5rem;
+  }
+
+  h2 {
+    color: var(--global-text-color-light);
+    font-size: clamp(1rem, 2.5vw, 1.25rem);
+    font-weight: 400;
+    font-style: italic;
+  }
+}
+
+// Blog listing: square figure to the left of title and abstract.
+.post-row {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+
+  .post-body {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .post-thumb {
+    flex: 0 0 140px;
+    width: 140px;
+    aspect-ratio: 1 / 1;
+    border-radius: 0.375rem;
+    overflow: hidden;
+    border: 1px solid var(--global-divider-color);
+    background-color: var(--global-bg-color);
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: left center; // plots: keep the y-axis, crop the legend side
+      transition: transform 0.3s ease;
+    }
+
+    &:hover img {
+      transform: scale(1.05);
+    }
+  }
+
+  .post-thumb-placeholder {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    color: var(--global-theme-color);
+    opacity: 0.5;
+  }
+
+  @media (max-width: 576px) {
+    gap: 1rem;
+
+    .post-thumb {
+      flex-basis: 88px;
+      width: 88px;
+    }
+  }
+}
+
+// Colour keys used in figure captions; readable in light and dark mode.
+.fig-orange {
+  color: #d97706;
+  font-weight: 500;
+}
+.fig-blue {
+  color: #2563eb;
+  font-weight: 500;
+}
+html[data-theme="dark"] {
+  .fig-orange {
+    color: #fbbf24;
+  }
+  .fig-blue {
+    color: #60a5fa;
   }
 }
 
@@ -41,14 +123,38 @@
 
 .post-list {
   margin: 0;
+  margin-top: 2rem;
   margin-bottom: 40px;
   padding: 0;
 
-  li {
-    border-bottom: 1px solid var(--global-divider-color);
+  > li {
     list-style: none;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    background-color: var(--global-card-bg-color);
+    border: 1px solid var(--global-divider-color);
+    border-left: 4px solid var(--global-theme-color);
+    border-radius: 0.5rem;
+    padding: 1.5rem 1.75rem;
+    margin-bottom: 1.5rem;
+    transition:
+      box-shadow 0.2s ease,
+      transform 0.2s ease;
+
+    &:hover {
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+      transform: translateY(-2px);
+    }
+
+    h3 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+
+    > p:not(.post-meta):not(.post-tags) {
+      color: var(--global-text-color);
+      line-height: 1.6;
+      margin-bottom: 0.75rem;
+    }
 
     .post-meta {
       color: var(--global-text-color-light);

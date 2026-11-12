@@ -37,7 +37,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/teaching/";
           },
-        },{id: "post-no-free-ride-to-disease-eradication",
+        },{id: "post-transmission-in-a-queue",
+        
+          title: "Transmission in a queue",
+        
+        description: "Physical distancing and mask wearing have become ubiquitous non-pharmaceutical prevention measures against respiratory infectious diseases. Starting from a situation where susceptible individuals queue while waiting to pass at a counter, we use elementary probability calculus to demonstrate that disease spreads to everyone unless a certain fraction of individuals comply with distancing or mask wearing.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/standing-line/";
+          
+        },
+      },{id: "post-no-free-ride-to-disease-eradication",
         
           title: "No free ride to disease eradication",
         

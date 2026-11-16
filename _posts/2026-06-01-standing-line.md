@@ -28,7 +28,7 @@ $$P_{\text{interior}}=(1-p)(1-(1-p)^2)=(1-p)p(2-p)$$
 
 <div class="row justify-content-center">
   <div class="col-sm-10 col-md-8">
-    {% include figure.liquid path="assets/img/post_standing_line-fig1.png" class="img-fluid rounded" alt="Initial queue with three infectious hosts chosen at random." zoomable=true %}
+    {% include figure.liquid path="assets/img/post_standing_line-fig1.png" class="img-fluid rounded" caption="Initial queue with three infectious hosts chosen at random." zoomable=true %}
   </div>
 </div>
 
@@ -76,7 +76,7 @@ $$\lambda_2=2 p(1-p) + (M-2)p(1-p)(2-p) + 2 p(1-p) + (M-2)p(1-p)(2-p)$$
 From our figure below we can see that the cut creates more boundary points for which by definition the probability of infection is lower than for the interior points:
 <div class="row justify-content-center">
   <div class="col-sm-10 col-md-8">
-    {% include figure.liquid path="assets/img/post_standing_line-fig2.png" class="img-fluid rounded" caption="Expected new infections with transmission uncertainty. The colored dots show the prevalence levels above which disease spread becomes supercritical." zoomable=true %}
+    {% include figure.liquid path="assets/img/post_standing_line-fig2.png" class="img-fluid rounded" caption="We cut our initial line into two lines of equal size." zoomable=true %}
   </div>
 </div>                                                                                                                      
 Without doing the calculations it follows that cutting the queue in two equal parts would decrease the compound number of new infections. From our above interpretation of $\lambda$ we are actually rather interested in the threshold of switching from supercriticality to subcriticality. Elementary calculations show that
@@ -99,5 +99,5 @@ which means that only by cutting the queue into pairs, we can achieve subcritica
 
 <div class="row justify-content-center">
   <div class="col-sm-10 col-md-8">
-    {% include figure.liquid path="assets/img/post_standing_line-fig3.png" class="img-fluid rounded" alt="Minimum number of cuts to achieve subcriticality" zoomable=true %}
+    {% include figure.liquid path="assets/img/post_standing_line-fig3.png" class="img-fluid rounded" caption="Minimum number of cuts to achieve subcriticality" zoomable=true %}
   </div>                                                                                                                    </div>  

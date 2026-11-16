@@ -83,7 +83,7 @@ Without doing the calculations it follows that cutting the queue in two equal pa
 
 $$\lambda_k=\lambda_1-2kp(1-p)^2$$
 
-such that the condition $\lambda_k$ to become subcritical reads:
+such that the condition $\lambda_k<1$ to become subcritical reads:
 
 $$k>\frac{\lambda_1-1}{2p(1-p)^2}$$
 

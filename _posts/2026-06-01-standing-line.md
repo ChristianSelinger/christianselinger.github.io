@@ -23,7 +23,7 @@ $$P_{\text{boundary}}=(1-p)p$$
 
 For any susceptible host in the interior of the queue, the probability that at least one of the two possible neighbours is infectious is the complement of the fact the neither of the two is infectious:
 
-$$P_{\text{interior}}=(1-p)(1-(1-p)^2)=p(2-p)$$
+$$P_{\text{interior}}=(1-p)(1-(1-p)^2)=(1-p)p(2-p)$$
 
 
 <div class="row justify-content-center">

@@ -89,6 +89,11 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/kasy-means_prediction/";
+            },},{id: "books-how-not-to-be-wrong",
+          title: 'How not to be wrong',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/ellenberg-notwrong/";
             },},{id: "books-das-periodische-system",
           title: 'Das periodische System',
           description: "",
